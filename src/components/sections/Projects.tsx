@@ -50,18 +50,18 @@ export const Projects: React.FC = () => {
             <Card
               key={project.id}
               gradientBorder
-              className="project-card flex flex-col justify-between group hover:border-cyan-500/50 transition-all"
+              className="project-card flex flex-col justify-between group hover:border-[#709FA8]/50 transition-all"
             >
               <div>
                 {/* Visual Window Mockup Header */}
-                <div className="mb-6 rounded-xl bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-4 border border-white/10 shadow-inner group-hover:border-cyan-500/30 transition-colors">
+                <div className="mb-6 rounded-xl bg-gradient-to-br from-[#1C2023] via-[#14181B] to-[#1C2023] p-4 border border-white/10 shadow-inner group-hover:border-[#709FA8]/30 transition-colors">
                   <div className="flex items-center justify-between pb-3 border-b border-white/10">
                     <div className="flex items-center gap-1.5">
                       <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
                       <span className="h-2.5 w-2.5 rounded-full bg-amber-500/80" />
                       <span className="h-2.5 w-2.5 rounded-full bg-emerald-500/80" />
                     </div>
-                    <span className="text-[10px] font-mono text-cyan-400/80">
+                    <span className="text-[10px] font-mono text-[#709FA8]">
                       {project.category} Showcase
                     </span>
                   </div>
@@ -69,7 +69,7 @@ export const Projects: React.FC = () => {
                   {/* Graphical Mockup Accent Illustration */}
                   <div className="pt-4 pb-2 flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <div className="h-10 w-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-lg border border-cyan-500/30">
+                      <div className="h-10 w-10 rounded-xl bg-[#2B5866]/30 text-[#709FA8] flex items-center justify-center font-bold text-lg border border-[#709FA8]/30">
                         {project.id.includes("pokedex")
                           ? "⚡"
                           : project.category === "Healthcare"
@@ -80,13 +80,13 @@ export const Projects: React.FC = () => {
                       </div>
                       <div>
                         <div className="text-xs font-bold text-white">{project.title}</div>
-                        <div className="text-[10px] text-slate-400 font-mono">
+                        <div className="text-[10px] text-[#B1B8C0] font-mono">
                           {project.liveUrl ? "Live Production Build" : "100/100 Core Web Vitals"}
                         </div>
                       </div>
                     </div>
 
-                    <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-cyan-400 bg-cyan-500/15 rounded-full border border-cyan-500/30">
+                    <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[#709FA8] bg-[#2B5866]/30 rounded-full border border-[#709FA8]/30">
                       {project.tags.includes("TDD") ? "TDD Built" : "AI Powered"}
                     </span>
                   </div>
@@ -94,7 +94,7 @@ export const Projects: React.FC = () => {
 
                 {/* Category & Badge */}
                 <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="text-xs font-bold uppercase tracking-wider text-cyan-400">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#709FA8]">
                     {project.category}
                   </span>
                   {project.featured && (
@@ -105,10 +105,10 @@ export const Projects: React.FC = () => {
                 </div>
 
                 {/* Title & Subtitle */}
-                <h3 className="text-2xl font-black text-[var(--text-primary)] font-heading mb-1 group-hover:text-cyan-400 transition-colors">
+                <h3 className="text-2xl font-black text-[var(--text-primary)] font-heading mb-1 group-hover:text-[#709FA8] transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-xs font-semibold text-cyan-500/90 mb-4">{project.subtitle}</p>
+                <p className="text-xs font-semibold text-[#709FA8] mb-4">{project.subtitle}</p>
 
                 {/* Description */}
                 <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-6">
@@ -122,7 +122,7 @@ export const Projects: React.FC = () => {
                   </h4>
                   {project.highlights.map((h, i) => (
                     <div key={i} className="flex items-start gap-2 text-xs text-[var(--text-secondary)]">
-                      <span className="text-cyan-400 font-bold">✓</span>
+                      <span className="text-[#709FA8] font-bold">✓</span>
                       <span>{h}</span>
                     </div>
                   ))}
@@ -135,7 +135,7 @@ export const Projects: React.FC = () => {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2.5 py-1 text-xs font-semibold text-[var(--text-secondary)] glass-panel rounded-lg border border-[var(--bg-card-border)] group-hover:border-cyan-500/30 transition-colors"
+                      className="px-2.5 py-1 text-xs font-semibold text-[var(--text-secondary)] glass-panel rounded-lg border border-[var(--bg-card-border)] group-hover:border-[#709FA8]/30 transition-colors"
                     >
                       {tag}
                     </span>

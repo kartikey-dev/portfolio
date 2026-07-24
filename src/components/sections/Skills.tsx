@@ -67,11 +67,11 @@ export const Skills: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {SKILL_CATEGORIES.map((cat) => (
-            <Card key={cat.title} className="skill-category flex flex-col justify-between hover:border-cyan-500/40 transition-colors">
+            <Card key={cat.title} className="skill-category flex flex-col justify-between hover:border-[#709FA8]/40 transition-colors">
               <div>
                 <h3 className="text-lg font-bold text-[var(--text-primary)] font-heading mb-5 pb-3 border-b border-[var(--bg-card-border)] flex items-center justify-between">
                   <span className="flex items-center gap-2">
-                    <span className="h-2.5 w-2.5 rounded-full bg-cyan-400 animate-pulse" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-[#709FA8] animate-pulse" />
                     {cat.title}
                   </span>
                   <span className="text-xs font-mono text-[var(--text-muted)] font-normal">
@@ -87,9 +87,9 @@ export const Skills: React.FC = () => {
                         <span
                           className={`font-mono text-[10px] uppercase ${
                             skill.level === "Expert"
-                              ? "text-cyan-400 font-bold"
+                              ? "text-[#709FA8] font-bold"
                               : skill.level === "Advanced"
-                              ? "text-purple-400"
+                              ? "text-[#B1B8C0]"
                               : "text-[var(--text-muted)]"
                           }`}
                         >
@@ -102,10 +102,10 @@ export const Skills: React.FC = () => {
                         <div
                           className={`skill-bar-fill h-full rounded-full transition-all duration-500 ${
                             skill.level === "Expert"
-                              ? "bg-gradient-to-r from-cyan-500 to-blue-500"
+                              ? "bg-gradient-to-r from-[#2B5866] via-[#488293] to-[#709FA8]"
                               : skill.level === "Advanced"
-                              ? "bg-gradient-to-r from-purple-500 to-pink-500"
-                              : "bg-gradient-to-r from-sky-500 to-indigo-500"
+                              ? "bg-gradient-to-r from-[#488293] to-[#709FA8]"
+                              : "bg-gradient-to-r from-[#2B5866] to-[#488293]"
                           }`}
                           data-width={getPercentage(skill.level)}
                           style={{ width: "0%" }}

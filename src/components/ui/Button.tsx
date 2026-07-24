@@ -25,17 +25,17 @@ export const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, Bu
     ref
   ) => {
     const baseStyles =
-      "inline-flex items-center justify-center font-medium transition-all duration-300 rounded-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-cyan-500/50 disabled:opacity-50 disabled:cursor-not-allowed";
+      "inline-flex items-center justify-center font-medium transition-all duration-300 rounded-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#709FA8]/50 disabled:opacity-50 disabled:cursor-not-allowed";
 
     const variants = {
       primary:
-        "bg-gradient-to-r from-sky-500 to-purple-600 text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 hover:scale-[1.02] active:scale-[0.98]",
+        "bg-gradient-to-r from-[#2B5866] via-[#488293] to-[#709FA8] text-white shadow-lg shadow-[#2B5866]/30 hover:shadow-[#488293]/40 hover:scale-[1.02] active:scale-[0.98]",
       secondary:
-        "glass-panel text-[var(--text-primary)] border border-[var(--bg-card-border)] hover:border-cyan-500/50 hover:scale-[1.02] active:scale-[0.98]",
+        "glass-panel text-[var(--text-primary)] border border-[var(--bg-card-border)] hover:border-[#709FA8]/50 hover:scale-[1.02] active:scale-[0.98]",
       outline:
-        "border-2 border-cyan-500 text-cyan-500 hover:bg-cyan-500/10 hover:scale-[1.02] active:scale-[0.98]",
+        "border-2 border-[#709FA8] text-[#709FA8] hover:bg-[#709FA8]/10 hover:scale-[1.02] active:scale-[0.98]",
       ghost:
-        "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-cyan-500/10",
+        "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[#709FA8]/10",
     };
 
     const sizes = {

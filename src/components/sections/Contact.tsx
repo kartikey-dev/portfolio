@@ -90,12 +90,12 @@ export const Contact: React.FC = () => {
               <div className="flex flex-col gap-6">
                 {/* Email */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-500 border border-cyan-500/20">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#2B5866]/20 text-[#709FA8] border border-[#709FA8]/30">
                     ✉️
                   </div>
                   <div>
                     <span className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold">Email</span>
-                    <a href={`mailto:${PERSONAL_INFO.email}`} className="block text-base font-medium text-[var(--text-primary)] hover:text-cyan-500 transition-colors">
+                    <a href={`mailto:${PERSONAL_INFO.email}`} className="block text-base font-medium text-[var(--text-primary)] hover:text-[#709FA8] transition-colors">
                       {PERSONAL_INFO.email}
                     </a>
                   </div>
@@ -103,12 +103,12 @@ export const Contact: React.FC = () => {
 
                 {/* Phone */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-purple-500/10 text-purple-500 border border-purple-500/20">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#488293]/20 text-[#709FA8] border border-[#488293]/30">
                     📞
                   </div>
                   <div>
                     <span className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold">Phone</span>
-                    <a href={`tel:${PERSONAL_INFO.phone}`} className="block text-base font-medium text-[var(--text-primary)] hover:text-cyan-500 transition-colors">
+                    <a href={`tel:${PERSONAL_INFO.phone}`} className="block text-base font-medium text-[var(--text-primary)] hover:text-[#709FA8] transition-colors">
                       {PERSONAL_INFO.phone}
                     </a>
                   </div>
@@ -116,7 +116,7 @@ export const Contact: React.FC = () => {
 
                 {/* Location */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-500 border border-cyan-500/20">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#2B5866]/20 text-[#709FA8] border border-[#709FA8]/30">
                     📍
                   </div>
                   <div>
@@ -154,7 +154,7 @@ export const Contact: React.FC = () => {
             </h3>
 
             {status === "success" ? (
-              <div className="p-6 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-center flex flex-col items-center gap-3">
+              <div className="p-6 rounded-xl bg-[#2B5866]/20 border border-[#709FA8]/40 text-[#709FA8] text-center flex flex-col items-center gap-3">
                 <span className="text-4xl">🎉</span>
                 <h4 className="text-lg font-bold">Message Sent Successfully!</h4>
                 <p className="text-sm text-[var(--text-secondary)]">
@@ -183,7 +183,7 @@ export const Contact: React.FC = () => {
                       placeholder="Your Name"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full rounded-xl glass-panel px-4 py-2.5 text-sm text-[var(--text-primary)] border border-[var(--bg-card-border)] focus:border-cyan-500 focus:outline-none transition-colors"
+                      className="w-full rounded-xl glass-panel px-4 py-2.5 text-sm text-[var(--text-primary)] border border-[var(--bg-card-border)] focus:border-[#709FA8] focus:outline-none transition-colors"
                     />
                   </div>
 
@@ -197,7 +197,7 @@ export const Contact: React.FC = () => {
                       placeholder="Your Email"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full rounded-xl glass-panel px-4 py-2.5 text-sm text-[var(--text-primary)] border border-[var(--bg-card-border)] focus:border-cyan-500 focus:outline-none transition-colors"
+                      className="w-full rounded-xl glass-panel px-4 py-2.5 text-sm text-[var(--text-primary)] border border-[var(--bg-card-border)] focus:border-[#709FA8] focus:outline-none transition-colors"
                     />
                   </div>
                 </div>
@@ -211,7 +211,7 @@ export const Contact: React.FC = () => {
                     placeholder="Project Inquiry / Opportunity"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    className="w-full rounded-xl glass-panel px-4 py-2.5 text-sm text-[var(--text-primary)] border border-[var(--bg-card-border)] focus:border-cyan-500 focus:outline-none transition-colors"
+                    className="w-full rounded-xl glass-panel px-4 py-2.5 text-sm text-[var(--text-primary)] border border-[var(--bg-card-border)] focus:border-[#709FA8] focus:outline-none transition-colors"
                   />
                 </div>
 
@@ -225,7 +225,7 @@ export const Contact: React.FC = () => {
                     placeholder="Your Message..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full rounded-xl glass-panel px-4 py-2.5 text-sm text-[var(--text-primary)] border border-[var(--bg-card-border)] focus:border-cyan-500 focus:outline-none transition-colors resize-none"
+                    className="w-full rounded-xl glass-panel px-4 py-2.5 text-sm text-[var(--text-primary)] border border-[var(--bg-card-border)] focus:border-[#709FA8] focus:outline-none transition-colors resize-none"
                   />
                 </div>
 

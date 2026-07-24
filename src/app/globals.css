@@ -2,29 +2,35 @@
 
 @layer base {
   :root {
-    --bg-primary: #f8fafc;
+    --bg-primary: #f2f5f7;
     --bg-secondary: #ffffff;
-    --bg-card: rgba(255, 255, 255, 0.85);
-    --bg-card-border: rgba(226, 232, 240, 0.8);
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --text-muted: #94a3b8;
-    --accent-cyan: #0284c7;
-    --accent-violet: #7c3aed;
-    --accent-glow: rgba(14, 165, 233, 0.15);
+    --bg-card: rgba(255, 255, 255, 0.9);
+    --bg-card-border: rgba(43, 88, 102, 0.18);
+    --text-primary: #192026;
+    --text-secondary: #2b5866;
+    --text-muted: #488293;
+    --accent-cyan: #2b5866;
+    --accent-teal: #2b5866;
+    --accent-steel: #488293;
+    --accent-ice: #709fa8;
+    --accent-silver: #b1b8c0;
+    --accent-glow: rgba(72, 130, 147, 0.15);
   }
 
   .dark {
-    --bg-primary: #0b0f17;
-    --bg-secondary: #111827;
-    --bg-card: rgba(17, 24, 39, 0.75);
-    --bg-card-border: rgba(255, 255, 255, 0.08);
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --text-muted: #64748b;
-    --accent-cyan: #38bdf8;
-    --accent-violet: #a855f7;
-    --accent-glow: rgba(56, 189, 248, 0.15);
+    --bg-primary: #1c2023;
+    --bg-secondary: #14181b;
+    --bg-card: rgba(28, 32, 35, 0.85);
+    --bg-card-border: rgba(112, 159, 168, 0.18);
+    --text-primary: #ffffff;
+    --text-secondary: #b1b8c0;
+    --text-muted: #709fa8;
+    --accent-cyan: #709fa8;
+    --accent-teal: #2b5866;
+    --accent-steel: #488293;
+    --accent-ice: #709fa8;
+    --accent-silver: #b1b8c0;
+    --accent-glow: rgba(112, 159, 168, 0.2);
   }
 
   html {
@@ -47,23 +53,38 @@
   }
 }
 
-/* Glassmorphism & Cross-Browser Card Utilities */
+/* Glassmorphism & Custom Palette Utilities */
 .glass-panel {
   background: var(--bg-card);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border: 1px solid var(--bg-card-border);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-violet) 100%);
+  background: linear-gradient(135deg, #709fa8 0%, #ffffff 50%, #488293 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
 
-/* Cross-Browser Mask Gradient Border (Chrome, Safari, Firefox, Edge) */
+.teal-gradient-text {
+  background: linear-gradient(135deg, #2b5866 0%, #488293 50%, #709fa8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Metallic Silver Nameplate Sheen Effect */
+.metallic-plate {
+  background: linear-gradient(135deg, #d2d7dc 0%, #b1b8c0 40%, #8e969f 70%, #d2d7dc 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 rgba(0, 0, 0, 0.4);
+  border: 1px solid #e2e8f0;
+}
+
+/* Cross-Browser Mask Gradient Border (Deep Teal to Bright Ice Blue) */
 .gradient-border {
   position: relative;
   border-radius: 1rem;
@@ -75,12 +96,12 @@
   inset: -1px;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+  background: linear-gradient(135deg, #488293, #709fa8, #2b5866);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
-  opacity: 0.4;
+  opacity: 0.45;
   transition: opacity 0.3s ease;
   pointer-events: none;
 }
@@ -89,7 +110,7 @@
   opacity: 1;
 }
 
-/* Cross-Browser Custom Scrollbar */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -100,18 +121,18 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--text-muted);
+  background: #2b5866;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-cyan);
+  background: #709fa8;
 }
 
 /* Firefox Scrollbar Support */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--text-muted) var(--bg-primary);
+  scrollbar-color: #2b5866 var(--bg-primary);
 }
 
 /* Touch & Responsive Utilities */

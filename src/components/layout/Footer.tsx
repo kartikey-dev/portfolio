@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { PERSONAL_INFO } from "@/lib/constants";
 
 export const Footer: React.FC = () => {
@@ -14,17 +15,35 @@ export const Footer: React.FC = () => {
   return (
     <footer className="relative border-t border-[var(--bg-card-border)] bg-[var(--bg-secondary)]/50 backdrop-blur-lg py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        {/* Brushed Metallic Silver Nameplate Showcase in Footer */}
+        <div className="mb-10 flex flex-col items-center justify-center">
+          <div className="relative max-w-sm sm:max-w-md w-full overflow-hidden rounded-2xl border border-[#B1B8C0]/40 shadow-2xl shadow-[#1C2023]/60 group transition-transform duration-300 hover:scale-[1.01]">
+            <Image
+              src="/images/kk-nameplate.jpg"
+              alt="Kumar Kartikey — Senior Software Engineer Metallic Nameplate"
+              width={600}
+              height={200}
+              className="w-full h-auto object-cover rounded-xl"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1C2023]/40 via-transparent to-transparent opacity-60" />
+          </div>
+          <span className="mt-3 text-[10px] font-mono uppercase tracking-widest text-[#709FA8]">
+            Senior Software Engineer &amp; UI Architect
+          </span>
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-6 border-t border-[var(--bg-card-border)]/60">
           {/* Logo & Copyright */}
           <div className="flex flex-col items-center md:items-start gap-2">
             <Link
               href="#"
               className="font-heading text-lg font-bold tracking-tight text-[var(--text-primary)]"
             >
-              Kumar Kartikey<span className="text-cyan-500">.dev</span>
+              Kumar Kartikey<span className="text-[#709FA8]">.dev</span>
             </Link>
             <p className="text-xs text-[var(--text-muted)] text-center md:text-left">
-              &copy; {currentYear} Kumar Kartikey. All rights reserved. Built with Next.js 16, TypeScript, Tailwind CSS v4 & GSAP.
+              &copy; {currentYear} Kumar Kartikey. All rights reserved. Built with Next.js 16, TypeScript, Tailwind CSS v4 &amp; GSAP.
             </p>
           </div>
 
@@ -35,7 +54,7 @@ export const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="flex h-10 w-10 items-center justify-center rounded-full glass-panel border border-[var(--bg-card-border)] text-[var(--text-secondary)] hover:text-cyan-500 hover:border-cyan-500/50 transition-all"
+              className="flex h-10 w-10 items-center justify-center rounded-full glass-panel border border-[var(--bg-card-border)] text-[var(--text-secondary)] hover:text-[#709FA8] hover:border-[#709FA8]/50 transition-all"
             >
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -51,7 +70,7 @@ export const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="flex h-10 w-10 items-center justify-center rounded-full glass-panel border border-[var(--bg-card-border)] text-[var(--text-secondary)] hover:text-cyan-500 hover:border-cyan-500/50 transition-all"
+              className="flex h-10 w-10 items-center justify-center rounded-full glass-panel border border-[var(--bg-card-border)] text-[var(--text-secondary)] hover:text-[#709FA8] hover:border-[#709FA8]/50 transition-all"
             >
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
@@ -61,7 +80,7 @@ export const Footer: React.FC = () => {
             <a
               href={`mailto:${PERSONAL_INFO.email}`}
               aria-label="Email"
-              className="flex h-10 w-10 items-center justify-center rounded-full glass-panel border border-[var(--bg-card-border)] text-[var(--text-secondary)] hover:text-cyan-500 hover:border-cyan-500/50 transition-all"
+              className="flex h-10 w-10 items-center justify-center rounded-full glass-panel border border-[var(--bg-card-border)] text-[var(--text-secondary)] hover:text-[#709FA8] hover:border-[#709FA8]/50 transition-all"
             >
               <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -73,7 +92,7 @@ export const Footer: React.FC = () => {
           <button
             onClick={scrollToTop}
             aria-label="Back to top"
-            className="flex items-center gap-2 text-xs font-medium text-[var(--text-secondary)] hover:text-cyan-500 glass-panel px-4 py-2 rounded-full border border-[var(--bg-card-border)] hover:border-cyan-500/50 transition-all cursor-pointer"
+            className="flex items-center gap-2 text-xs font-medium text-[var(--text-secondary)] hover:text-[#709FA8] glass-panel px-4 py-2 rounded-full border border-[var(--bg-card-border)] hover:border-[#709FA8]/50 transition-all cursor-pointer"
           >
             <span>Back to top</span>
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

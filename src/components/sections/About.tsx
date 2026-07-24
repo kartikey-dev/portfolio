@@ -47,14 +47,14 @@ export const About: React.FC = () => {
           {/* Main Bio Card */}
           <Card className="about-animate lg:col-span-7 flex flex-col gap-6">
             <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-500/10 text-cyan-500 text-2xl font-bold border border-cyan-500/20">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#2B5866]/30 text-[#709FA8] text-2xl font-bold border border-[#709FA8]/30">
                 👨‍💻
               </span>
               <div>
                 <h3 className="text-2xl font-bold text-[var(--text-primary)] font-heading">
                   Architecting Scalable UI &amp; AI Products
                 </h3>
-                <span className="text-xs font-semibold uppercase tracking-wider text-cyan-400">
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#709FA8]">
                   7+ Years of Engineering Excellence
                 </span>
               </div>
@@ -72,7 +72,7 @@ export const About: React.FC = () => {
               </div>
               <div className="glass-panel p-3 rounded-xl border border-[var(--bg-card-border)]">
                 <span className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] font-bold">Email</span>
-                <p className="text-xs font-semibold text-cyan-400 truncate">{PERSONAL_INFO.email}</p>
+                <p className="text-xs font-semibold text-[#709FA8] truncate">{PERSONAL_INFO.email}</p>
               </div>
               <div className="glass-panel p-3 rounded-xl border border-[var(--bg-card-border)]">
                 <span className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] font-bold">Phone</span>
@@ -82,11 +82,11 @@ export const About: React.FC = () => {
 
             {/* Recognition Badges */}
             <div className="pt-4 border-t border-[var(--bg-card-border)] flex flex-col gap-3">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-cyan-400">Key Recognition</h4>
+              <h4 className="text-xs font-bold uppercase tracking-wider text-[#709FA8]">Key Recognition</h4>
               <div className="grid grid-cols-1 gap-3">
                 {ACHIEVEMENTS.map((item) => (
-                  <div key={item.title} className="flex items-start gap-3 p-3 glass-panel rounded-xl border border-[var(--bg-card-border)] hover:border-cyan-500/30 transition-colors">
-                    <span className="text-cyan-500 text-xl">🏆</span>
+                  <div key={item.title} className="flex items-start gap-3 p-3 glass-panel rounded-xl border border-[var(--bg-card-border)] hover:border-[#709FA8]/30 transition-colors">
+                    <span className="text-[#709FA8] text-xl">🏆</span>
                     <div>
                       <strong className="text-[var(--text-primary)] font-bold text-sm block">{item.title}</strong>
                       <span className="text-xs text-[var(--text-secondary)]">{item.description} ({item.issuer})</span>
@@ -106,7 +106,7 @@ export const About: React.FC = () => {
               </h3>
               <div className="flex flex-col gap-4">
                 {EDUCATIONS.map((edu) => (
-                  <div key={edu.degree} className="border-l-2 border-cyan-500/40 pl-4 py-1">
+                  <div key={edu.degree} className="border-l-2 border-[#709FA8]/50 pl-4 py-1">
                     <h4 className="text-base font-bold text-[var(--text-primary)]">{edu.degree}</h4>
                     <p className="text-sm text-[var(--text-secondary)]">{edu.institution} • {edu.location}</p>
                     <span className="text-xs font-mono text-[var(--text-muted)]">{edu.year}</span>
@@ -122,7 +122,7 @@ export const About: React.FC = () => {
               </h3>
               <div className="flex flex-col gap-4">
                 {CERTIFICATIONS.map((cert) => (
-                  <div key={cert.title} className="border-l-2 border-purple-500/40 pl-4 py-1">
+                  <div key={cert.title} className="border-l-2 border-[#488293]/50 pl-4 py-1">
                     <h4 className="text-base font-bold text-[var(--text-primary)]">{cert.title}</h4>
                     <p className="text-sm text-[var(--text-secondary)]">Issued by {cert.issuer} • {cert.date}</p>
                     {cert.verifyUrl && (
@@ -130,7 +130,7 @@ export const About: React.FC = () => {
                         href={cert.verifyUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-xs font-semibold text-cyan-400 hover:underline mt-1"
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-[#709FA8] hover:underline mt-1"
                       >
                         Verify Credential ↗
                       </a>

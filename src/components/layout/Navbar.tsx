@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 
 const NAV_ITEMS = [
@@ -54,22 +55,28 @@ export const Navbar: React.FC = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[var(--bg-primary)]/80 backdrop-blur-md border-b border-[var(--bg-card-border)] py-3 shadow-lg shadow-black/5"
+          ? "bg-[var(--bg-primary)]/85 backdrop-blur-md border-b border-[var(--bg-card-border)] py-3 shadow-lg shadow-black/10"
           : "bg-transparent py-5"
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo with 3D Monogram Avatar */}
           <Link
             href="#"
-            className="group flex items-center gap-2 font-heading text-xl font-bold tracking-tight text-[var(--text-primary)]"
+            className="group flex items-center gap-3 font-heading text-xl font-bold tracking-tight text-[var(--text-primary)]"
           >
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-cyan-500 to-purple-600 text-white font-black text-lg shadow-md shadow-cyan-500/20 group-hover:scale-105 transition-transform">
-              K
-            </span>
+            <div className="relative h-10 w-10 overflow-hidden rounded-xl border border-[#709FA8]/30 bg-[#2B5866]/20 p-0.5 shadow-md shadow-[#2B5866]/20 group-hover:scale-105 transition-transform">
+              <Image
+                src="/images/kk-monogram-logo.png"
+                alt="Kumar Kartikey Logo"
+                width={40}
+                height={40}
+                className="h-full w-full object-cover rounded-lg"
+              />
+            </div>
             <span>
-              Kartikey<span className="text-cyan-500">.dev</span>
+              Kartikey<span className="text-[#709FA8]">.dev</span>
             </span>
           </Link>
 
@@ -80,7 +87,7 @@ export const Navbar: React.FC = () => {
                 key={item.label}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className="px-4 py-1.5 text-sm font-medium text-[var(--text-secondary)] hover:text-cyan-500 rounded-full transition-colors"
+                className="px-4 py-1.5 text-sm font-medium text-[var(--text-secondary)] hover:text-[#709FA8] rounded-full transition-colors"
               >
                 {item.label}
               </a>
@@ -92,12 +99,12 @@ export const Navbar: React.FC = () => {
             <button
               onClick={toggleTheme}
               aria-label="Toggle theme"
-              className="flex h-10 w-10 items-center justify-center rounded-full glass-panel border border-[var(--bg-card-border)] text-[var(--text-primary)] hover:border-cyan-500/50 hover:text-cyan-500 transition-all"
+              className="flex h-10 w-10 items-center justify-center rounded-full glass-panel border border-[var(--bg-card-border)] text-[var(--text-primary)] hover:border-[#709FA8]/50 hover:text-[#709FA8] transition-all"
             >
               {theme === "dark" ? (
                 // Sun Icon
                 <svg
-                  className="h-5 w-5 text-amber-400"
+                  className="h-5 w-5 text-[#709FA8]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -112,7 +119,7 @@ export const Navbar: React.FC = () => {
               ) : (
                 // Moon Icon
                 <svg
-                  className="h-5 w-5 text-purple-600"
+                  className="h-5 w-5 text-[#2B5866]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -173,7 +180,7 @@ export const Navbar: React.FC = () => {
                 key={item.label}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className="text-lg font-medium text-[var(--text-primary)] hover:text-cyan-500 transition-colors py-2 border-b border-[var(--bg-card-border)]/50 last:border-none"
+                className="text-lg font-medium text-[var(--text-primary)] hover:text-[#709FA8] transition-colors py-2 border-b border-[var(--bg-card-border)]/50 last:border-none"
               >
                 {item.label}
               </a>
