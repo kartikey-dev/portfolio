@@ -1,0 +1,54 @@
+export interface Experience {
+  id: string;
+  company: string;
+  role: string;
+  period: string;
+  location: string;
+  highlights: string[];
+  technologies: string[];
+}
+
+export interface Project {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  longDescription?: string;
+  tags: string[];
+  highlights: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+  featured: boolean;
+  category: "AI" | "Healthcare" | "Fintech" | "SaaS";
+}
+
+export interface SkillCategory {
+  title: string;
+  skills: {
+    name: string;
+    level?: "Expert" | "Advanced" | "Proficient";
+    icon?: string;
+  }[];
+}
+
+export interface Education {
+  degree: string;
+  institution: string;
+  location?: string;
+  year: string;
+  details?: string;
+}
+
+export interface Certification {
+  title: string;
+  issuer: string;
+  date: string;
+  certId?: string;
+  verifyUrl?: string;
+}
+
+export interface Achievement {
+  title: string;
+  description: string;
+  issuer: string;
+}
