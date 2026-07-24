@@ -12,20 +12,20 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="relative border-t border-[var(--bg-card-border)] bg-[#1C2023] pt-20 pb-12 overflow-hidden">
+    <footer className="relative border-t border-[var(--bg-card-border)] bg-[var(--bg-primary)] pt-20 pb-12 overflow-hidden transition-colors">
       {/* Background Ambient Glows & Grid Pattern */}
       <div className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 h-[350px] w-[800px] rounded-full bg-gradient-to-t from-[#2B5866]/20 via-[#488293]/10 to-transparent blur-[140px] opacity-70" />
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:32px_32px]" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         {/* High-Impact Gradient CTA Callout Box */}
-        <div className="relative mb-20 overflow-hidden rounded-3xl border border-[#709FA8]/30 bg-gradient-to-r from-[#1C2023] via-[#2B5866]/40 to-[#1C2023] p-8 sm:p-12 shadow-2xl shadow-[#2B5866]/20 backdrop-blur-xl">
+        <div className="relative mb-20 overflow-hidden rounded-3xl border border-[#709FA8]/40 bg-gradient-to-r from-[var(--bg-secondary)] via-[#2B5866]/20 to-[var(--bg-secondary)] p-8 sm:p-12 shadow-2xl shadow-[#2B5866]/10 backdrop-blur-xl">
           <div className="absolute top-0 right-0 -mt-12 -mr-12 h-64 w-64 rounded-full bg-[#709FA8]/10 blur-3xl pointer-events-none" />
 
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div className="max-w-2xl">
               {/* Availability Indicator */}
-              <div className="inline-flex items-center gap-2 rounded-full bg-[#2B5866]/40 px-3 py-1 border border-[#709FA8]/40 text-xs font-semibold text-[#709FA8] mb-4">
+              <div className="inline-flex items-center gap-2 rounded-full bg-[#2B5866]/20 px-3 py-1 border border-[#709FA8]/40 text-xs font-semibold text-[#709FA8] mb-4">
                 <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
                 <span>Available for Senior Frontend Engineering &amp; UI Consulting</span>
               </div>
@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
               <span className="font-heading text-2xl font-black tracking-tight text-[var(--text-primary)]">
                 Kumar <span className="gradient-text">Kartikey</span>
               </span>
-              <span className="text-[10px] font-mono font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-[#2B5866]/40 text-[#709FA8] border border-[#709FA8]/30">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-[#2B5866]/20 text-[#709FA8] border border-[#709FA8]/30">
                 7+ Yrs Exp
               </span>
             </div>
@@ -234,7 +234,7 @@ export const Footer: React.FC = () => {
           <div className="flex flex-wrap items-center gap-3 text-center sm:text-left">
             <span>&copy; {currentYear} Kumar Kartikey. All rights reserved.</span>
             <span className="hidden sm:inline text-[var(--bg-card-border)]">•</span>
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#2B5866]/30 text-[#709FA8] border border-[#709FA8]/30 font-mono text-[10px] font-bold">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#2B5866]/20 text-[#709FA8] border border-[#709FA8]/30 font-mono text-[10px] font-bold">
               ⚡ 100/100 Core Web Vitals Optimized
             </span>
           </div>

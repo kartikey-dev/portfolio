@@ -2,10 +2,10 @@
 
 @layer base {
   :root {
-    --bg-primary: #f2f5f7;
+    --bg-primary: #f4f6f8;
     --bg-secondary: #ffffff;
-    --bg-card: rgba(255, 255, 255, 0.9);
-    --bg-card-border: rgba(43, 88, 102, 0.18);
+    --bg-card: rgba(255, 255, 255, 0.95);
+    --bg-card-border: rgba(43, 88, 102, 0.22);
     --text-primary: #192026;
     --text-secondary: #2b5866;
     --text-muted: #488293;
@@ -76,6 +76,14 @@
 }
 
 .gradient-text {
+  background: linear-gradient(135deg, #2b5866 0%, #488293 50%, #709fa8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.dark .gradient-text {
   background: linear-gradient(135deg, #709fa8 0%, #ffffff 50%, #488293 100%);
   -webkit-background-clip: text;
   background-clip: text;
