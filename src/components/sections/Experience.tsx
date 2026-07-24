@@ -44,7 +44,7 @@ export const Experience: React.FC = () => {
         <SectionHeading
           badge="Career Journey"
           title="Work Experience"
-          subtitle="6.5+ years of delivering high-impact frontend architecture across healthcare, insurance, construction, and e-commerce SaaS products."
+          subtitle="7+ years of delivering high-impact frontend architecture across healthcare, insurance, construction, and e-commerce SaaS products."
         />
 
         {/* Timeline Container */}
@@ -52,7 +52,7 @@ export const Experience: React.FC = () => {
           {EXPERIENCES.map((exp) => (
             <div key={exp.id} className="timeline-card relative group">
               {/* Timeline Node Icon */}
-              <div className="absolute -left-[31px] sm:-left-[47px] top-1 flex h-6 w-6 items-center justify-center rounded-full bg-[var(--bg-primary)] border-2 border-cyan-500 group-hover:scale-125 group-hover:bg-cyan-500 transition-all">
+              <div className="absolute -left-[31px] sm:-left-[53px] top-1 flex h-6 w-6 items-center justify-center rounded-full bg-[var(--bg-primary)] border-2 border-cyan-500 group-hover:scale-125 group-hover:bg-cyan-500 transition-all">
                 <span className="h-2 w-2 rounded-full bg-cyan-500 group-hover:bg-white transition-colors" />
               </div>
 
@@ -80,7 +80,7 @@ export const Experience: React.FC = () => {
                       key={idx}
                       className="flex items-start gap-3 text-sm text-[var(--text-secondary)]"
                     >
-                      <span className="text-cyan-500 mt-1">▹</span>
+                      <span className="text-cyan-500">▹</span>
                       <span className="leading-relaxed">{highlight}</span>
                     </li>
                   ))}

@@ -26,7 +26,7 @@ export interface SkillCategory {
   title: string;
   skills: {
     name: string;
-    level?: "Expert" | "Advanced" | "Proficient";
+    level?: "Expert" | "Advanced" | "Proficient" | "Intermediate" | "Beginner";
     icon?: string;
   }[];
 }

@@ -18,33 +18,45 @@ export const Footer: React.FC = () => {
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:32px_32px]" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-        
         {/* High-Impact Gradient CTA Callout Box */}
         <div className="relative mb-20 overflow-hidden rounded-3xl border border-[#709FA8]/30 bg-gradient-to-r from-[#1C2023] via-[#2B5866]/40 to-[#1C2023] p-8 sm:p-12 shadow-2xl shadow-[#2B5866]/20 backdrop-blur-xl">
           <div className="absolute top-0 right-0 -mt-12 -mr-12 h-64 w-64 rounded-full bg-[#709FA8]/10 blur-3xl pointer-events-none" />
-          
+
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div className="max-w-2xl">
               {/* Availability Indicator */}
               <div className="inline-flex items-center gap-2 rounded-full bg-[#2B5866]/40 px-3 py-1 border border-[#709FA8]/40 text-xs font-semibold text-[#709FA8] mb-4">
                 <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-                <span>Available for Senior Frontend Architecture &amp; Consulting</span>
+                <span>Available for Senior Frontend Engineering &amp; UI Consulting</span>
               </div>
 
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[var(--text-primary)] tracking-tight leading-tight">
-                Let&apos;s Build Something <span className="gradient-text">Exceptional</span> Together
+                Let&apos;s Build Something <span className="gradient-text">Exceptional</span>{" "}
+                Together
               </h2>
 
               <p className="mt-3 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
-                Whether you need a high-performance Next.js application, an AI-powered SaaS interface, or expert frontend leadership — let&apos;s connect and bring your vision to life.
+                Whether you need a high-performance Next.js application, an AI-powered SaaS
+                interface, or expert frontend engineering — let&apos;s connect and bring your vision
+                to life.
               </p>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto">
-              <Button href="#contact" variant="primary" size="lg" className="w-full sm:w-auto text-center">
+              <Button
+                href="#contact"
+                variant="primary"
+                size="lg"
+                className="w-full sm:w-auto text-center"
+              >
                 Let&apos;s Talk 🚀
               </Button>
-              <Button href="#projects" variant="secondary" size="lg" className="w-full sm:w-auto text-center">
+              <Button
+                href="#projects"
+                variant="secondary"
+                size="lg"
+                className="w-full sm:w-auto text-center"
+              >
                 Explore Projects 💼
               </Button>
             </div>
@@ -53,7 +65,6 @@ export const Footer: React.FC = () => {
 
         {/* Modular 4-Column Footer Navigation */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-16 border-b border-[var(--bg-card-border)]/60">
-          
           {/* Column 1: Executive Brand Info (lg:col-span-5) */}
           <div className="lg:col-span-5 flex flex-col gap-4">
             <div className="flex items-center gap-3">
@@ -66,7 +77,9 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed max-w-md">
-              Senior Frontend Architect &amp; UI Expert specializing in Next.js 16, TypeScript, design systems, and AI-driven user experiences with 100/100 Lighthouse performance scores.
+              Senior Frontend Engineer &amp; UI Expert specializing in Next.js 16, TypeScript,
+              design systems, and AI-driven user experiences with 100/100 Lighthouse performance
+              scores.
             </p>
 
             {/* Social Icons */}
@@ -104,8 +117,18 @@ export const Footer: React.FC = () => {
                 aria-label="Email"
                 className="flex h-10 w-10 items-center justify-center rounded-xl glass-panel border border-[var(--bg-card-border)] text-[var(--text-secondary)] hover:text-[#709FA8] hover:border-[#709FA8]/50 hover:bg-[#2B5866]/30 transition-all"
               >
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                <svg
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
                 </svg>
               </a>
             </div>
@@ -117,12 +140,36 @@ export const Footer: React.FC = () => {
               Navigation
             </h4>
             <ul className="flex flex-col gap-2.5 text-sm text-[var(--text-secondary)] font-medium">
-              <li><a href="#hero" className="hover:text-[#709FA8] transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-[#709FA8] transition-colors">About Me</a></li>
-              <li><a href="#experience" className="hover:text-[#709FA8] transition-colors">Experience</a></li>
-              <li><a href="#projects" className="hover:text-[#709FA8] transition-colors">Projects</a></li>
-              <li><a href="#skills" className="hover:text-[#709FA8] transition-colors">Skills</a></li>
-              <li><a href="#contact" className="hover:text-[#709FA8] transition-colors">Contact</a></li>
+              <li>
+                <a href="#hero" className="hover:text-[#709FA8] transition-colors">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="hover:text-[#709FA8] transition-colors">
+                  About Me
+                </a>
+              </li>
+              <li>
+                <a href="#experience" className="hover:text-[#709FA8] transition-colors">
+                  Experience
+                </a>
+              </li>
+              <li>
+                <a href="#projects" className="hover:text-[#709FA8] transition-colors">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#skills" className="hover:text-[#709FA8] transition-colors">
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-[#709FA8] transition-colors">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -136,7 +183,9 @@ export const Footer: React.FC = () => {
               <li className="text-[var(--text-secondary)] font-semibold">TypeScript &amp; TDD</li>
               <li className="text-[var(--text-secondary)] font-semibold">GSAP Animations</li>
               <li className="text-[var(--text-secondary)] font-semibold">Tailwind CSS v4</li>
-              <li className="text-[var(--text-secondary)] font-semibold">Core Web Vitals 100/100</li>
+              <li className="text-[var(--text-secondary)] font-semibold">
+                Core Web Vitals 100/100
+              </li>
             </ul>
           </div>
 
@@ -147,19 +196,31 @@ export const Footer: React.FC = () => {
             </h4>
             <div className="flex flex-col gap-3 text-xs text-[var(--text-secondary)]">
               <div>
-                <span className="text-[10px] font-mono text-[var(--text-muted)] uppercase tracking-wider block font-bold">Email</span>
-                <a href={`mailto:${PERSONAL_INFO.email}`} className="text-sm font-semibold text-[var(--text-primary)] hover:text-[#709FA8] transition-colors">
+                <span className="text-[10px] font-mono text-[var(--text-muted)] uppercase tracking-wider block font-bold">
+                  Email
+                </span>
+                <a
+                  href={`mailto:${PERSONAL_INFO.email}`}
+                  className="text-sm font-semibold text-[var(--text-primary)] hover:text-[#709FA8] transition-colors"
+                >
                   {PERSONAL_INFO.email}
                 </a>
               </div>
               <div>
-                <span className="text-[10px] font-mono text-[var(--text-muted)] uppercase tracking-wider block font-bold">Phone</span>
-                <a href={`tel:${PERSONAL_INFO.phone}`} className="text-sm font-semibold text-[var(--text-primary)] hover:text-[#709FA8] transition-colors">
+                <span className="text-[10px] font-mono text-[var(--text-muted)] uppercase tracking-wider block font-bold">
+                  Phone
+                </span>
+                <a
+                  href={`tel:${PERSONAL_INFO.phone}`}
+                  className="text-sm font-semibold text-[var(--text-primary)] hover:text-[#709FA8] transition-colors"
+                >
                   {PERSONAL_INFO.phone}
                 </a>
               </div>
               <div>
-                <span className="text-[10px] font-mono text-[var(--text-muted)] uppercase tracking-wider block font-bold">Location</span>
+                <span className="text-[10px] font-mono text-[var(--text-muted)] uppercase tracking-wider block font-bold">
+                  Location
+                </span>
                 <span className="text-sm font-semibold text-[var(--text-primary)]">
                   📍 {PERSONAL_INFO.location}
                 </span>
@@ -184,7 +245,13 @@ export const Footer: React.FC = () => {
             className="group flex items-center gap-2 text-xs font-semibold text-[var(--text-secondary)] hover:text-[#709FA8] glass-panel px-4 py-2 rounded-full border border-[var(--bg-card-border)] hover:border-[#709FA8]/60 hover:bg-[#2B5866]/20 transition-all cursor-pointer shadow-md"
           >
             <span>Back to top</span>
-            <svg className="h-4 w-4 transform group-hover:-translate-y-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg
+              className="h-4 w-4 transform group-hover:-translate-y-0.5 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
             </svg>
           </button>

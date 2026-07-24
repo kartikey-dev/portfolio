@@ -5,7 +5,9 @@ import { Navbar } from "../Navbar";
 describe("Navbar component", () => {
   it("renders logo correctly", () => {
     render(<Navbar />);
-    expect(screen.getByRole("link", { name: /Kumar Kartikey Nameplate Logo/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: /Kumar Kartikey Nameplate Logo/i })
+    ).toBeInTheDocument();
   });
 
   it("renders navigation links", () => {

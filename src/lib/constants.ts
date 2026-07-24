@@ -2,7 +2,7 @@ import { Experience, Project, SkillCategory, Education, Certification, Achieveme
 
 export const PERSONAL_INFO = {
   name: "Kumar Kartikey",
-  title: "Senior Frontend & UI Architect",
+  title: "Senior Frontend Engineer & UI Expert",
   experienceYears: "7+",
   location: "Ghaziabad, UP, India",
   email: "webkartikdevloper@gmail.com",
@@ -10,7 +10,7 @@ export const PERSONAL_INFO = {
   linkedin: "https://linkedin.com/in/kumar-kartikey-web",
   github: "https://github.com/kartikey-dev",
   summary:
-    "Senior Frontend Architect & UI Expert with 7+ years of experience engineering scalable AI-powered SaaS, web, mobile, and desktop applications using React, Next.js, TypeScript, and React Native. Specialized in frontend architecture, micro-interactions, design systems, performance engineering, and AI-driven user experiences. Proven track record of leading frontend engineering initiatives, mentoring engineers, and delivering secure, high-performance applications serving 50,000+ users.",
+    "Senior Frontend Engineer & UI Expert with 7+ years of experience engineering scalable AI-powered SaaS, web, mobile, and desktop applications using React, Next.js, TypeScript, and React Native. Specialized in frontend engineering, micro-interactions, design systems, performance optimization, and AI-driven user experiences. Proven track record of leading frontend engineering initiatives, mentoring developers, and delivering secure, high-performance applications serving 50,000+ users.",
 };
 
 export const EXPERIENCES: Experience[] = [
@@ -19,7 +19,7 @@ export const EXPERIENCES: Experience[] = [
     company: "Hestabit Technologies",
     role: "Software Engineer/Senior Frontend Engineer",
     period: "July 2022 – July 2026",
-    location: "India",
+    location: "Noida, Uttar Pradesh, India",
     highlights: [
       "Led frontend architecture across AI-powered Healthcare, Insurance, and Construction SaaS products using React, Next.js 16, TypeScript, and React Native.",
       "Improved LCP by 40%, SEO traffic by 28%, and Core Web Vitals from 65 to 92+ by migrating core platforms to Next.js App Router.",
@@ -48,7 +48,7 @@ export const EXPERIENCES: Experience[] = [
     company: "New Vision Digital",
     role: "UI Developer",
     period: "Dec 2020 – July 2022",
-    location: "India",
+    location: "Noida, Uttar Pradesh, India",
     highlights: [
       "Delivered 15+ production React applications while maintaining Lighthouse performance scores above 95 through responsive UI and frontend optimization.",
       "Served as the frontend technical point of contact for domestic and international clients, translating business requirements into production-ready solutions.",
@@ -60,7 +60,7 @@ export const EXPERIENCES: Experience[] = [
     company: "Softclique Technologies",
     role: "Web Designer",
     period: "July 2019 – Dec 2020",
-    location: "India",
+    location: "Noida, Uttar Pradesh, India",
     highlights: [
       "Modernized legacy web applications using HTML5, CSS3, JavaScript, semantic HTML, and accessibility best practices, improving cross-browser compatibility and maintainability.",
     ],
@@ -71,7 +71,7 @@ export const EXPERIENCES: Experience[] = [
     company: "Upturn Private Limited",
     role: "Web Development Intern",
     period: "Jan 2018 – Feb 2018",
-    location: "India",
+    location: "Hyderabad, Telangana, India",
     highlights: [
       "Built UI components with HTML5, CSS3, and WordPress; gained full SDLC and deployment experience.",
     ],
@@ -200,6 +200,8 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "JavaScript (ES6+)", level: "Expert" },
       { name: "HTML5 & Semantic Markup", level: "Expert" },
       { name: "CSS3 & Modern Layouts", level: "Expert" },
+      { name: "PHP", level: "Intermediate" },
+      { name: "Python", level: "Beginner" },
     ],
   },
   {
@@ -207,8 +209,24 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: [
       { name: "React.js", level: "Expert" },
       { name: "Next.js (App Router)", level: "Expert" },
+      { name: "Vue.js", level: "Proficient" },
       { name: "React Native (Expo)", level: "Advanced" },
       { name: "Electron.js", level: "Proficient" },
+    ],
+  },
+  {
+    title: "CMS & E-Commerce",
+    skills: [
+      { name: "WordPress", level: "Expert" },
+      { name: "Magento", level: "Proficient" },
+      { name: "Shopify", level: "Proficient" },
+    ],
+  },
+  {
+    title: "Mobile & Native Tech",
+    skills: [
+      { name: "Swift", level: "Intermediate" },
+      { name: "Flutter", level: "Intermediate" },
     ],
   },
   {
@@ -227,15 +245,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Zustand", level: "Advanced" },
       { name: "Redux Toolkit", level: "Advanced" },
       { name: "React Hook Form & Zod", level: "Expert" },
-    ],
-  },
-  {
-    title: "API & Architecture",
-    skills: [
-      { name: "RESTful APIs", level: "Expert" },
-      { name: "GraphQL", level: "Advanced" },
-      { name: "JWT & OAuth 2.0", level: "Advanced" },
-      { name: "Micro-Frontends & Architecture", level: "Advanced" },
     ],
   },
   {

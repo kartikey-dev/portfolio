@@ -53,6 +53,9 @@ export const Skills: React.FC = () => {
   const getPercentage = (level?: string) => {
     if (level === "Expert") return "95%";
     if (level === "Advanced") return "85%";
+    if (level === "Proficient") return "75%";
+    if (level === "Intermediate") return "65%";
+    if (level === "Beginner") return "45%";
     return "75%";
   };
 
@@ -66,7 +69,7 @@ export const Skills: React.FC = () => {
         <SectionHeading
           badge="Technical Expertise"
           title="Tech Stack &amp; Skills"
-          subtitle="Comprehensive tools, frameworks, and methodologies mastered across 7+ years of production frontend engineering."
+          subtitle="Comprehensive tools, frameworks, languages, and e-commerce platforms mastered across 7+ years of production engineering."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -95,7 +98,7 @@ export const Skills: React.FC = () => {
                           className={`font-mono text-[10px] uppercase ${
                             skill.level === "Expert"
                               ? "text-[#709FA8] font-bold"
-                              : skill.level === "Advanced"
+                              : skill.level === "Advanced" || skill.level === "Proficient"
                                 ? "text-[#B1B8C0]"
                                 : "text-[var(--text-muted)]"
                           }`}
@@ -110,7 +113,7 @@ export const Skills: React.FC = () => {
                           className={`skill-bar-fill h-full rounded-full transition-all duration-500 ${
                             skill.level === "Expert"
                               ? "bg-gradient-to-r from-[#2B5866] via-[#488293] to-[#709FA8]"
-                              : skill.level === "Advanced"
+                              : skill.level === "Advanced" || skill.level === "Proficient"
                                 ? "bg-gradient-to-r from-[#488293] to-[#709FA8]"
                                 : "bg-gradient-to-r from-[#2B5866] to-[#488293]"
                           }`}

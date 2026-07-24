@@ -6,7 +6,7 @@ describe("Hero component", () => {
     render(<Hero />);
     expect(screen.getByText("Kumar")).toBeInTheDocument();
     expect(screen.getByText("Kartikey")).toBeInTheDocument();
-    expect(screen.getByText(/Senior Frontend Architect & UI Expert/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/Senior Frontend Engineer & UI Expert/i).length).toBeGreaterThan(0);
   });
 
   it("renders key stats and CTAs", () => {

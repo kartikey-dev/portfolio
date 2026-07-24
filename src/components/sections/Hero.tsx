@@ -74,7 +74,7 @@ export const Hero: React.FC = () => {
     { label: "Years Experience", end: 7, suffix: "+" },
     { label: "Users Served", end: 50, suffix: "K+" },
     { label: "Lighthouse Target", end: 100, suffix: "/100" },
-    { label: "Production Apps", end: 15, suffix: "+" },
+    { label: "Production Apps", end: 100, suffix: "+" },
   ];
 
   return (
@@ -97,7 +97,7 @@ export const Hero: React.FC = () => {
             {/* Expert UI Badge */}
             <div className="hero-animate inline-flex items-center gap-2.5 rounded-full glass-panel px-4 py-1.5 border border-[#709FA8]/40 text-xs font-bold uppercase tracking-widest text-[#709FA8] shadow-lg shadow-[#2B5866]/10">
               <span className="flex h-2 w-2 rounded-full bg-[#709FA8] animate-ping" />
-              <span>Senior Frontend Architect &amp; UI Expert</span>
+              <span>Senior Frontend Engineer &amp; UI Expert</span>
             </div>
 
             {/* Main Name Heading */}
@@ -113,8 +113,8 @@ export const Hero: React.FC = () => {
             {/* Subtitle / Role Statement */}
             <p className="hero-animate text-lg sm:text-2xl font-medium text-[var(--text-secondary)] leading-relaxed max-w-2xl">
               <strong className="text-[var(--text-primary)] font-bold">7+ Years</strong> of
-              designing &amp; architecting high-performance UI/UX, AI-powered SaaS platforms &amp;
-              modern web applications.
+              engineering high-performance UI/UX, AI-powered SaaS platforms &amp; modern web
+              applications.
             </p>
 
             <p className="hero-animate text-sm sm:text-base text-[var(--text-muted)] max-w-xl leading-relaxed">
@@ -148,7 +148,7 @@ export const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column — Reverted Code Window Interactive 3D Card with Custom Palette */}
+          {/* Right Column — Code Window Interactive 3D Card */}
           <div className="lg:col-span-5 relative flex justify-center w-full">
             {/* Floating Graphic Badge top right */}
             <div className="hero-float hidden sm:flex absolute -top-6 -right-2 z-20 glass-panel rounded-2xl p-3 sm:p-4 border border-[#709FA8]/40 shadow-xl shadow-[#2B5866]/20 backdrop-blur-xl items-center gap-3">
@@ -204,7 +204,10 @@ export const Hero: React.FC = () => {
                 </div>
                 <div className="pl-4">
                   <span className="text-[var(--text-muted)]">role:</span>{" "}
-                  <span className="text-[#709FA8]">&quot;UI Architect &amp; Senior Engineer&quot;</span>,
+                  <span className="text-[#709FA8]">
+                    &quot;Senior Frontend Engineer &amp; UI Expert&quot;
+                  </span>
+                  ,
                 </div>
                 <div className="pl-4">
                   <span className="text-[var(--text-muted)]">experience:</span>{" "}
@@ -218,7 +221,10 @@ export const Hero: React.FC = () => {
                 </div>
                 <div className="pl-4">
                   <span className="text-[var(--text-muted)]">passion:</span>{" "}
-                  <span className="text-white font-bold">&quot;Crafting 100/100 UI &amp; AI UX&quot;</span>,
+                  <span className="text-white font-bold">
+                    &quot;Crafting 100/100 UI &amp; AI UX&quot;
+                  </span>
+                  ,
                 </div>
                 <div>&#125;;</div>
               </div>

@@ -40,7 +40,7 @@ export const About: React.FC = () => {
         <SectionHeading
           badge="Background"
           title="About Me"
-          subtitle="Passionate Senior Frontend Architect &amp; UI Expert focused on performance, design systems, and AI-driven user experiences."
+          subtitle="Passionate Senior Frontend Engineer &amp; UI Expert focused on performance, design systems, and AI-driven user experiences."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -52,7 +52,7 @@ export const About: React.FC = () => {
               </span>
               <div>
                 <h3 className="text-2xl font-bold text-[var(--text-primary)] font-heading">
-                  Architecting Scalable UI &amp; AI Products
+                  Engineering Scalable UI &amp; AI Products
                 </h3>
                 <span className="text-xs font-semibold uppercase tracking-wider text-[#709FA8]">
                   7+ Years of Engineering Excellence

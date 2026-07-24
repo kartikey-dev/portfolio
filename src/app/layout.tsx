@@ -1,27 +1,27 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
+const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-heading",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Kumar Kartikey | Senior Frontend Architect & UI Expert",
+  title: "Kumar Kartikey | Senior Frontend Engineer & UI Expert",
   description:
-    "Portfolio of Kumar Kartikey — Senior Frontend Architect with 7+ years of experience engineering scalable AI-powered SaaS, React, Next.js, and React Native applications.",
+    "Portfolio of Kumar Kartikey — Senior Frontend Engineer & UI Expert with 7+ years of experience engineering scalable AI-powered SaaS, React, Next.js, and React Native applications.",
   keywords: [
     "Kumar Kartikey",
-    "Frontend Architect",
-    "UI Architect",
+    "Senior Frontend Engineer",
+    "UI Expert",
     "React Developer",
     "Next.js Developer",
     "TypeScript",
@@ -36,16 +36,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://kartikey.dev",
-    title: "Kumar Kartikey | Senior Frontend Architect & UI Expert",
+    title: "Kumar Kartikey | Senior Frontend Engineer & UI Expert",
     description:
-      "Senior Frontend Architect & UI Expert with 7+ years of experience building high-performance AI SaaS, React, Next.js, and React Native applications.",
+      "Senior Frontend Engineer & UI Expert with 7+ years of experience building high-performance AI SaaS, React, Next.js, and React Native applications.",
     siteName: "Kumar Kartikey Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kumar Kartikey | Senior Frontend Architect & UI Expert",
+    title: "Kumar Kartikey | Senior Frontend Engineer & UI Expert",
     description:
-      "Senior Frontend Architect specializing in Next.js, React, TypeScript, GSAP, and AI UX performance.",
+      "Senior Frontend Engineer & UI Expert specializing in Next.js, React, TypeScript, GSAP, and AI UX performance.",
   },
   robots: {
     index: true,
@@ -55,8 +55,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
-    { media: "(prefers-color-scheme: dark)", color: "#0b0f17" },
+    { media: "(prefers-color-scheme: light)", color: "#1C2023" },
+    { media: "(prefers-color-scheme: dark)", color: "#1C2023" },
   ],
   width: "device-width",
   initialScale: 1,
@@ -71,7 +71,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${spaceGrotesk.variable}`}
+      className={`${plusJakartaSans.variable} ${outfit.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -93,7 +93,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased selection:bg-cyan-500/20 selection:text-cyan-400 max-w-full overflow-x-hidden">
+      <body className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased selection:bg-[#709FA8]/30 selection:text-[#709FA8] max-w-full overflow-x-hidden">
         {children}
       </body>
     </html>
