@@ -5,8 +5,8 @@ describe("Projects component", () => {
   it("renders section heading and project titles", () => {
     render(<Projects />);
     expect(screen.getByText(/Featured Projects/i)).toBeInTheDocument();
-    expect(screen.getByText(/Pulse — AI Healthcare Platform/i)).toBeInTheDocument();
-    expect(screen.getByText(/Orchard Benefits/i)).toBeInTheDocument();
+    expect(screen.getByText(/AI Healthcare Platform/i)).toBeInTheDocument();
+    expect(screen.getByText(/AI Insurance Concierge Platform/i)).toBeInTheDocument();
     expect(screen.getByText(/AI Construction Co-Pilot/i)).toBeInTheDocument();
   });
 

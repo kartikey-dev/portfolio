@@ -63,7 +63,7 @@ export const Projects: React.FC = () => {
                       <span className="h-2.5 w-2.5 rounded-full bg-emerald-500/80" />
                     </div>
                     <span className="text-[10px] font-mono text-cyan-400/80">
-                      {project.id}.app
+                      {project.category} Showcase
                     </span>
                   </div>
 

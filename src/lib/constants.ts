@@ -81,8 +81,8 @@ export const EXPERIENCES: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: "pulse",
-    title: "Pulse — AI Healthcare Platform",
+    id: "ai-healthcare-platform",
+    title: "AI Healthcare Platform",
     subtitle: "HIPAA-Compliant Cross-Platform Healthcare SaaS",
     description:
       "Cross-platform healthcare application featuring 5-role RBAC, secure messaging, EHR integration, and real-time AI NLP risk classification.",
@@ -99,8 +99,8 @@ export const PROJECTS: Project[] = [
     featured: true,
   },
   {
-    id: "orchard-benefits",
-    title: "Orchard Benefits — AI Insurance Concierge",
+    id: "ai-insurance-concierge",
+    title: "AI Insurance Concierge Platform",
     subtitle: "Context-Aware AI Conversational Healthcare Benefits Platform",
     description:
       "AI-powered insurance concierge platform delivering context-aware multi-turn conversational experiences across healthcare benefit plans.",
