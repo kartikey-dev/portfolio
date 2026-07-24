@@ -14,6 +14,7 @@ export const Skills: React.FC = () => {
     () => {
       if (!containerRef.current) return;
       const categories = containerRef.current.querySelectorAll(".skill-category");
+      const progressBars = containerRef.current.querySelectorAll(".skill-bar-fill");
 
       gsap.fromTo(
         categories,
@@ -22,7 +23,7 @@ export const Skills: React.FC = () => {
           opacity: 1,
           scale: 1,
           duration: 0.7,
-          stagger: 0.15,
+          stagger: 0.12,
           scrollTrigger: {
             trigger: containerRef.current,
             start: "top 75%",
@@ -30,9 +31,30 @@ export const Skills: React.FC = () => {
           },
         }
       );
+
+      gsap.fromTo(
+        progressBars,
+        { width: "0%" },
+        {
+          width: (index, target) => target.getAttribute("data-width") || "85%",
+          duration: 1.2,
+          stagger: 0.05,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top 70%",
+          },
+        }
+      );
     },
     { scope: containerRef }
   );
+
+  const getPercentage = (level?: string) => {
+    if (level === "Expert") return "95%";
+    if (level === "Advanced") return "85%";
+    return "75%";
+  };
 
   return (
     <section id="skills" ref={containerRef} className="py-24 relative overflow-hidden bg-[var(--bg-secondary)]/30">
@@ -40,37 +62,55 @@ export const Skills: React.FC = () => {
         <SectionHeading
           badge="Technical Expertise"
           title="Tech Stack &amp; Skills"
-          subtitle="Comprehensive tools, frameworks, and methodologies mastered across 6.5+ years of production frontend engineering."
+          subtitle="Comprehensive tools, frameworks, and methodologies mastered across 7+ years of production frontend engineering."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {SKILL_CATEGORIES.map((cat) => (
-            <Card key={cat.title} className="skill-category flex flex-col justify-between">
+            <Card key={cat.title} className="skill-category flex flex-col justify-between hover:border-cyan-500/40 transition-colors">
               <div>
-                <h3 className="text-lg font-bold text-[var(--text-primary)] font-heading mb-4 pb-2 border-b border-[var(--bg-card-border)] flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-cyan-500" />
-                  {cat.title}
+                <h3 className="text-lg font-bold text-[var(--text-primary)] font-heading mb-5 pb-3 border-b border-[var(--bg-card-border)] flex items-center justify-between">
+                  <span className="flex items-center gap-2">
+                    <span className="h-2.5 w-2.5 rounded-full bg-cyan-400 animate-pulse" />
+                    {cat.title}
+                  </span>
+                  <span className="text-xs font-mono text-[var(--text-muted)] font-normal">
+                    {cat.skills.length} Stack Tools
+                  </span>
                 </h3>
 
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-4">
                   {cat.skills.map((skill) => (
-                    <div key={skill.name} className="flex items-center justify-between gap-2">
-                      <span className="text-sm font-medium text-[var(--text-primary)]">
-                        {skill.name}
-                      </span>
-                      {skill.level && (
+                    <div key={skill.name} className="flex flex-col gap-1.5">
+                      <div className="flex items-center justify-between text-xs font-semibold">
+                        <span className="text-[var(--text-primary)]">{skill.name}</span>
                         <span
-                          className={`text-xs px-2 py-0.5 rounded-full font-semibold ${
+                          className={`font-mono text-[10px] uppercase ${
                             skill.level === "Expert"
-                              ? "bg-cyan-500/15 text-cyan-400 border border-cyan-500/30"
+                              ? "text-cyan-400 font-bold"
                               : skill.level === "Advanced"
-                              ? "bg-purple-500/15 text-purple-400 border border-purple-500/30"
-                              : "bg-[var(--bg-card-border)] text-[var(--text-secondary)]"
+                              ? "text-purple-400"
+                              : "text-[var(--text-muted)]"
                           }`}
                         >
-                          {skill.level}
+                          {skill.level} ({getPercentage(skill.level)})
                         </span>
-                      )}
+                      </div>
+
+                      {/* Visual Graphic Skill Meter Bar */}
+                      <div className="h-2 w-full rounded-full bg-[var(--bg-primary)] border border-[var(--bg-card-border)] overflow-hidden">
+                        <div
+                          className={`skill-bar-fill h-full rounded-full transition-all duration-500 ${
+                            skill.level === "Expert"
+                              ? "bg-gradient-to-r from-cyan-500 to-blue-500"
+                              : skill.level === "Advanced"
+                              ? "bg-gradient-to-r from-purple-500 to-pink-500"
+                              : "bg-gradient-to-r from-sky-500 to-indigo-500"
+                          }`}
+                          data-width={getPercentage(skill.level)}
+                          style={{ width: "0%" }}
+                        />
+                      </div>
                     </div>
                   ))}
                 </div>

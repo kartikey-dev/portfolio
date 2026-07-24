@@ -2,33 +2,32 @@ import { Experience, Project, SkillCategory, Education, Certification, Achieveme
 
 export const PERSONAL_INFO = {
   name: "Kumar Kartikey",
-  title: "Senior Frontend Engineer",
-  experienceYears: "6.5+",
+  title: "Senior Frontend & UI Architect",
+  experienceYears: "7+",
   location: "Ghaziabad, UP, India",
   email: "webkartikdevloper@gmail.com",
   phone: "+91 9050102547",
   linkedin: "https://linkedin.com/in/kumar-kartikey-web",
   github: "https://github.com/kartikey-dev",
-  availability: "Open to PAN India & Remote (US/EU)",
   summary:
-    "Senior Frontend Engineer with 6.5+ years of experience architecting scalable AI-powered SaaS, web, mobile, and desktop applications using React, Next.js, TypeScript, and React Native. Specialized in frontend architecture, design systems, performance engineering, and AI-driven user experiences. Proven track record of leading frontend engineering initiatives, mentoring engineers, and delivering secure, high-performance applications serving 50,000+ users.",
+    "Senior Frontend Architect & UI Expert with 7+ years of experience engineering scalable AI-powered SaaS, web, mobile, and desktop applications using React, Next.js, TypeScript, and React Native. Specialized in frontend architecture, micro-interactions, design systems, performance engineering, and AI-driven user experiences. Proven track record of leading frontend engineering initiatives, mentoring engineers, and delivering secure, high-performance applications serving 50,000+ users.",
 };
 
 export const EXPERIENCES: Experience[] = [
   {
     id: "hestabit",
     company: "Hestabit Technologies",
-    role: "Software Engineer",
+    role: "Senior Software Engineer / Frontend Lead",
     period: "July 2022 – July 2026",
     location: "India",
     highlights: [
-      "Led frontend engineering across AI-powered Healthcare, Insurance, and Construction SaaS products using React, Next.js, TypeScript, and React Native.",
-      "Improved LCP by 40%, SEO traffic by 28%, and Core Web Vitals from 65 to 92+ by migrating to Next.js and TypeScript.",
+      "Led frontend architecture across AI-powered Healthcare, Insurance, and Construction SaaS products using React, Next.js 16, TypeScript, and React Native.",
+      "Improved LCP by 40%, SEO traffic by 28%, and Core Web Vitals from 65 to 92+ by migrating core platforms to Next.js App Router.",
       "Reduced JavaScript bundle size by 30% using React Server Components, lazy loading, code splitting, and rendering optimizations.",
-      "Designed reusable Storybook component libraries, mentored engineers, and established frontend engineering standards.",
+      "Designed reusable Storybook design systems & component libraries, mentored engineers, and established frontend quality standards.",
       "Built React Native applications, Chrome Extensions, and Electron desktop solutions while integrating secure REST/GraphQL services using JWT and OAuth 2.0.",
-      "Collaborated closely with product managers, designers, backend engineers, and international stakeholders to deliver scalable AI-powered SaaS products.",
-      "Leveraged Claude Code, ChatGPT, and Gemini Code Assist to accelerate feature delivery, refactoring, testing, and developer productivity.",
+      "Collaborated with product managers, designers, backend engineers, and international stakeholders to deliver scalable AI-powered SaaS products.",
+      "Leveraged Claude Code, ChatGPT, and AI tools to accelerate feature delivery, refactoring, testing, and developer productivity.",
     ],
     technologies: [
       "React.js",
@@ -40,6 +39,7 @@ export const EXPERIENCES: Experience[] = [
       "Electron.js",
       "Storybook",
       "Tailwind CSS",
+      "GSAP",
       "Jest",
     ],
   },
@@ -160,7 +160,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: [
       { name: "Tailwind CSS (v3 & v4)", level: "Expert" },
       { name: "GSAP & ScrollTrigger", level: "Advanced" },
-      { name: "Storybook", level: "Advanced" },
+      { name: "Storybook & Design Systems", level: "Expert" },
       { name: "Accessibility (WCAG AA)", level: "Expert" },
     ],
   },
