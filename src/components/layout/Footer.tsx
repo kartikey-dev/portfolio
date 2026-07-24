@@ -16,32 +16,34 @@ export const Footer: React.FC = () => {
     <footer className="relative border-t border-[var(--bg-card-border)] bg-[var(--bg-secondary)]/50 backdrop-blur-lg py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
-        {/* Brushed Metallic Silver Nameplate Showcase in Footer */}
-        <div className="mb-10 flex flex-col items-center justify-center">
-          <div className="relative max-w-sm sm:max-w-md w-full overflow-hidden rounded-2xl border border-[#B1B8C0]/40 shadow-2xl shadow-[#1C2023]/60 group transition-transform duration-300 hover:scale-[1.01]">
+        {/* Executive Brushed Metallic Silver Nameplate Showcase */}
+        <div className="mb-12 flex flex-col items-center justify-center">
+          <div className="relative max-w-md sm:max-w-lg w-full overflow-hidden rounded-2xl border-2 border-[#B1B8C0]/50 shadow-2xl shadow-[#1C2023]/80 group transition-all duration-300 hover:scale-[1.02] hover:border-[#709FA8]/80 hover:shadow-[#2B5866]/30">
             <Image
               src="/images/kk-nameplate.jpg"
               alt="Kumar Kartikey — Senior Software Engineer Metallic Nameplate"
-              width={600}
-              height={200}
-              className="w-full h-auto object-cover rounded-xl"
+              width={650}
+              height={220}
+              className="w-full h-auto object-cover rounded-xl shadow-inner"
+              priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#1C2023]/40 via-transparent to-transparent opacity-60" />
+            {/* Subtle Metallic Specular Highlight Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent pointer-events-none" />
           </div>
-          <span className="mt-3 text-[10px] font-mono uppercase tracking-widest text-[#709FA8]">
+          <span className="mt-3 text-[11px] font-mono uppercase tracking-widest text-[#709FA8] font-bold">
             Senior Software Engineer &amp; UI Architect
           </span>
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-6 border-t border-[var(--bg-card-border)]/60">
-          {/* Logo & Copyright */}
+          {/* Copyright & Info */}
           <div className="flex flex-col items-center md:items-start gap-2">
-            <Link
-              href="#"
-              className="font-heading text-lg font-bold tracking-tight text-[var(--text-primary)]"
-            >
-              Kumar Kartikey<span className="text-[#709FA8]">.dev</span>
-            </Link>
+            <div className="flex items-center gap-2 font-heading text-base font-bold tracking-tight text-[var(--text-primary)]">
+              <span className="text-[#709FA8]">Kumar Kartikey</span>
+              <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-[#2B5866]/30 text-[#709FA8] border border-[#709FA8]/30">
+                Frontend Lead
+              </span>
+            </div>
             <p className="text-xs text-[var(--text-muted)] text-center md:text-left">
               &copy; {currentYear} Kumar Kartikey. All rights reserved. Built with Next.js 16, TypeScript, Tailwind CSS v4 &amp; GSAP.
             </p>

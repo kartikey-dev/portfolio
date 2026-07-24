@@ -3,10 +3,9 @@ import userEvent from "@testing-library/user-event";
 import { Navbar } from "../Navbar";
 
 describe("Navbar component", () => {
-  it("renders logo/name correctly", () => {
+  it("renders logo correctly", () => {
     render(<Navbar />);
-    expect(screen.getByText("Kartikey")).toBeInTheDocument();
-    expect(screen.getByText(".dev")).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /Kumar Kartikey Logo/i })).toBeInTheDocument();
   });
 
   it("renders navigation links", () => {

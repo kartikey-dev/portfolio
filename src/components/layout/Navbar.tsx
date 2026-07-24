@@ -61,23 +61,22 @@ export const Navbar: React.FC = () => {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo with 3D Monogram Avatar */}
+          {/* Logo with 3D Monogram Avatar only (removed text as requested) */}
           <Link
             href="#"
-            className="group flex items-center gap-3 font-heading text-xl font-bold tracking-tight text-[var(--text-primary)]"
+            aria-label="Kumar Kartikey Logo"
+            className="group flex items-center justify-center font-heading text-xl font-bold tracking-tight text-[var(--text-primary)]"
           >
-            <div className="relative h-10 w-10 overflow-hidden rounded-xl border border-[#709FA8]/30 bg-[#2B5866]/20 p-0.5 shadow-md shadow-[#2B5866]/20 group-hover:scale-105 transition-transform">
+            <div className="relative h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-2xl border border-[#709FA8]/40 bg-[#2B5866]/30 p-0.5 shadow-lg shadow-[#2B5866]/30 group-hover:scale-105 transition-all">
               <Image
                 src="/images/kk-monogram-logo.png"
-                alt="Kumar Kartikey Logo"
-                width={40}
-                height={40}
-                className="h-full w-full object-cover rounded-lg"
+                alt="Kumar Kartikey Monogram Logo"
+                width={48}
+                height={48}
+                className="h-full w-full object-cover rounded-xl"
+                priority
               />
             </div>
-            <span>
-              Kartikey<span className="text-[#709FA8]">.dev</span>
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
