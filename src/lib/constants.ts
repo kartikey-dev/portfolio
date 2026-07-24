@@ -17,7 +17,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "hestabit",
     company: "Hestabit Technologies",
-    role: "Senior Software Engineer / Frontend Lead",
+    role: "Software Engineer/Senior Frontend Engineer",
     period: "July 2022 – July 2026",
     location: "India",
     highlights: [
@@ -153,6 +153,42 @@ export const PROJECTS: Project[] = [
     ],
     category: "SaaS",
     featured: true,
+  },
+  {
+    id: "enterprise-design-system",
+    title: "Enterprise Storybook Design System",
+    subtitle: "Modular UI Component Library & Micro-Frontend Tokens",
+    description:
+      "Accessible Storybook design system providing standardized UI tokens, micro-interactions, and reusable React components across enterprise products.",
+    longDescription:
+      "Architected a centralized Storybook design system establishing design tokens, WCAG AA accessibility standards, and reusable component libraries. Reduced development cycle time by 35% across multi-repo frontend teams.",
+    tags: ["Storybook", "React", "TypeScript", "Tailwind CSS", "WCAG AA"],
+    highlights: [
+      "WCAG AA accessible component tokens",
+      "Standardized UI states, micro-interactions & animations",
+      "Multi-brand theme token distribution",
+      "Storybook visual regression testing",
+    ],
+    category: "Frontend",
+    featured: false,
+  },
+  {
+    id: "electron-desktop-extension",
+    title: "Electron Desktop & Chrome Extension Suite",
+    subtitle: "Cross-Platform Desktop & Browser Integration Tools",
+    description:
+      "Cross-platform desktop application built with Electron.js alongside companion Chrome extensions for secure workflow automation.",
+    longDescription:
+      "Engineered secure desktop solutions using Electron.js and Chrome Extension API with OAuth 2.0 authentication, native system notifications, and background IPC bridge communication.",
+    tags: ["Electron.js", "JavaScript", "Chrome Extension API", "OAuth 2.0", "IPC"],
+    highlights: [
+      "Cross-platform desktop packaging with Electron",
+      "Chrome Extension API integration & background workers",
+      "OAuth 2.0 authentication & secure token storage",
+      "Native IPC inter-process communication",
+    ],
+    category: "SaaS",
+    featured: false,
   },
 ];
 

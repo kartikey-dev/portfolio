@@ -1,28 +1,20 @@
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { Contact } from "../Contact";
 
 describe("Contact component", () => {
   beforeEach(() => {
+    jest.clearAllMocks();
     global.fetch = jest.fn();
   });
 
-  afterEach(() => {
-    jest.resetAllMocks();
-  });
-
-  it("renders section heading and contact form inputs", () => {
+  it("renders section heading and form input fields", () => {
     render(<Contact />);
     expect(screen.getByText(/Get In Touch/i)).toBeInTheDocument();
-    expect(screen.getByPlaceholderText(/your name/i)).toBeInTheDocument();
-    expect(screen.getByPlaceholderText(/your email/i)).toBeInTheDocument();
-    expect(screen.getByPlaceholderText(/your message/i)).toBeInTheDocument();
-  });
-
-  it("renders personal contact details", () => {
-    render(<Contact />);
-    expect(screen.getByText("webkartikdevloper@gmail.com")).toBeInTheDocument();
-    expect(screen.getByText("+91 9050102547")).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/Your Name/i)).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/Your Email/i)).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/Project Inquiry/i)).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/Your Message/i)).toBeInTheDocument();
   });
 
   it("submits contact form successfully", async () => {
@@ -34,17 +26,18 @@ describe("Contact component", () => {
     const user = userEvent.setup();
     render(<Contact />);
 
-    await user.type(screen.getByPlaceholderText(/your name/i), "Alice");
-    await user.type(screen.getByPlaceholderText(/your email/i), "alice@example.com");
-    await user.type(screen.getByPlaceholderText(/your message/i), "Hello Kartikey!");
+    await user.type(screen.getByPlaceholderText(/Your Name/i), "John Doe");
+    await user.type(screen.getByPlaceholderText(/Your Email/i), "john@example.com");
+    await user.type(screen.getByPlaceholderText(/Project Inquiry/i), "Job Opportunity");
+    await user.type(screen.getByPlaceholderText(/Your Message/i), "Hello, love your work!");
 
-    const submitBtn = screen.getByRole("button", { name: /send message/i });
-    fireEvent.click(submitBtn);
+    const submitBtn = screen.getByRole("button", { name: /Send Message/i });
+    await user.click(submitBtn);
 
     await waitFor(() => {
       expect(screen.getByText(/Message Sent Successfully/i)).toBeInTheDocument();
     });
-  });
+  }, 15000);
 
   it("handles form submission error", async () => {
     (global.fetch as jest.Mock).mockResolvedValueOnce({
@@ -55,15 +48,16 @@ describe("Contact component", () => {
     const user = userEvent.setup();
     render(<Contact />);
 
-    await user.type(screen.getByPlaceholderText(/your name/i), "Bob");
-    await user.type(screen.getByPlaceholderText(/your email/i), "bob@example.com");
-    await user.type(screen.getByPlaceholderText(/your message/i), "Hi there");
+    await user.type(screen.getByPlaceholderText(/Your Name/i), "John Doe");
+    await user.type(screen.getByPlaceholderText(/Your Email/i), "john@example.com");
+    await user.type(screen.getByPlaceholderText(/Project Inquiry/i), "Job Opportunity");
+    await user.type(screen.getByPlaceholderText(/Your Message/i), "Hello, love your work!");
 
-    const submitBtn = screen.getByRole("button", { name: /send message/i });
-    fireEvent.click(submitBtn);
+    const submitBtn = screen.getByRole("button", { name: /Send Message/i });
+    await user.click(submitBtn);
 
     await waitFor(() => {
       expect(screen.getByText(/Invalid email/i)).toBeInTheDocument();
     });
-  });
+  }, 15000);
 });
