@@ -284,7 +284,8 @@ export const ACHIEVEMENTS: Achievement[] = [
   },
   {
     title: "Excellence in Mentorship Award",
-    description: "Recognized for leading engineering standards and mentoring junior/mid developers.",
+    description:
+      "Recognized for leading engineering standards and mentoring junior/mid developers.",
     issuer: "Hestabit Technologies",
   },
   {

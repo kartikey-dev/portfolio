@@ -113,11 +113,14 @@ export const Hero: React.FC = () => {
 
             {/* Subtitle / Role Statement */}
             <p className="hero-animate text-lg sm:text-2xl font-medium text-[var(--text-secondary)] leading-relaxed max-w-2xl">
-              <strong className="text-[var(--text-primary)] font-bold">7+ Years</strong> of designing &amp; architecting high-performance UI/UX, AI-powered SaaS platforms &amp; modern web applications.
+              <strong className="text-[var(--text-primary)] font-bold">7+ Years</strong> of
+              designing &amp; architecting high-performance UI/UX, AI-powered SaaS platforms &amp;
+              modern web applications.
             </p>
 
             <p className="hero-animate text-sm sm:text-base text-[var(--text-muted)] max-w-xl leading-relaxed">
-              Specialized in Next.js 16, TypeScript, Tailwind CSS v4 &amp; GSAP animations — creating blazing-fast web experiences scoring 100 on Google PageSpeed Insights.
+              Specialized in Next.js 16, TypeScript, Tailwind CSS v4 &amp; GSAP animations —
+              creating blazing-fast web experiences scoring 100 on Google PageSpeed Insights.
             </p>
 
             {/* Interactive CTAs */}
@@ -165,7 +168,9 @@ export const Hero: React.FC = () => {
                 🎨
               </div>
               <div>
-                <div className="text-xs font-bold text-[var(--text-primary)]">UI/UX Architecture</div>
+                <div className="text-xs font-bold text-[var(--text-primary)]">
+                  UI/UX Architecture
+                </div>
                 <div className="text-[10px] text-[#709FA8] font-mono">7+ Yrs Expertise</div>
               </div>
             </div>

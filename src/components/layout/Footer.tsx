@@ -16,22 +16,20 @@ export const Footer: React.FC = () => {
     <footer className="relative border-t border-[var(--bg-card-border)] bg-[var(--bg-secondary)]/50 backdrop-blur-lg py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
-        {/* Executive Brushed Metallic Silver Nameplate Showcase */}
-        <div className="mb-12 flex flex-col items-center justify-center">
-          <div className="relative max-w-md sm:max-w-lg w-full overflow-hidden rounded-2xl border-2 border-[#B1B8C0]/50 shadow-2xl shadow-[#1C2023]/80 group transition-all duration-300 hover:scale-[1.02] hover:border-[#709FA8]/80 hover:shadow-[#2B5866]/30">
+        {/* 3D KK Monogram Portrait Logo Showcase in Footer */}
+        <div className="mb-10 flex flex-col items-center justify-center">
+          <div className="relative h-28 w-28 sm:h-32 sm:w-32 overflow-hidden rounded-3xl border-2 border-[#709FA8]/50 shadow-2xl shadow-[#2B5866]/40 bg-[#1C2023]/80 p-1 group transition-all duration-300 hover:scale-105 hover:border-[#709FA8]">
             <Image
-              src="/images/kk-nameplate.jpg"
-              alt="Kumar Kartikey — Senior Software Engineer Metallic Nameplate"
-              width={650}
-              height={220}
-              className="w-full h-auto object-cover rounded-xl shadow-inner"
+              src="/images/kk-monogram-logo.png"
+              alt="Kumar Kartikey 3D Monogram Logo"
+              width={128}
+              height={128}
+              className="h-full w-full object-cover rounded-2xl"
               priority
             />
-            {/* Subtle Metallic Specular Highlight Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent pointer-events-none" />
           </div>
           <span className="mt-3 text-[11px] font-mono uppercase tracking-widest text-[#709FA8] font-bold">
-            Senior Software Engineer &amp; UI Architect
+            Kumar Kartikey • UI Architect &amp; Frontend Lead
           </span>
         </div>
 

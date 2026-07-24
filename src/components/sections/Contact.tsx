@@ -94,8 +94,13 @@ export const Contact: React.FC = () => {
                     ✉️
                   </div>
                   <div>
-                    <span className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold">Email</span>
-                    <a href={`mailto:${PERSONAL_INFO.email}`} className="block text-base font-medium text-[var(--text-primary)] hover:text-[#709FA8] transition-colors">
+                    <span className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold">
+                      Email
+                    </span>
+                    <a
+                      href={`mailto:${PERSONAL_INFO.email}`}
+                      className="block text-base font-medium text-[var(--text-primary)] hover:text-[#709FA8] transition-colors"
+                    >
                       {PERSONAL_INFO.email}
                     </a>
                   </div>
@@ -107,8 +112,13 @@ export const Contact: React.FC = () => {
                     📞
                   </div>
                   <div>
-                    <span className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold">Phone</span>
-                    <a href={`tel:${PERSONAL_INFO.phone}`} className="block text-base font-medium text-[var(--text-primary)] hover:text-[#709FA8] transition-colors">
+                    <span className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold">
+                      Phone
+                    </span>
+                    <a
+                      href={`tel:${PERSONAL_INFO.phone}`}
+                      className="block text-base font-medium text-[var(--text-primary)] hover:text-[#709FA8] transition-colors"
+                    >
                       {PERSONAL_INFO.phone}
                     </a>
                   </div>
@@ -120,7 +130,9 @@ export const Contact: React.FC = () => {
                     📍
                   </div>
                   <div>
-                    <span className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold">Location</span>
+                    <span className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold">
+                      Location
+                    </span>
                     <p className="text-base font-medium text-[var(--text-primary)]">
                       {PERSONAL_INFO.location}
                     </p>
@@ -158,7 +170,8 @@ export const Contact: React.FC = () => {
                 <span className="text-4xl">🎉</span>
                 <h4 className="text-lg font-bold">Message Sent Successfully!</h4>
                 <p className="text-sm text-[var(--text-secondary)]">
-                  Thank you for reaching out. I will get back to your email ({formData.email || PERSONAL_INFO.email}) as soon as possible.
+                  Thank you for reaching out. I will get back to your email (
+                  {formData.email || PERSONAL_INFO.email}) as soon as possible.
                 </p>
                 <Button variant="outline" size="sm" onClick={() => setStatus("idle")}>
                   Send Another Message

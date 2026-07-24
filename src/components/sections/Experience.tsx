@@ -35,7 +35,11 @@ export const Experience: React.FC = () => {
   );
 
   return (
-    <section id="experience" ref={containerRef} className="py-24 relative overflow-hidden bg-[var(--bg-secondary)]/30">
+    <section
+      id="experience"
+      ref={containerRef}
+      className="py-24 relative overflow-hidden bg-[var(--bg-secondary)]/30"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Career Journey"
@@ -58,9 +62,7 @@ export const Experience: React.FC = () => {
                     <h3 className="text-xl font-bold text-[var(--text-primary)] font-heading">
                       {exp.role}
                     </h3>
-                    <span className="text-base font-medium text-cyan-500">
-                      {exp.company}
-                    </span>
+                    <span className="text-base font-medium text-cyan-500">{exp.company}</span>
                   </div>
 
                   <div className="flex flex-col items-start sm:items-end">
@@ -74,7 +76,10 @@ export const Experience: React.FC = () => {
                 {/* Highlights List */}
                 <ul className="flex flex-col gap-2.5 my-2">
                   {exp.highlights.map((highlight, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-sm text-[var(--text-secondary)]">
+                    <li
+                      key={idx}
+                      className="flex items-start gap-3 text-sm text-[var(--text-secondary)]"
+                    >
                       <span className="text-cyan-500 mt-1">▹</span>
                       <span className="leading-relaxed">{highlight}</span>
                     </li>

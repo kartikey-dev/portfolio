@@ -61,19 +61,19 @@ export const Navbar: React.FC = () => {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo with 3D Monogram Avatar only (removed text as requested) */}
+          {/* Logo using Brushed Metallic Nameplate Badge */}
           <Link
             href="#"
-            aria-label="Kumar Kartikey Logo"
+            aria-label="Kumar Kartikey Nameplate Logo"
             className="group flex items-center justify-center font-heading text-xl font-bold tracking-tight text-[var(--text-primary)]"
           >
-            <div className="relative h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-2xl border border-[#709FA8]/40 bg-[#2B5866]/30 p-0.5 shadow-lg shadow-[#2B5866]/30 group-hover:scale-105 transition-all">
+            <div className="relative h-10 w-36 sm:h-11 sm:w-44 overflow-hidden rounded-xl border border-[#B1B8C0]/50 shadow-md shadow-[#1C2023]/40 group-hover:scale-105 transition-all">
               <Image
-                src="/images/kk-monogram-logo.png"
-                alt="Kumar Kartikey Monogram Logo"
-                width={48}
-                height={48}
-                className="h-full w-full object-cover rounded-xl"
+                src="/images/kk-nameplate.jpg"
+                alt="Kumar Kartikey Metallic Nameplate Logo"
+                width={176}
+                height={44}
+                className="h-full w-full object-cover rounded-lg"
                 priority
               />
             </div>

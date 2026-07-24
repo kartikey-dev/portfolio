@@ -34,8 +34,7 @@ export const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, Bu
         "glass-panel text-[var(--text-primary)] border border-[var(--bg-card-border)] hover:border-[#709FA8]/50 hover:scale-[1.02] active:scale-[0.98]",
       outline:
         "border-2 border-[#709FA8] text-[#709FA8] hover:bg-[#709FA8]/10 hover:scale-[1.02] active:scale-[0.98]",
-      ghost:
-        "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[#709FA8]/10",
+      ghost: "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[#709FA8]/10",
     };
 
     const sizes = {
@@ -61,11 +60,7 @@ export const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, Bu
         );
       }
       return (
-        <Link
-          href={href}
-          className={combinedClasses}
-          ref={ref as React.Ref<HTMLAnchorElement>}
-        >
+        <Link href={href} className={combinedClasses} ref={ref as React.Ref<HTMLAnchorElement>}>
           {children}
         </Link>
       );

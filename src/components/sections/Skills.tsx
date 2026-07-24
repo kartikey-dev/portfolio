@@ -57,7 +57,11 @@ export const Skills: React.FC = () => {
   };
 
   return (
-    <section id="skills" ref={containerRef} className="py-24 relative overflow-hidden bg-[var(--bg-secondary)]/30">
+    <section
+      id="skills"
+      ref={containerRef}
+      className="py-24 relative overflow-hidden bg-[var(--bg-secondary)]/30"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Technical Expertise"
@@ -67,7 +71,10 @@ export const Skills: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {SKILL_CATEGORIES.map((cat) => (
-            <Card key={cat.title} className="skill-category flex flex-col justify-between hover:border-[#709FA8]/40 transition-colors">
+            <Card
+              key={cat.title}
+              className="skill-category flex flex-col justify-between hover:border-[#709FA8]/40 transition-colors"
+            >
               <div>
                 <h3 className="text-lg font-bold text-[var(--text-primary)] font-heading mb-5 pb-3 border-b border-[var(--bg-card-border)] flex items-center justify-between">
                   <span className="flex items-center gap-2">
@@ -89,8 +96,8 @@ export const Skills: React.FC = () => {
                             skill.level === "Expert"
                               ? "text-[#709FA8] font-bold"
                               : skill.level === "Advanced"
-                              ? "text-[#B1B8C0]"
-                              : "text-[var(--text-muted)]"
+                                ? "text-[#B1B8C0]"
+                                : "text-[var(--text-muted)]"
                           }`}
                         >
                           {skill.level} ({getPercentage(skill.level)})
@@ -104,8 +111,8 @@ export const Skills: React.FC = () => {
                             skill.level === "Expert"
                               ? "bg-gradient-to-r from-[#2B5866] via-[#488293] to-[#709FA8]"
                               : skill.level === "Advanced"
-                              ? "bg-gradient-to-r from-[#488293] to-[#709FA8]"
-                              : "bg-gradient-to-r from-[#2B5866] to-[#488293]"
+                                ? "bg-gradient-to-r from-[#488293] to-[#709FA8]"
+                                : "bg-gradient-to-r from-[#2B5866] to-[#488293]"
                           }`}
                           data-width={getPercentage(skill.level)}
                           style={{ width: "0%" }}

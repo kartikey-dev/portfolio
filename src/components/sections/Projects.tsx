@@ -73,10 +73,10 @@ export const Projects: React.FC = () => {
                         {project.id.includes("pokedex")
                           ? "⚡"
                           : project.category === "Healthcare"
-                          ? "🩺"
-                          : project.category === "AI"
-                          ? "🛡️"
-                          : "🏗️"}
+                            ? "🩺"
+                            : project.category === "AI"
+                              ? "🛡️"
+                              : "🏗️"}
                       </div>
                       <div>
                         <div className="text-xs font-bold text-white">{project.title}</div>
@@ -121,7 +121,10 @@ export const Projects: React.FC = () => {
                     Key Features &amp; Architecture
                   </h4>
                   {project.highlights.map((h, i) => (
-                    <div key={i} className="flex items-start gap-2 text-xs text-[var(--text-secondary)]">
+                    <div
+                      key={i}
+                      className="flex items-start gap-2 text-xs text-[var(--text-secondary)]"
+                    >
                       <span className="text-[#709FA8] font-bold">✓</span>
                       <span>{h}</span>
                     </div>

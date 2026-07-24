@@ -67,29 +67,50 @@ export const About: React.FC = () => {
             {/* Info Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-[var(--bg-card-border)]">
               <div className="glass-panel p-3 rounded-xl border border-[var(--bg-card-border)]">
-                <span className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] font-bold">Location</span>
-                <p className="text-sm font-semibold text-[var(--text-primary)]">{PERSONAL_INFO.location}</p>
+                <span className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] font-bold">
+                  Location
+                </span>
+                <p className="text-sm font-semibold text-[var(--text-primary)]">
+                  {PERSONAL_INFO.location}
+                </p>
               </div>
               <div className="glass-panel p-3 rounded-xl border border-[var(--bg-card-border)]">
-                <span className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] font-bold">Email</span>
-                <p className="text-xs font-semibold text-[#709FA8] truncate">{PERSONAL_INFO.email}</p>
+                <span className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] font-bold">
+                  Email
+                </span>
+                <p className="text-xs font-semibold text-[#709FA8] truncate">
+                  {PERSONAL_INFO.email}
+                </p>
               </div>
               <div className="glass-panel p-3 rounded-xl border border-[var(--bg-card-border)]">
-                <span className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] font-bold">Phone</span>
-                <p className="text-sm font-semibold text-[var(--text-primary)]">{PERSONAL_INFO.phone}</p>
+                <span className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] font-bold">
+                  Phone
+                </span>
+                <p className="text-sm font-semibold text-[var(--text-primary)]">
+                  {PERSONAL_INFO.phone}
+                </p>
               </div>
             </div>
 
             {/* Recognition Badges */}
             <div className="pt-4 border-t border-[var(--bg-card-border)] flex flex-col gap-3">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-[#709FA8]">Key Recognition</h4>
+              <h4 className="text-xs font-bold uppercase tracking-wider text-[#709FA8]">
+                Key Recognition
+              </h4>
               <div className="grid grid-cols-1 gap-3">
                 {ACHIEVEMENTS.map((item) => (
-                  <div key={item.title} className="flex items-start gap-3 p-3 glass-panel rounded-xl border border-[var(--bg-card-border)] hover:border-[#709FA8]/30 transition-colors">
+                  <div
+                    key={item.title}
+                    className="flex items-start gap-3 p-3 glass-panel rounded-xl border border-[var(--bg-card-border)] hover:border-[#709FA8]/30 transition-colors"
+                  >
                     <span className="text-[#709FA8] text-xl">🏆</span>
                     <div>
-                      <strong className="text-[var(--text-primary)] font-bold text-sm block">{item.title}</strong>
-                      <span className="text-xs text-[var(--text-secondary)]">{item.description} ({item.issuer})</span>
+                      <strong className="text-[var(--text-primary)] font-bold text-sm block">
+                        {item.title}
+                      </strong>
+                      <span className="text-xs text-[var(--text-secondary)]">
+                        {item.description} ({item.issuer})
+                      </span>
                     </div>
                   </div>
                 ))}
@@ -108,7 +129,9 @@ export const About: React.FC = () => {
                 {EDUCATIONS.map((edu) => (
                   <div key={edu.degree} className="border-l-2 border-[#709FA8]/50 pl-4 py-1">
                     <h4 className="text-base font-bold text-[var(--text-primary)]">{edu.degree}</h4>
-                    <p className="text-sm text-[var(--text-secondary)]">{edu.institution} • {edu.location}</p>
+                    <p className="text-sm text-[var(--text-secondary)]">
+                      {edu.institution} • {edu.location}
+                    </p>
                     <span className="text-xs font-mono text-[var(--text-muted)]">{edu.year}</span>
                   </div>
                 ))}
@@ -124,7 +147,9 @@ export const About: React.FC = () => {
                 {CERTIFICATIONS.map((cert) => (
                   <div key={cert.title} className="border-l-2 border-[#488293]/50 pl-4 py-1">
                     <h4 className="text-base font-bold text-[var(--text-primary)]">{cert.title}</h4>
-                    <p className="text-sm text-[var(--text-secondary)]">Issued by {cert.issuer} • {cert.date}</p>
+                    <p className="text-sm text-[var(--text-secondary)]">
+                      Issued by {cert.issuer} • {cert.date}
+                    </p>
                     {cert.verifyUrl && (
                       <a
                         href={cert.verifyUrl}
