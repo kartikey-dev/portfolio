@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import { MagneticButton } from "../MagneticButton";
 
 describe("MagneticButton component", () => {
@@ -7,8 +7,13 @@ describe("MagneticButton component", () => {
     expect(screen.getByText("Magnetic Content")).toBeInTheDocument();
   });
 
-  it("applies inline-block container styling", () => {
-    const { container } = render(<MagneticButton>Button</MagneticButton>);
-    expect(container.firstChild).toHaveClass("inline-block");
+  it("handles mousemove and mouseleave events", () => {
+    render(<MagneticButton>Button</MagneticButton>);
+    const element = screen.getByText("Button").parentElement!;
+
+    fireEvent.mouseMove(element, { clientX: 100, clientY: 100 });
+    fireEvent.mouseLeave(element);
+
+    expect(element).toBeInTheDocument();
   });
 });

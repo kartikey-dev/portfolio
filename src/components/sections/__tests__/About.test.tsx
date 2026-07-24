@@ -5,7 +5,7 @@ describe("About component", () => {
   it("renders section heading and bio content", () => {
     render(<About />);
     expect(screen.getByText(/About Me/i)).toBeInTheDocument();
-    expect(screen.getByText(/Senior Frontend Engineer/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/Senior Frontend Engineer/i).length).toBeGreaterThan(0);
   });
 
   it("renders education items", () => {

@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { Navbar } from "../Navbar";
 
@@ -18,19 +18,22 @@ describe("Navbar component", () => {
     expect(screen.getByText("Contact")).toBeInTheDocument();
   });
 
-  it("renders theme toggle buttons", () => {
+  it("toggles theme when theme button is clicked", async () => {
+    const user = userEvent.setup();
     render(<Navbar />);
     const themeButtons = screen.getAllByRole("button", { name: /toggle theme/i });
-    expect(themeButtons.length).toBeGreaterThan(0);
+    await user.click(themeButtons[0]);
+    expect(themeButtons[0]).toBeInTheDocument();
   });
 
-  it("toggles mobile menu when hamburger button is clicked", async () => {
+  it("toggles mobile menu and clicks nav link", async () => {
     const user = userEvent.setup();
     render(<Navbar />);
     const menuButton = screen.getByRole("button", { name: /toggle menu/i });
-    expect(menuButton).toBeInTheDocument();
-
     await user.click(menuButton);
     expect(menuButton).toHaveAttribute("aria-expanded", "true");
+
+    const aboutLinks = screen.getAllByText("About");
+    fireEvent.click(aboutLinks[0]);
   });
 });

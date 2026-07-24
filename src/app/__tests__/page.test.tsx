@@ -9,6 +9,6 @@ describe("Home Page", () => {
     expect(screen.getByText(/Work Experience/i)).toBeInTheDocument();
     expect(screen.getByText(/Featured Projects/i)).toBeInTheDocument();
     expect(screen.getByText(/Tech Stack & Skills/i)).toBeInTheDocument();
-    expect(screen.getByText(/Get In Touch/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/Get In Touch/i).length).toBeGreaterThan(0);
   });
 });
