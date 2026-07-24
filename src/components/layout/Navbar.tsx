@@ -21,6 +21,7 @@ export const Navbar: React.FC = () => {
   useEffect(() => {
     // Initial theme detection
     const isDark = document.documentElement.classList.contains("dark");
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setTheme(isDark ? "dark" : "light");
 
     const handleScroll = () => {

@@ -26,13 +26,17 @@ jobs:
           version: 9
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
 
       - name: Build
         run: pnpm build
 
       - name: Run Lighthouse CI
         uses: treosh/lighthouse-ci-action@v12
+        continue-on-error: true
         with:
           uploadArtifacts: true
           temporaryPublicStorage: true

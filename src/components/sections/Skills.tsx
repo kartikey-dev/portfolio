@@ -53,10 +53,10 @@ export const Skills: React.FC = () => {
   const getPercentage = (level?: string) => {
     if (level === "Expert") return "95%";
     if (level === "Advanced") return "85%";
-    if (level === "Proficient") return "75%";
-    if (level === "Intermediate") return "65%";
-    if (level === "Beginner") return "45%";
-    return "75%";
+    if (level === "Proficient") return "70%";
+    if (level === "Intermediate") return "55%";
+    if (level === "Beginner") return "30%";
+    return "70%";
   };
 
   return (
