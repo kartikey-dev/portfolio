@@ -15,18 +15,19 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Kumar Kartikey | Senior Frontend Engineer",
+  title: "Kumar Kartikey | Senior Frontend Architect & UI Expert",
   description:
-    "Portfolio of Kumar Kartikey — Senior Frontend Engineer with 6.5+ years experience building scalable AI-powered SaaS, React, Next.js, and React Native applications.",
+    "Portfolio of Kumar Kartikey — Senior Frontend Architect with 7+ years of experience engineering scalable AI-powered SaaS, React, Next.js, and React Native applications.",
   keywords: [
     "Kumar Kartikey",
-    "Frontend Engineer",
+    "Frontend Architect",
+    "UI Architect",
     "React Developer",
     "Next.js Developer",
     "TypeScript",
-    "UI Architect",
     "AI SaaS",
     "Web Performance",
+    "GSAP Animations",
   ],
   authors: [{ name: "Kumar Kartikey" }],
   creator: "Kumar Kartikey",
@@ -35,16 +36,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://kartikey.dev",
-    title: "Kumar Kartikey | Senior Frontend Engineer",
+    title: "Kumar Kartikey | Senior Frontend Architect & UI Expert",
     description:
-      "Senior Frontend Engineer with 6.5+ years experience building scalable AI-powered SaaS, React, Next.js, and React Native applications.",
+      "Senior Frontend Architect & UI Expert with 7+ years of experience building high-performance AI SaaS, React, Next.js, and React Native applications.",
     siteName: "Kumar Kartikey Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kumar Kartikey | Senior Frontend Engineer",
+    title: "Kumar Kartikey | Senior Frontend Architect & UI Expert",
     description:
-      "Senior Frontend Engineer specializing in Next.js, React, TypeScript, and AI UX performance.",
+      "Senior Frontend Architect specializing in Next.js, React, TypeScript, GSAP, and AI UX performance.",
   },
   robots: {
     index: true,
@@ -59,6 +60,7 @@ export const viewport: Viewport = {
   ],
   width: "device-width",
   initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
@@ -87,7 +89,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased selection:bg-cyan-500/20 selection:text-cyan-400">
+      <body className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased selection:bg-cyan-500/20 selection:text-cyan-400 max-w-full overflow-x-hidden">
         {children}
       </body>
     </html>

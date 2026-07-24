@@ -4,7 +4,6 @@ import React, { useRef } from "react";
 import { Button } from "@/components/ui/Button";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { Counter } from "@/components/ui/Counter";
-import { PERSONAL_INFO } from "@/lib/constants";
 import { gsap } from "@/lib/gsapConfig";
 import { useGSAP } from "@gsap/react";
 
@@ -34,7 +33,7 @@ export const Hero: React.FC = () => {
       // Floating graphic elements animation
       const floaters = containerRef.current.querySelectorAll(".hero-float");
       gsap.to(floaters, {
-        y: "-=12",
+        y: "-=10",
         duration: 3,
         repeat: -1,
         yoyo: true,
@@ -87,16 +86,14 @@ export const Hero: React.FC = () => {
       {/* Background Ambient Lights & Grid Pattern */}
       <div className="pointer-events-none absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 h-[550px] w-[550px] rounded-full bg-gradient-to-tr from-cyan-500/25 via-sky-500/15 to-purple-600/25 blur-[140px] opacity-80" />
       <div className="pointer-events-none absolute bottom-10 right-10 h-[400px] w-[400px] rounded-full bg-purple-600/20 blur-[130px]" />
-      
-      {/* Subtle Background Circuit / Grid SVG overlay */}
+
+      {/* Background Circuit / Grid SVG overlay */}
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
           {/* Left Column — Text & CTAs */}
           <div className="lg:col-span-7 flex flex-col items-start gap-6">
-            
             {/* Expert UI Badge */}
             <div className="hero-animate inline-flex items-center gap-2.5 rounded-full glass-panel px-4 py-1.5 border border-cyan-500/40 text-xs font-bold uppercase tracking-widest text-cyan-400 shadow-lg shadow-cyan-500/10">
               <span className="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping" />
@@ -108,30 +105,30 @@ export const Hero: React.FC = () => {
               <span className="text-lg font-semibold text-cyan-500 sm:text-xl tracking-wide">
                 Crafting Exceptional Digital Products
               </span>
-              <h1 className="mt-1 font-heading text-5xl font-black tracking-tight sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl text-[var(--text-primary)] leading-[1.05]">
+              <h1 className="mt-1 font-heading text-4xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-black tracking-tight text-[var(--text-primary)] leading-[1.05]">
                 Kumar <span className="gradient-text">Kartikey</span>
               </h1>
             </div>
 
             {/* Subtitle / Role Statement */}
-            <p className="hero-animate text-xl font-medium text-[var(--text-secondary)] sm:text-2xl leading-relaxed max-w-2xl">
+            <p className="hero-animate text-lg sm:text-2xl font-medium text-[var(--text-secondary)] leading-relaxed max-w-2xl">
               <strong className="text-[var(--text-primary)] font-bold">7+ Years</strong> of designing &amp; architecting high-performance UI/UX, AI-powered SaaS platforms &amp; modern web applications.
             </p>
 
-            <p className="hero-animate text-sm text-[var(--text-muted)] sm:text-base max-w-xl leading-relaxed">
+            <p className="hero-animate text-sm sm:text-base text-[var(--text-muted)] max-w-xl leading-relaxed">
               Specialized in Next.js 16, TypeScript, Tailwind CSS v4 &amp; GSAP animations — creating blazing-fast web experiences scoring 100 on Google PageSpeed Insights.
             </p>
 
             {/* Interactive CTAs */}
-            <div className="hero-animate flex flex-wrap items-center gap-4 pt-2">
-              <MagneticButton>
-                <Button href="#projects" variant="primary" size="lg">
+            <div className="hero-animate flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
+              <MagneticButton className="w-full sm:w-auto">
+                <Button href="#projects" variant="primary" size="lg" className="w-full sm:w-auto">
                   Explore Showcase 🚀
                 </Button>
               </MagneticButton>
 
-              <MagneticButton>
-                <Button href="#contact" variant="secondary" size="lg">
+              <MagneticButton className="w-full sm:w-auto">
+                <Button href="#contact" variant="secondary" size="lg" className="w-full sm:w-auto">
                   Let&apos;s Connect
                 </Button>
               </MagneticButton>
@@ -141,6 +138,7 @@ export const Hero: React.FC = () => {
                 external
                 variant="ghost"
                 size="lg"
+                className="w-full sm:w-auto text-center"
               >
                 Resume PDF ↗
               </Button>
@@ -148,10 +146,9 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Right Column — Interactive 3D Graphic Card Showcase */}
-          <div className="lg:col-span-5 relative flex justify-center">
-            
-            {/* Animated Floating Graphic Badge top right */}
-            <div className="hero-float absolute -top-6 -right-2 z-20 glass-panel rounded-2xl p-4 border border-cyan-500/40 shadow-xl shadow-cyan-500/20 backdrop-blur-xl flex items-center gap-3">
+          <div className="lg:col-span-5 relative flex justify-center w-full">
+            {/* Floating Graphic Badge top right */}
+            <div className="hero-float hidden sm:flex absolute -top-6 -right-2 z-20 glass-panel rounded-2xl p-3 sm:p-4 border border-cyan-500/40 shadow-xl shadow-cyan-500/20 backdrop-blur-xl items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 text-white font-bold text-lg">
                 ⚡
               </div>
@@ -161,8 +158,8 @@ export const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Animated Floating Badge bottom left */}
-            <div className="hero-float absolute -bottom-6 -left-4 z-20 glass-panel rounded-2xl p-4 border border-purple-500/40 shadow-xl shadow-purple-500/20 backdrop-blur-xl flex items-center gap-3">
+            {/* Floating Badge bottom left */}
+            <div className="hero-float hidden sm:flex absolute -bottom-6 -left-4 z-20 glass-panel rounded-2xl p-3 sm:p-4 border border-purple-500/40 shadow-xl shadow-purple-500/20 backdrop-blur-xl items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-purple-600 to-pink-500 text-white font-bold text-lg">
                 🎨
               </div>
@@ -177,11 +174,11 @@ export const Hero: React.FC = () => {
               ref={heroCardRef}
               onMouseMove={handleMouseMove}
               onMouseLeave={handleMouseLeave}
-              className="relative w-full max-w-md glass-panel rounded-3xl p-8 border border-[var(--bg-card-border)] shadow-2xl shadow-cyan-500/10 transition-transform duration-200 cursor-pointer overflow-hidden"
+              className="relative w-full max-w-md glass-panel rounded-3xl p-6 sm:p-8 border border-[var(--bg-card-border)] shadow-2xl shadow-cyan-500/10 transition-transform duration-200 cursor-pointer overflow-hidden"
               style={{ transformStyle: "preserve-3d" }}
             >
               {/* Card Top Header / Code Window Style */}
-              <div className="flex items-center justify-between pb-6 border-b border-[var(--bg-card-border)]">
+              <div className="flex items-center justify-between pb-4 sm:pb-6 border-b border-[var(--bg-card-border)]">
                 <div className="flex items-center gap-2">
                   <span className="h-3 w-3 rounded-full bg-red-500/80" />
                   <span className="h-3 w-3 rounded-full bg-amber-500/80" />
@@ -191,7 +188,7 @@ export const Hero: React.FC = () => {
               </div>
 
               {/* Code Snippet Visual Representation */}
-              <div className="py-6 font-mono text-xs leading-relaxed space-y-2 text-[var(--text-secondary)]">
+              <div className="py-4 sm:py-6 font-mono text-xs leading-relaxed space-y-2 text-[var(--text-secondary)]">
                 <div>
                   <span className="text-purple-400">const</span>{" "}
                   <span className="text-cyan-400">engineer</span> = &#123;
@@ -242,12 +239,12 @@ export const Hero: React.FC = () => {
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="glass-panel rounded-2xl p-6 border border-[var(--bg-card-border)] hover:border-cyan-500/40 hover:shadow-xl hover:shadow-cyan-500/10 transition-all text-center flex flex-col items-center justify-center group"
+              className="glass-panel rounded-2xl p-4 sm:p-6 border border-[var(--bg-card-border)] hover:border-cyan-500/40 hover:shadow-xl hover:shadow-cyan-500/10 transition-all text-center flex flex-col items-center justify-center group"
             >
-              <div className="font-heading text-4xl sm:text-5xl font-black text-[var(--text-primary)] group-hover:scale-105 transition-transform">
+              <div className="font-heading text-3xl sm:text-5xl font-black text-[var(--text-primary)] group-hover:scale-105 transition-transform">
                 <Counter end={stat.end} suffix={stat.suffix} className="gradient-text" />
               </div>
-              <div className="mt-2 text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
+              <div className="mt-2 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
                 {stat.label}
               </div>
             </div>
