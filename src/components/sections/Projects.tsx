@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
+import { Button } from "@/components/ui/Button";
 import { PROJECTS } from "@/lib/constants";
 import { gsap } from "@/lib/gsapConfig";
 import { useGSAP } from "@gsap/react";
@@ -22,7 +23,7 @@ export const Projects: React.FC = () => {
           opacity: 1,
           y: 0,
           duration: 0.8,
-          stagger: 0.2,
+          stagger: 0.15,
           scrollTrigger: {
             trigger: containerRef.current,
             start: "top 75%",
@@ -40,18 +41,16 @@ export const Projects: React.FC = () => {
         <SectionHeading
           badge="Portfolio Showcase"
           title="Featured Projects"
-          subtitle="Production-grade AI platforms, healthcare SaaS applications, and enterprise web experiences designed with precision."
+          subtitle="Production-grade AI platforms, healthcare SaaS applications, and modern web applications built test-first."
         />
 
         {/* Bento Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {PROJECTS.map((project, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          {PROJECTS.map((project) => (
             <Card
               key={project.id}
               gradientBorder
-              className={`project-card flex flex-col justify-between group hover:border-cyan-500/50 transition-all ${
-                index === 0 ? "md:col-span-2 lg:col-span-2" : ""
-              }`}
+              className="project-card flex flex-col justify-between group hover:border-cyan-500/50 transition-all"
             >
               <div>
                 {/* Visual Window Mockup Header */}
@@ -71,16 +70,24 @@ export const Projects: React.FC = () => {
                   <div className="pt-4 pb-2 flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <div className="h-10 w-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-lg border border-cyan-500/30">
-                        {index === 0 ? "🩺" : index === 1 ? "🛡️" : "🏗️"}
+                        {project.id.includes("pokedex")
+                          ? "⚡"
+                          : project.category === "Healthcare"
+                          ? "🩺"
+                          : project.category === "AI"
+                          ? "🛡️"
+                          : "🏗️"}
                       </div>
                       <div>
-                        <div className="text-xs font-bold text-white">{project.category} SaaS</div>
-                        <div className="text-[10px] text-slate-400 font-mono">100/100 Core Web Vitals</div>
+                        <div className="text-xs font-bold text-white">{project.title}</div>
+                        <div className="text-[10px] text-slate-400 font-mono">
+                          {project.liveUrl ? "Live Production Build" : "100/100 Core Web Vitals"}
+                        </div>
                       </div>
                     </div>
 
                     <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-cyan-400 bg-cyan-500/15 rounded-full border border-cyan-500/30">
-                      AI Powered
+                      {project.tags.includes("TDD") ? "TDD Built" : "AI Powered"}
                     </span>
                   </div>
                 </div>
@@ -92,7 +99,7 @@ export const Projects: React.FC = () => {
                   </span>
                   {project.featured && (
                     <span className="text-xs font-bold text-amber-400 flex items-center gap-1">
-                      <span>★</span> Featured Platform
+                      <span>★</span> Featured Project
                     </span>
                   )}
                 </div>
@@ -122,16 +129,34 @@ export const Projects: React.FC = () => {
                 </div>
               </div>
 
-              {/* Bottom Tech Badges */}
-              <div className="pt-4 border-t border-[var(--bg-card-border)] flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-2.5 py-1 text-xs font-semibold text-[var(--text-secondary)] glass-panel rounded-lg border border-[var(--bg-card-border)] group-hover:border-cyan-500/30 transition-colors"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              {/* Bottom Tech Badges & Action Buttons */}
+              <div className="pt-4 border-t border-[var(--bg-card-border)] flex flex-col gap-4">
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2.5 py-1 text-xs font-semibold text-[var(--text-secondary)] glass-panel rounded-lg border border-[var(--bg-card-border)] group-hover:border-cyan-500/30 transition-colors"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Live Demo & Code Links */}
+                {(project.liveUrl || project.githubUrl) && (
+                  <div className="flex flex-wrap items-center gap-3 pt-2">
+                    {project.liveUrl && (
+                      <Button href={project.liveUrl} external variant="primary" size="sm">
+                        Live Demo ↗
+                      </Button>
+                    )}
+                    {project.githubUrl && (
+                      <Button href={project.githubUrl} external variant="secondary" size="sm">
+                        Source Code ↗
+                      </Button>
+                    )}
+                  </div>
+                )}
               </div>
             </Card>
           ))}

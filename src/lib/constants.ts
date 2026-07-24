@@ -81,6 +81,26 @@ export const EXPERIENCES: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: "pokedex-explorer",
+    title: "Pokedex Explorer",
+    subtitle: "Test-Driven Modern Pokémon Discovery Platform",
+    description:
+      "Interactive Pokémon exploration platform built with Next.js, TypeScript, and PokéAPI following a strict TDD methodology.",
+    longDescription:
+      "Built an interactive, high-performance Pokémon discovery application utilizing Next.js App Router, TypeScript, and REST PokéAPI. Engineered using a Test-Driven Development (TDD) methodology with comprehensive unit & integration tests, dynamic type-search filtering, responsive card layouts, and live Vercel deployment.",
+    tags: ["Next.js", "TypeScript", "PokéAPI", "TDD", "Tailwind CSS", "Jest", "Vercel"],
+    highlights: [
+      "Test-Driven Development (TDD) approach with high test coverage",
+      "Real-time search, type filtering & dynamic pagination",
+      "PokéAPI REST integration with cached responses",
+      "Responsive grid UI deployed live on Vercel",
+    ],
+    liveUrl: "https://pokemon-explorer-indol-psi.vercel.app/",
+    githubUrl: "https://github.com/kartikey-dev",
+    category: "Web App",
+    featured: true,
+  },
+  {
     id: "ai-healthcare-platform",
     title: "AI Healthcare Platform",
     subtitle: "HIPAA-Compliant Cross-Platform Healthcare SaaS",

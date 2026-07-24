@@ -19,7 +19,7 @@ export interface Project {
   liveUrl?: string;
   githubUrl?: string;
   featured: boolean;
-  category: "AI" | "Healthcare" | "Fintech" | "SaaS";
+  category: "AI" | "Healthcare" | "Fintech" | "SaaS" | "Web App" | "Frontend";
 }
 
 export interface SkillCategory {
