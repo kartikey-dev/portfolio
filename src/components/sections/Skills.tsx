@@ -36,13 +36,13 @@ export const Skills: React.FC = () => {
         progressBars,
         { width: "0%" },
         {
-          width: (index, target) => target.getAttribute("data-width") || "85%",
+          width: (index, target) => target.getAttribute("data-width") || "70%",
           duration: 1.2,
           stagger: 0.05,
           ease: "power2.out",
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top 70%",
+            start: "top 85%",
           },
         }
       );
@@ -90,39 +90,42 @@ export const Skills: React.FC = () => {
                 </h3>
 
                 <div className="flex flex-col gap-4">
-                  {cat.skills.map((skill) => (
-                    <div key={skill.name} className="flex flex-col gap-1.5">
-                      <div className="flex items-center justify-between text-xs font-semibold">
-                        <span className="text-[var(--text-primary)]">{skill.name}</span>
-                        <span
-                          className={`font-mono text-[10px] uppercase ${
-                            skill.level === "Expert"
-                              ? "text-[#709FA8] font-bold"
-                              : skill.level === "Advanced" || skill.level === "Proficient"
-                                ? "text-[#B1B8C0]"
-                                : "text-[var(--text-muted)]"
-                          }`}
-                        >
-                          {skill.level} ({getPercentage(skill.level)})
-                        </span>
-                      </div>
+                  {cat.skills.map((skill) => {
+                    const pct = getPercentage(skill.level);
+                    return (
+                      <div key={skill.name} className="flex flex-col gap-1.5">
+                        <div className="flex items-center justify-between text-xs font-semibold">
+                          <span className="text-[var(--text-primary)]">{skill.name}</span>
+                          <span
+                            className={`font-mono text-[10px] uppercase ${
+                              skill.level === "Expert"
+                                ? "text-[#709FA8] font-bold"
+                                : skill.level === "Advanced" || skill.level === "Proficient"
+                                  ? "text-[#B1B8C0]"
+                                  : "text-[var(--text-muted)]"
+                            }`}
+                          >
+                            {skill.level} ({pct})
+                          </span>
+                        </div>
 
-                      {/* Visual Graphic Skill Meter Bar */}
-                      <div className="h-2 w-full rounded-full bg-[var(--bg-primary)] border border-[var(--bg-card-border)] overflow-hidden">
-                        <div
-                          className={`skill-bar-fill h-full rounded-full transition-all duration-500 ${
-                            skill.level === "Expert"
-                              ? "bg-gradient-to-r from-[#2B5866] via-[#488293] to-[#709FA8]"
-                              : skill.level === "Advanced" || skill.level === "Proficient"
-                                ? "bg-gradient-to-r from-[#488293] to-[#709FA8]"
-                                : "bg-gradient-to-r from-[#2B5866] to-[#488293]"
-                          }`}
-                          data-width={getPercentage(skill.level)}
-                          style={{ width: "0%" }}
-                        />
+                        {/* Visual Graphic Skill Meter Bar */}
+                        <div className="h-2 w-full rounded-full bg-[var(--bg-primary)] border border-[var(--bg-card-border)] overflow-hidden">
+                          <div
+                            className={`skill-bar-fill h-full rounded-full transition-all duration-500 ${
+                              skill.level === "Expert"
+                                ? "bg-gradient-to-r from-[#2B5866] via-[#488293] to-[#709FA8]"
+                                : skill.level === "Advanced" || skill.level === "Proficient"
+                                  ? "bg-gradient-to-r from-[#488293] to-[#709FA8]"
+                                  : "bg-gradient-to-r from-[#2B5866] to-[#488293]"
+                            }`}
+                            data-width={pct}
+                            style={{ width: pct }}
+                          />
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             </Card>
