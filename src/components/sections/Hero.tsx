@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useRef } from "react";
-import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { Counter } from "@/components/ui/Counter";
@@ -149,7 +148,7 @@ export const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column — 3D Monogram & Portrait Interactive Card */}
+          {/* Right Column — Reverted Code Window Interactive 3D Card with Custom Palette */}
           <div className="lg:col-span-5 relative flex justify-center w-full">
             {/* Floating Graphic Badge top right */}
             <div className="hero-float hidden sm:flex absolute -top-6 -right-2 z-20 glass-panel rounded-2xl p-3 sm:p-4 border border-[#709FA8]/40 shadow-xl shadow-[#2B5866]/20 backdrop-blur-xl items-center gap-3">
@@ -175,49 +174,57 @@ export const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Interactive 3D Card showcasing 3D Monogram Logo */}
+            {/* Interactive 3D Code Snippet Card */}
             <div
               ref={heroCardRef}
               onMouseMove={handleMouseMove}
               onMouseLeave={handleMouseLeave}
-              className="relative w-full max-w-md glass-panel rounded-3xl p-6 sm:p-8 border border-[var(--bg-card-border)] shadow-2xl shadow-[#2B5866]/20 transition-transform duration-200 cursor-pointer overflow-hidden group"
+              className="relative w-full max-w-md glass-panel rounded-3xl p-6 sm:p-8 border border-[var(--bg-card-border)] shadow-2xl shadow-[#2B5866]/20 transition-transform duration-200 cursor-pointer overflow-hidden"
               style={{ transformStyle: "preserve-3d" }}
             >
-              {/* Card Top Header / Window Style */}
-              <div className="flex items-center justify-between pb-4 sm:pb-6 border-b border-[var(--bg-card-border)] mb-4">
+              {/* Card Top Header / Code Window Style */}
+              <div className="flex items-center justify-between pb-4 sm:pb-6 border-b border-[var(--bg-card-border)]">
                 <div className="flex items-center gap-2">
                   <span className="h-3 w-3 rounded-full bg-red-500/80" />
                   <span className="h-3 w-3 rounded-full bg-amber-500/80" />
                   <span className="h-3 w-3 rounded-full bg-emerald-500/80" />
                 </div>
-                <span className="text-xs font-mono text-[#709FA8]">kk-monogram.tsx</span>
+                <span className="text-xs font-mono text-[#709FA8]">kartikey.tsx</span>
               </div>
 
-              {/* Central 3D KK Monogram Image Display */}
-              <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl border border-[#709FA8]/30 shadow-inner bg-[#1C2023]/60 mb-6 group-hover:border-[#709FA8]/60 transition-colors">
-                <Image
-                  src="/images/kk-monogram-logo.png"
-                  alt="Kumar Kartikey 3D KK Monogram Logo"
-                  fill
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                  priority
-                />
-              </div>
-
-              {/* Code / Details Snippet */}
-              <div className="font-mono text-xs leading-relaxed space-y-1 text-[var(--text-secondary)]">
-                <div className="flex justify-between items-center text-[11px]">
-                  <span className="text-[#709FA8]">const architect</span>
-                  <span className="text-[#B1B8C0]">&quot;Kumar Kartikey&quot;</span>
+              {/* Code Snippet Visual Representation */}
+              <div className="py-4 sm:py-6 font-mono text-xs leading-relaxed space-y-2 text-[var(--text-secondary)]">
+                <div>
+                  <span className="text-[#709FA8]">const</span>{" "}
+                  <span className="text-[#488293]">engineer</span> = &#123;
                 </div>
-                <div className="flex justify-between items-center text-[11px]">
-                  <span className="text-[#488293]">const focus</span>
-                  <span className="text-white font-bold">&quot;UI/UX &amp; AI Systems&quot;</span>
+                <div className="pl-4">
+                  <span className="text-[var(--text-muted)]">name:</span>{" "}
+                  <span className="text-white font-bold">&quot;Kumar Kartikey&quot;</span>,
                 </div>
+                <div className="pl-4">
+                  <span className="text-[var(--text-muted)]">role:</span>{" "}
+                  <span className="text-[#709FA8]">&quot;UI Architect &amp; Senior Engineer&quot;</span>,
+                </div>
+                <div className="pl-4">
+                  <span className="text-[var(--text-muted)]">experience:</span>{" "}
+                  <span className="text-[#B1B8C0]">&quot;7+ Years&quot;</span>,
+                </div>
+                <div className="pl-4">
+                  <span className="text-[var(--text-muted)]">stack:</span> [
+                  <span className="text-[#709FA8]">&quot;Next.js 16&quot;</span>,{" "}
+                  <span className="text-[#488293]">&quot;GSAP&quot;</span>,{" "}
+                  <span className="text-[#709FA8]">&quot;Tailwind v4&quot;</span>],
+                </div>
+                <div className="pl-4">
+                  <span className="text-[var(--text-muted)]">passion:</span>{" "}
+                  <span className="text-white font-bold">&quot;Crafting 100/100 UI &amp; AI UX&quot;</span>,
+                </div>
+                <div>&#125;;</div>
               </div>
 
               {/* Skill Visual Chips inside card */}
-              <div className="mt-4 pt-4 border-t border-[var(--bg-card-border)] flex flex-wrap gap-2">
+              <div className="pt-4 border-t border-[var(--bg-card-border)] flex flex-wrap gap-2">
                 <span className="px-2.5 py-1 rounded-lg text-[10px] font-bold bg-[#2B5866]/30 text-[#709FA8] border border-[#709FA8]/30">
                   Next.js App Router
                 </span>

@@ -53,11 +53,10 @@ export const Navbar: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-[var(--bg-primary)]/85 backdrop-blur-md border-b border-[var(--bg-card-border)] py-3 shadow-lg shadow-black/10"
-          : "bg-transparent py-5"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? "bg-[var(--bg-primary)]/85 backdrop-blur-md border-b border-[var(--bg-card-border)] py-3 shadow-lg shadow-black/10"
+        : "bg-transparent py-5"
+        }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
@@ -67,13 +66,13 @@ export const Navbar: React.FC = () => {
             aria-label="Kumar Kartikey Nameplate Logo"
             className="group flex items-center justify-center font-heading text-xl font-bold tracking-tight text-[var(--text-primary)]"
           >
-            <div className="relative h-10 w-36 sm:h-11 sm:w-44 overflow-hidden rounded-xl border border-[#B1B8C0]/50 shadow-md shadow-[#1C2023]/40 group-hover:scale-105 transition-all">
+            <div className="relative h-11 sm:h-15 group-hover:scale-105 transition-all">
               <Image
                 src="/images/kk-nameplate.jpg"
                 alt="Kumar Kartikey Metallic Nameplate Logo"
-                width={176}
-                height={44}
-                className="h-full w-full object-cover rounded-lg"
+                width={210}
+                height={60}
+                className="h-full w-full object-cover rounded"
                 priority
               />
             </div>
