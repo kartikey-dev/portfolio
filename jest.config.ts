@@ -17,6 +17,8 @@ const config: Config = {
     "!src/**/layout.tsx",
     "!src/**/not-found.tsx",
     "!src/app/sitemap.ts",
+    "!src/app/robots.ts",
+    "!src/app/manifest.ts",
     "!src/lib/gsapConfig.ts",
     "!src/**/__tests__/**",
   ],
