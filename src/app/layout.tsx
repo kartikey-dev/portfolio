@@ -32,7 +32,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Kumar Kartikey" }],
   creator: "Kumar Kartikey",
-  metadataBase: new URL("https://kartikey.dev"),
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "https://portfolio-topaz-iota-zs571dsyg5.vercel.app"
+  ),
   openGraph: {
     type: "website",
     locale: "en_US",
