@@ -229,12 +229,21 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     ],
   },
   {
-    title: "UI, Styling & Animation",
+    title: "UI & Styling",
     skills: [
       { name: "Tailwind CSS (v3 & v4)", level: "Expert" },
       { name: "Bootstrap", level: "Expert" },
       { name: "SCSS / SASS", level: "Expert" },
       { name: "Styled-components", level: "Advanced" },
+      { name: "Responsive Design", level: "Expert" },
+      { name: "Semantic HTML", level: "Expert" },
+      { name: "Storybook & Design Systems", level: "Expert" },
+      { name: "Accessibility (WCAG 2.1 AA)", level: "Expert" },
+    ],
+  },
+  {
+    title: "Animation & Motion",
+    skills: [
       { name: "GSAP & ScrollTrigger", level: "Advanced" },
       { name: "Framer Motion", level: "Advanced" },
       { name: "Anime.js", level: "Advanced" },
@@ -242,10 +251,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Lottie", level: "Advanced" },
       { name: "Three.js", level: "Intermediate" },
       { name: "hover.css", level: "Advanced" },
-      { name: "Responsive Design", level: "Expert" },
-      { name: "Semantic HTML", level: "Expert" },
-      { name: "Storybook & Design Systems", level: "Expert" },
-      { name: "Accessibility (WCAG 2.1 AA)", level: "Expert" },
     ],
   },
   {

@@ -7,7 +7,8 @@ describe("Skills component", () => {
     expect(screen.getByText(/Tech Stack & Skills/i)).toBeInTheDocument();
     expect(screen.getByText("Languages & Core")).toBeInTheDocument();
     expect(screen.getByText("Frontend Frameworks")).toBeInTheDocument();
-    expect(screen.getByText("UI, Styling & Animation")).toBeInTheDocument();
+    expect(screen.getByText("UI & Styling")).toBeInTheDocument();
+    expect(screen.getByText("Animation & Motion")).toBeInTheDocument();
   });
 
   it("renders specific skill tags", () => {
