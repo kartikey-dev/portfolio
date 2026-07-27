@@ -15,6 +15,10 @@ const outfit = Outfit({
   display: "swap",
 });
 
+const siteUrl = process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : "https://portfolio-topaz-iota-zs571dsyg5.vercel.app";
+
 export const metadata: Metadata = {
   title: "Kumar Kartikey | Senior Frontend Engineer & UI Expert",
   description:
@@ -24,37 +28,58 @@ export const metadata: Metadata = {
     "Senior Frontend Engineer",
     "UI Expert",
     "React Developer",
-    "Next.js Developer",
-    "TypeScript",
-    "AI SaaS",
-    "Web Performance",
+    "Next.js Architect",
+    "TypeScript Specialist",
+    "AI SaaS Frontend",
+    "Web Performance Optimization",
     "GSAP Animations",
+    "Design Systems",
+    "React Native",
   ],
-  authors: [{ name: "Kumar Kartikey" }],
+  authors: [{ name: "Kumar Kartikey", url: siteUrl }],
   creator: "Kumar Kartikey",
-  metadataBase: new URL(
-    process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : "https://portfolio-topaz-iota-zs571dsyg5.vercel.app"
-  ),
+  publisher: "Kumar Kartikey",
+  category: "technology",
+  applicationName: "Kumar Kartikey Portfolio",
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: "./",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://kartikey.dev",
+    url: siteUrl,
     title: "Kumar Kartikey | Senior Frontend Engineer & UI Expert",
     description:
       "Senior Frontend Engineer & UI Expert with 7+ years of experience building high-performance AI SaaS, React, Next.js, and React Native applications.",
     siteName: "Kumar Kartikey Portfolio",
+    images: [
+      {
+        url: "/images/kk-nameplate.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Kumar Kartikey - Senior Frontend Engineer & UI Expert",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Kumar Kartikey | Senior Frontend Engineer & UI Expert",
     description:
       "Senior Frontend Engineer & UI Expert specializing in Next.js, React, TypeScript, GSAP, and AI UX performance.",
+    images: ["/images/kk-nameplate.jpg"],
+    creator: "@kartikey_dev",
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   icons: {
     icon: [
@@ -75,6 +100,51 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`,
+      name: "Kumar Kartikey",
+      jobTitle: "Senior Frontend Engineer & UI Expert",
+      description:
+        "Senior Frontend Engineer & UI Expert with 7+ years of experience engineering scalable AI-powered SaaS, React, Next.js, and React Native applications.",
+      url: siteUrl,
+      sameAs: [
+        "https://linkedin.com/in/kumar-kartikey-web",
+        "https://github.com/kartikey-dev",
+      ],
+      knowsAbout: [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "Frontend Architecture",
+        "UI/UX Engineering",
+        "Design Systems",
+        "React Native",
+        "Web Performance Optimization",
+        "Accessibility (WCAG 2.1 AA)",
+        "GraphQL",
+        "Tailwind CSS",
+      ],
+      worksFor: {
+        "@type": "Organization",
+        name: "Hestabit Technologies",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: "Kumar Kartikey Portfolio",
+      publisher: {
+        "@id": `${siteUrl}/#person`,
+      },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -105,6 +175,10 @@ export default function RootLayout({
               })();
             `,
           }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body
