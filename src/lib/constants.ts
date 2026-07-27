@@ -277,16 +277,21 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "React Testing Library (TDD)", level: "Expert" },
       { name: "Jest", level: "Expert" },
       { name: "Playwright", level: "Advanced" },
-      { name: "Vite, Webpack & Bun", level: "Advanced" },
+      { name: "Vite & Webpack", level: "Advanced" },
+      { name: "Bun", level: "Advanced" },
       { name: "pnpm / npm / Yarn", level: "Expert" },
     ],
   },
   {
     title: "DevOps & Deployment",
     skills: [
-      { name: "GitHub Actions & CI/CD", level: "Proficient" },
+      { name: "CI/CD Pipelines", level: "Proficient" },
+      { name: "GitHub Actions", level: "Proficient" },
+      { name: "Jenkins", level: "Intermediate" },
       { name: "Docker", level: "Intermediate" },
+      { name: "Kubernetes", level: "Proficient" },
       { name: "Vercel & Netlify", level: "Proficient" },
+      { name: "Bitbucket", level: "Proficient" },
     ],
   },
   {
@@ -301,8 +306,19 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     ],
   },
   {
+    title: "Design Tools",
+    skills: [
+      { name: "Figma", level: "Proficient" },
+      { name: "Adobe XD", level: "Proficient" },
+      { name: "Adobe Photoshop", level: "Proficient" },
+    ],
+  },
+  {
     title: "AI Tools & Platforms",
     skills: [
+      { name: "GitHub Copilot", level: "Advanced" },
+      { name: "Gemini Code", level: "Advanced" },
+      { name: "OpenAI Codex", level: "Advanced" },
       { name: "Claude Code", level: "Proficient" },
       { name: "Cursor", level: "Proficient" },
       { name: "v0 by Vercel", level: "Proficient" },
