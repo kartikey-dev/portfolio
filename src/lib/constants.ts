@@ -194,6 +194,17 @@ export const PROJECTS: Project[] = [
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
+    title: "Architecture & Patterns",
+    skills: [
+      { name: "System Design", level: "Advanced" },
+      { name: "Frontend Architecture", level: "Expert" },
+      { name: "Micro-frontends", level: "Advanced" },
+      { name: "Monorepo (Nx / Turborepo)", level: "Advanced" },
+      { name: "RFC Authorship", level: "Advanced" },
+      { name: "PWA", level: "Advanced" },
+    ],
+  },
+  {
     title: "Frontend Frameworks",
     skills: [
       { name: "React.js", level: "Expert" },
@@ -231,12 +242,14 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Lottie", level: "Advanced" },
       { name: "Three.js", level: "Intermediate" },
       { name: "hover.css", level: "Advanced" },
+      { name: "Responsive Design", level: "Expert" },
+      { name: "Semantic HTML", level: "Expert" },
       { name: "Storybook & Design Systems", level: "Expert" },
-      { name: "Accessibility (WCAG AA)", level: "Expert" },
+      { name: "Accessibility (WCAG 2.1 AA)", level: "Expert" },
     ],
   },
   {
-    title: "State & Data Fetching",
+    title: "State Management",
     skills: [
       { name: "TanStack Query", level: "Expert" },
       { name: "Zustand", level: "Advanced" },
@@ -244,6 +257,17 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Context API", level: "Proficient" },
       { name: "React Hook Form & Zod", level: "Expert" },
       { name: "moment.js", level: "Proficient" },
+    ],
+  },
+  {
+    title: "API & Authentication",
+    skills: [
+      { name: "REST APIs", level: "Expert" },
+      { name: "GraphQL (Schema Design & Caching)", level: "Advanced" },
+      { name: "Axios", level: "Expert" },
+      { name: "JWT", level: "Advanced" },
+      { name: "OAuth2", level: "Advanced" },
+      { name: "NextAuth", level: "Advanced" },
     ],
   },
   {
@@ -295,6 +319,25 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     ],
   },
   {
+    title: "Performance & Observability",
+    skills: [
+      { name: "Core Web Vitals", level: "Expert" },
+      { name: "Lighthouse CI", level: "Expert" },
+      { name: "Sentry & RUM Monitoring", level: "Advanced" },
+      { name: "Bundle Analysis", level: "Advanced" },
+      { name: "Profiling & Optimization", level: "Advanced" },
+    ],
+  },
+  {
+    title: "Methodologies",
+    skills: [
+      { name: "Agile & Scrum", level: "Expert" },
+      { name: "RFC-driven Development", level: "Advanced" },
+      { name: "Test-Driven Development (TDD)", level: "Expert" },
+      { name: "Code Review & Mentorship", level: "Expert" },
+    ],
+  },
+  {
     title: "IDE & Developer Tools",
     skills: [
       { name: "Visual Studio Code", level: "Expert" },
@@ -302,7 +345,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Sublime Text", level: "Advanced" },
       { name: "Notepad++", level: "Advanced" },
       { name: "Adobe Dreamweaver", level: "Advanced" },
-      { name: "GitHub Copilot", level: "Advanced" },
     ],
   },
   {
