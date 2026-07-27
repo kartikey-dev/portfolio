@@ -112,7 +112,7 @@ export const Hero: React.FC = () => {
 
             {/* Subtitle / Role Statement */}
             <p className="hero-animate text-lg sm:text-2xl font-medium text-[var(--text-secondary)] leading-relaxed max-w-2xl">
-              <strong className="text-[var(--text-primary)] font-bold">7+ Years</strong> of
+              <strong className="text-[var(--text-primary)] font-bold">7+ Years</strong>&nbsp; of
               engineering high-performance UI/UX, AI-powered SaaS platforms &amp; modern web
               applications.
             </p>

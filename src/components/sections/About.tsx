@@ -50,8 +50,8 @@ export const About: React.FC = () => {
               <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#2B5866]/30 text-[#709FA8] text-2xl font-bold border border-[#709FA8]/30">
                 👨‍💻
               </span>
-              <div>
-                <h3 className="text-2xl font-bold text-[var(--text-primary)] font-heading">
+              <div className="flex-1">
+                <h3 className="sm:text-2xl text-xl font-bold text-[var(--text-primary)] font-heading">
                   Engineering Scalable UI &amp; AI Products
                 </h3>
                 <span className="text-xs font-semibold uppercase tracking-wider text-[#709FA8]">

@@ -194,6 +194,18 @@ export const PROJECTS: Project[] = [
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
+    title: "Frontend Frameworks",
+    skills: [
+      { name: "React.js", level: "Expert" },
+      { name: "Next.js (App Router)", level: "Expert" },
+      { name: "Vue.js", level: "Proficient" },
+      { name: "Svelte", level: "Intermediate" },
+      { name: "Astro", level: "Proficient" },
+      { name: "Alpine.js", level: "Proficient" },
+      { name: "Electron.js", level: "Proficient" },
+    ],
+  },
+  {
     title: "Languages & Core",
     skills: [
       { name: "TypeScript", level: "Expert" },
@@ -202,37 +214,16 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "CSS3 & Modern Layouts", level: "Expert" },
       { name: "PHP", level: "Intermediate" },
       { name: "Python", level: "Beginner" },
-    ],
-  },
-  {
-    title: "Frontend & Frameworks",
-    skills: [
-      { name: "React.js", level: "Expert" },
-      { name: "Next.js (App Router)", level: "Expert" },
-      { name: "Vue.js", level: "Proficient" },
-      { name: "React Native (Expo)", level: "Advanced" },
-      { name: "Electron.js", level: "Proficient" },
-    ],
-  },
-  {
-    title: "CMS & E-Commerce",
-    skills: [
-      { name: "WordPress", level: "Expert" },
-      { name: "Magento", level: "Proficient" },
-      { name: "Shopify", level: "Proficient" },
-    ],
-  },
-  {
-    title: "Mobile & Native Tech",
-    skills: [
-      { name: "Swift", level: "Intermediate" },
-      { name: "Flutter", level: "Intermediate" },
+      { name: "SQL", level: "Advanced" },
     ],
   },
   {
     title: "UI, Styling & Animation",
     skills: [
       { name: "Tailwind CSS (v3 & v4)", level: "Expert" },
+      { name: "Bootstrap", level: "Expert" },
+      { name: "SCSS / SASS", level: "Expert" },
+      { name: "Styled-components", level: "Advanced" },
       { name: "GSAP & ScrollTrigger", level: "Advanced" },
       { name: "Storybook & Design Systems", level: "Expert" },
       { name: "Accessibility (WCAG AA)", level: "Expert" },
@@ -244,7 +235,34 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "TanStack Query", level: "Expert" },
       { name: "Zustand", level: "Advanced" },
       { name: "Redux Toolkit", level: "Advanced" },
+      { name: "Context API", level: "Proficient" },
       { name: "React Hook Form & Zod", level: "Expert" },
+      { name: "moment.js", level: "Proficient" },
+    ],
+  },
+  {
+    title: "Mobile & Native",
+    skills: [
+      { name: "React Native", level: "Advanced" },
+      { name: "Expo", level: "Advanced" },
+      { name: "Swift", level: "Proficient" },
+      { name: "Flutter", level: "Proficient" },
+    ],
+  },
+  {
+    title: "Databases",
+    skills: [
+      { name: "MongoDB", level: "Advanced" },
+      { name: "PostgreSQL", level: "Proficient" },
+      { name: "Prisma", level: "Proficient" },
+    ],
+  },
+  {
+    title: "CMS & E-Commerce",
+    skills: [
+      { name: "WordPress", level: "Expert" },
+      { name: "Magento", level: "Proficient" },
+      { name: "Shopify", level: "Proficient" },
     ],
   },
   {
@@ -255,7 +273,34 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Playwright", level: "Advanced" },
       { name: "Vite, Webpack & Bun", level: "Advanced" },
       { name: "pnpm / npm / Yarn", level: "Expert" },
-      { name: "GitHub Actions & CI/CD", level: "Advanced" },
+    ],
+  },
+  {
+    title: "DevOps & Deployment",
+    skills: [
+      { name: "GitHub Actions & CI/CD", level: "Proficient" },
+      { name: "Docker", level: "Intermediate" },
+      { name: "Vercel & Netlify", level: "Proficient" },
+    ],
+  },
+  {
+    title: "IDE & Developer Tools",
+    skills: [
+      { name: "Visual Studio Code", level: "Expert" },
+      { name: "Brackets", level: "Expert" },
+      { name: "Sublime Text", level: "Advanced" },
+      { name: "Notepad++", level: "Advanced" },
+      { name: "Adobe Dreamweaver", level: "Advanced" },
+      { name: "GitHub Copilot", level: "Advanced" },
+    ],
+  },
+  {
+    title: "AI Tools & Platforms",
+    skills: [
+      { name: "Claude Code", level: "Proficient" },
+      { name: "Cursor", level: "Proficient" },
+      { name: "v0 by Vercel", level: "Proficient" },
+      { name: "Lovable", level: "Proficient" },
     ],
   },
 ];

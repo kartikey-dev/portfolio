@@ -19,18 +19,18 @@ export const Footer: React.FC = () => {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         {/* High-Impact Gradient CTA Callout Box */}
-        <div className="relative mb-20 overflow-hidden rounded-3xl border border-[#709FA8]/40 bg-gradient-to-r from-[var(--bg-secondary)] via-[#2B5866]/20 to-[var(--bg-secondary)] p-8 sm:p-12 shadow-2xl shadow-[#2B5866]/10 backdrop-blur-xl">
+        <div className="relative mb-20 overflow-hidden rounded-3xl border border-[#709FA8]/40 bg-gradient-to-r from-[var(--bg-secondary)] via-[#2B5866]/20 to-[var(--bg-secondary)] p-5 sm:p-12 shadow-2xl shadow-[#2B5866]/10 backdrop-blur-xl">
           <div className="absolute top-0 right-0 -mt-12 -mr-12 h-64 w-64 rounded-full bg-[#709FA8]/10 blur-3xl pointer-events-none" />
 
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div className="max-w-2xl">
               {/* Availability Indicator */}
-              <div className="inline-flex items-center gap-2 rounded-full bg-[#2B5866]/20 px-3 py-1 border border-[#709FA8]/40 text-xs font-semibold text-[#709FA8] mb-4">
+              <div className="inline-flex items-center gap-2 rounded-full bg-[#2B5866]/20 px-3 py-1 border border-[#709FA8]/40 sm:text-xs text-[10px] font-semibold text-[#709FA8] mb-4">
                 <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
                 <span>Available for Senior Frontend Engineering &amp; UI Consulting</span>
               </div>
 
-              <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[var(--text-primary)] tracking-tight leading-tight">
+              <h2 className="font-heading text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[var(--text-primary)] tracking-tight leading-tight">
                 Let&apos;s Build Something <span className="gradient-text">Exceptional</span>{" "}
                 Together
               </h2>
@@ -230,8 +230,8 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Sleek Bottom Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 text-xs text-[var(--text-muted)]">
-          <div className="flex flex-wrap items-center gap-3 text-center sm:text-left">
+        <div className="flex flex-col sm:flex-row items-center sm:justify-between justify-center gap-4 pt-8 text-xs text-[var(--text-muted)]">
+          <div className="flex flex-wrap max-sm:justify-center items-center gap-3 text-center sm:text-left">
             <span>&copy; {currentYear} Kumar Kartikey. All rights reserved.</span>
             <span className="hidden sm:inline text-[var(--bg-card-border)]">•</span>
             <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#2B5866]/20 text-[#709FA8] border border-[#709FA8]/30 font-mono text-[10px] font-bold">

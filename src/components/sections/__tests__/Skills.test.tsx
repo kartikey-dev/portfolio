@@ -6,7 +6,7 @@ describe("Skills component", () => {
     render(<Skills />);
     expect(screen.getByText(/Tech Stack & Skills/i)).toBeInTheDocument();
     expect(screen.getByText("Languages & Core")).toBeInTheDocument();
-    expect(screen.getByText("Frontend & Frameworks")).toBeInTheDocument();
+    expect(screen.getByText("Frontend Frameworks")).toBeInTheDocument();
     expect(screen.getByText("UI, Styling & Animation")).toBeInTheDocument();
   });
 
