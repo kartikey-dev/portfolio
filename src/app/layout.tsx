@@ -17,7 +17,7 @@ const outfit = Outfit({
 
 const siteUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
-  : "https://portfolio-topaz-iota-zs571dsyg5.vercel.app";
+  : "https://webkartikey-dev.vercel.app";
 
 export const metadata: Metadata = {
   title: "Kumar Kartikey | Senior Frontend Engineer & UI Expert",

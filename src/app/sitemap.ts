@@ -3,7 +3,7 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.VERCEL_URL
     ? `https://${process.env.VERCEL_URL}`
-    : "https://portfolio-topaz-iota-zs571dsyg5.vercel.app";
+    : "https://webkartikey-dev.vercel.app";
 
   return [
     {

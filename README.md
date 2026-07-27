@@ -13,7 +13,7 @@
 
 ## 🚀 Live Demo
 
-🌐 **Live Website**: **[https://portfolio-topaz-iota-zs571dsyg5.vercel.app/](https://portfolio-topaz-iota-zs571dsyg5.vercel.app/)**
+🌐 **Live Website**: **[https://webkartikey-dev.vercel.app/](https://webkartikey-dev.vercel.app/)**
 
 ---
 
@@ -260,7 +260,7 @@ Every push and PR triggers the following GitHub Actions pipeline:
 
 ## Deployment
 
-This project is live on **Vercel** at **[https://portfolio-topaz-iota-zs571dsyg5.vercel.app/](https://portfolio-topaz-iota-zs571dsyg5.vercel.app/)** with automatic CI/CD deployments from the `main` branch.
+This project is live on **Vercel** at **[https://webkartikey-dev.vercel.app/](https://webkartikey-dev.vercel.app/)** with automatic CI/CD deployments from the `main` branch.
 
 ```bash
 # Build locally to verify
