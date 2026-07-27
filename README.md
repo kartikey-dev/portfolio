@@ -13,7 +13,7 @@
 
 ## 🚀 Live Demo
 
-> _Coming soon — will be deployed on Vercel_
+🌐 **Live Website**: **[https://portfolio-topaz-iota-zs571dsyg5.vercel.app/](https://portfolio-topaz-iota-zs571dsyg5.vercel.app/)**
 
 ---
 
@@ -36,7 +36,7 @@
 
 ## Overview
 
-Personal portfolio of **Kumar Kartikey** — a Senior Frontend Engineer with 6.5+ years of experience architecting scalable AI-powered SaaS, web, mobile, and desktop applications. This portfolio showcases UI/UX skills through a meticulously crafted single-page application with premium animations and near-instant load times.
+Personal portfolio of **Kumar Kartikey** — a Senior Frontend Engineer & UI Expert with 7+ years of experience architecting scalable AI-powered SaaS, web, mobile, and desktop applications. This portfolio showcases UI/UX skills through a meticulously crafted single-page application with premium animations and near-instant load times.
 
 ### Key Features
 
@@ -260,7 +260,7 @@ Every push and PR triggers the following GitHub Actions pipeline:
 
 ## Deployment
 
-This project is deployed on **Vercel** with automatic deployments from the `main` branch.
+This project is live on **Vercel** at **[https://portfolio-topaz-iota-zs571dsyg5.vercel.app/](https://portfolio-topaz-iota-zs571dsyg5.vercel.app/)** with automatic CI/CD deployments from the `main` branch.
 
 ```bash
 # Build locally to verify
@@ -284,7 +284,7 @@ pnpm build
 | Section | Description |
 |---|---|
 | **Hero** | Name, tagline, CTA — LCP-optimized with deferred GSAP animations |
-| **About** | Bio, profile photo, key stats (6.5+ years, 50K+ users) |
+| **About** | Bio, profile photo, key stats (7+ years, 100+ projects, 50K+ users) |
 | **Experience** | Animated timeline with 4 roles across companies |
 | **Projects** | Bento grid showcasing 3 AI-powered projects |
 | **Skills** | Categorized tech stack visualization |
