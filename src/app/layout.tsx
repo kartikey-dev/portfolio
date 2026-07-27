@@ -102,7 +102,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased selection:bg-[#709FA8]/30 selection:text-[#709FA8] max-w-full overflow-x-hidden">
+      <body
+        className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased selection:bg-[#709FA8]/30 selection:text-[#709FA8] max-w-full overflow-x-hidden"
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>
