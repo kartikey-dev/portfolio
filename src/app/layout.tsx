@@ -113,10 +113,7 @@ const jsonLd = {
       description:
         "Senior Frontend Engineer & UI Expert with 7+ years of experience engineering scalable AI-powered SaaS, React, Next.js, and React Native applications.",
       url: siteUrl,
-      sameAs: [
-        "https://linkedin.com/in/kumar-kartikey-web",
-        "https://github.com/kartikey-dev",
-      ],
+      sameAs: ["https://linkedin.com/in/kumar-kartikey-web", "https://github.com/kartikey-dev"],
       knowsAbout: [
         "React.js",
         "Next.js",
