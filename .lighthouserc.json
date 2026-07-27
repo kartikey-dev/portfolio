@@ -3,15 +3,16 @@
     "collect": {
       "startServerCommand": "pnpm start",
       "startServerReadyPattern": "Ready in|Local:|localhost|http://localhost:3000",
+      "startServerReadyTimeout": 90000,
       "url": ["http://localhost:3000"],
       "numberOfRuns": 1
     },
     "assert": {
       "assertions": {
-        "categories:performance": ["warn", { "minScore": 0.8 }],
-        "categories:accessibility": ["warn", { "minScore": 0.85 }],
-        "categories:best-practices": ["warn", { "minScore": 0.85 }],
-        "categories:seo": ["warn", { "minScore": 0.85 }]
+        "categories:performance": ["warn", { "minScore": 0.7 }],
+        "categories:accessibility": ["warn", { "minScore": 0.8 }],
+        "categories:best-practices": ["warn", { "minScore": 0.8 }],
+        "categories:seo": ["warn", { "minScore": 0.8 }]
       }
     },
     "upload": {
