@@ -1,6 +1,6 @@
 # Kumar Kartikey — Portfolio
 
-> ⚡ A high-performance, single-page portfolio built with Next.js 16, TypeScript, Tailwind CSS v4, and GSAP — targeting **100/100 on Google PageSpeed Insights** across all categories.
+> ⚡ A high-performance, single-page portfolio built with Next.js 16, TypeScript, Tailwind CSS v4, and GSAP — targeting **90+/100 on Google PageSpeed Insights** across all categories.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue?logo=typescript)
@@ -41,7 +41,7 @@ Personal portfolio of **Kumar Kartikey** — a Senior Frontend Engineer & UI Exp
 ### Key Features
 
 - 🎨 **Premium Design** — Dark/Light theme with system detection, glassmorphism, gradient accents
-- ⚡ **Blazing Fast** — LCP < 1.2s, CLS = 0, targeting 100/100 Lighthouse across all categories
+- ⚡ **Blazing Fast** — LCP < 1.2s, CLS = 0, targeting 90+/100 Lighthouse across all categories
 - 🎭 **GSAP Animations** — Scroll-triggered reveals, staggered entrances, magnetic buttons, parallax
 - 📱 **Fully Responsive** — Mobile-first design, 320px → 1920px
 - ♿ **Accessible** — WCAG AA compliant, `prefers-reduced-motion` support, keyboard navigation

@@ -78,7 +78,7 @@ export const Footer: React.FC = () => {
 
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed max-w-md">
               Senior Frontend Engineer &amp; UI Expert specializing in Next.js 16, TypeScript,
-              design systems, and AI-driven user experiences with 100/100 Lighthouse performance
+              design systems, and AI-driven user experiences with 90+/100 Lighthouse performance
               scores.
             </p>
 
@@ -184,7 +184,7 @@ export const Footer: React.FC = () => {
               <li className="text-[var(--text-secondary)] font-semibold">GSAP Animations</li>
               <li className="text-[var(--text-secondary)] font-semibold">Tailwind CSS v4</li>
               <li className="text-[var(--text-secondary)] font-semibold">
-                Core Web Vitals 100/100
+                Core Web Vitals 90+/100
               </li>
             </ul>
           </div>
@@ -235,7 +235,7 @@ export const Footer: React.FC = () => {
             <span>&copy; {currentYear} Kumar Kartikey. All rights reserved.</span>
             <span className="hidden sm:inline text-[var(--bg-card-border)]">•</span>
             <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#2B5866]/20 text-[#709FA8] border border-[#709FA8]/30 font-mono text-[10px] font-bold">
-              ⚡ 100/100 Core Web Vitals Optimized
+              ⚡ 90+/100 Core Web Vitals Optimized
             </span>
           </div>
 

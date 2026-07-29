@@ -13,6 +13,7 @@ describe("Navbar component", () => {
   it("renders navigation links", () => {
     render(<Navbar />);
     expect(screen.getByText("About")).toBeInTheDocument();
+    expect(screen.getByText("Services")).toBeInTheDocument();
     expect(screen.getByText("Experience")).toBeInTheDocument();
     expect(screen.getByText("Projects")).toBeInTheDocument();
     expect(screen.getByText("Skills")).toBeInTheDocument();

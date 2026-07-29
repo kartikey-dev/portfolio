@@ -1,4 +1,12 @@
-import { Experience, Project, SkillCategory, Education, Certification, Achievement } from "./types";
+import {
+  Experience,
+  Project,
+  SkillCategory,
+  Service,
+  Education,
+  Certification,
+  Achievement,
+} from "./types";
 
 export const PERSONAL_INFO = {
   name: "Kumar Kartikey",
@@ -10,35 +18,156 @@ export const PERSONAL_INFO = {
   linkedin: "https://linkedin.com/in/kumar-kartikey-web",
   github: "https://github.com/kartikey-dev",
   summary:
-    "Senior Frontend Engineer & UI Expert with 7+ years of experience engineering scalable AI-powered SaaS, web, mobile, and desktop applications using React, Next.js, TypeScript, and React Native. Specialized in frontend engineering, micro-interactions, design systems, performance optimization, and AI-driven user experiences. Proven track record of leading frontend engineering initiatives, mentoring developers, and delivering secure, high-performance applications serving 50,000+ users.",
+    "Senior Frontend Engineer & UI Expert with 7+ years of experience engineering scalable AI-powered SaaS, web, mobile, and desktop applications using React, Next.js, TypeScript, and React Native. Proven track record of leading 4–5 member UI teams, managing 5 concurrent enterprise projects, mentoring 5–10 freshers/interns, and integrating OpenAI APIs, GPT models, MCP, and Prompt Engineering to boost engineering productivity by 50–60%.",
 };
+
+export const WHAT_I_BUILD_SERVICES: Service[] = [
+  {
+    id: "ai-saas",
+    title: "AI SaaS Applications",
+    description:
+      "End-to-end scalable multi-tenant SaaS platforms powered by LLM APIs, Vercel AI SDK, streaming responses, and custom AI workflows.",
+    tags: ["Next.js", "React", "OpenAI API", "Vercel AI SDK", "Tailwind CSS"],
+  },
+  {
+    id: "business-websites",
+    title: "Business & Portfolio Websites",
+    description:
+      "High-converting corporate and marketing websites with stunning glassmorphism visuals, micro-interactions, and 90+ PageSpeed scores.",
+    tags: ["Next.js", "TypeScript", "GSAP", "Tailwind CSS", "Technical SEO"],
+  },
+  {
+    id: "dashboards",
+    title: "Analytics & Data Dashboards",
+    description:
+      "Interactive real-time data visualization dashboards handling complex streaming data, filters, and high-frequency UI updates.",
+    tags: ["React", "TypeScript", "TanStack Query", "Recharts", "Zustand"],
+  },
+  {
+    id: "admin-panels",
+    title: "Enterprise Admin Panels",
+    description:
+      "Secure role-based (RBAC) administration suites, content management control centers, and internal operations tools.",
+    tags: ["React", "Next.js", "shadcn/ui", "REST/GraphQL", "Auth.js"],
+  },
+  {
+    id: "ecommerce",
+    title: "E-Commerce Platforms",
+    description:
+      "Custom headless storefronts and full-stack e-commerce solutions with seamless checkout, cart state, and payment integrations.",
+    tags: ["Shopify APIs", "WooCommerce", "Magento", "Stripe", "Razorpay"],
+  },
+  {
+    id: "landing-pages",
+    title: "High-Converting Landing Pages",
+    description:
+      "Pixel-perfect, ultra-fast landing pages optimized for maximum conversion rate, A/B testing, and AEO/AIO search visibility.",
+    tags: ["Next.js", "GSAP", "Tailwind CSS", "Core Web Vitals 90+"],
+  },
+  {
+    id: "pwa",
+    title: "Progressive Web Apps (PWAs)",
+    description:
+      "Offline-first web applications with desktop/mobile installability, background sync, service workers, and push notifications.",
+    tags: ["Service Workers", "Workbox", "IndexedDB", "Web Manifest"],
+  },
+  {
+    id: "mobile-apps",
+    title: "Cross-Platform Mobile Apps",
+    description:
+      "Native-performing iOS & Android mobile applications built with React Native, Expo, and SwiftUI native module bridging.",
+    tags: ["React Native", "Expo", "SwiftUI", "BLE", "Redux Toolkit"],
+  },
+  {
+    id: "chrome-extensions",
+    title: "Chrome & Browser Extensions",
+    description:
+      "Manifest V3 browser tools, DOM manipulators, automation extensions, and productivity sidebar suites.",
+    tags: ["Chrome Extension API", "TypeScript", "React", "IPC Bridge"],
+  },
+  {
+    id: "design-systems",
+    title: "Design Systems & Component Libraries",
+    description:
+      "Standardized Storybook UI design systems with design tokens, WCAG 2.1 AA accessibility, and multi-brand theme distribution.",
+    tags: ["Storybook", "Tailwind CSS", "shadcn/ui", "Radix UI", "Tokens"],
+  },
+  {
+    id: "wordpress-solutions",
+    title: "WordPress & Headless Solutions",
+    description:
+      "Custom WordPress theme development, plugin creation, and Headless WP architectures connected to Next.js frontends.",
+    tags: ["WordPress", "Headless WP", "PHP", "GraphQL", "WooCommerce"],
+  },
+  {
+    id: "seo-optimization",
+    title: "SEO, AEO & AIO Optimization",
+    description:
+      "Comprehensive Technical SEO, Answer Engine Optimization (AEO), Schema.org JSON-LD, Open Graph, and AI Search dominance.",
+    tags: ["Schema.org", "JSON-LD", "Core Web Vitals", "AEO / AIO / GEO"],
+  },
+  {
+    id: "performance-optimization",
+    title: "Web Performance Optimization",
+    description:
+      "Auditing and optimizing legacy or slow applications to achieve 90+ Google PageSpeed Scores and sub-1s LCP times.",
+    tags: ["Lighthouse CI", "Code Splitting", "RSC", "Bundle Analysis"],
+  },
+  {
+    id: "api-integrations",
+    title: "API & Backend Integrations",
+    description:
+      "Robust integration of complex REST APIs, GraphQL endpoints, WebSockets, OAuth2, and third-party SaaS services.",
+    tags: ["REST", "GraphQL", "WebSockets", "Axios", "JWT / OAuth2"],
+  },
+  {
+    id: "ai-chatbots",
+    title: "AI Chatbots & Assistants",
+    description:
+      "Context-aware multi-turn conversational chatbots built with OpenAI GPT models, streaming UI, and custom knowledge bases.",
+    tags: ["OpenAI API", "GPT-4/5", "Vercel AI SDK", "Prompt Engineering"],
+  },
+  {
+    id: "ai-search",
+    title: "AI Search & RAG Systems",
+    description:
+      "Retrieval-Augmented Generation (RAG) search experiences connecting vector databases to intelligent prompt engines.",
+    tags: ["Pinecone", "Chroma", "Supabase Vector", "MCP", "Embeddings"],
+  },
+];
 
 export const EXPERIENCES: Experience[] = [
   {
     id: "hestabit",
     company: "Hestabit Technologies",
-    role: "Software Engineer/Senior Frontend Engineer",
-    period: "July 2022 – July 2026",
+    role: "Software Engineer / Senior Frontend Engineer",
+    period: "July 2022 – Present",
     location: "Noida, Uttar Pradesh, India",
     highlights: [
-      "Led frontend architecture across AI-powered Healthcare, Insurance, and Construction SaaS products using React, Next.js 16, TypeScript, and React Native.",
-      "Improved LCP by 40%, SEO traffic by 28%, and Core Web Vitals from 65 to 92+ by migrating core platforms to Next.js App Router.",
-      "Reduced JavaScript bundle size by 30% using React Server Components, lazy loading, code splitting, and rendering optimizations.",
-      "Designed reusable Storybook design systems & component libraries, mentored engineers, and established frontend quality standards.",
-      "Built React Native applications, Chrome Extensions, and Electron desktop solutions while integrating secure REST/GraphQL services using JWT and OAuth 2.0.",
-      "Collaborated with product managers, designers, backend engineers, and international stakeholders to deliver scalable AI-powered SaaS products.",
-      "Leveraged Claude Code, ChatGPT, and AI tools to accelerate feature delivery, refactoring, testing, and developer productivity.",
+      "Led frontend architecture and managed a 4–5 member UI engineering team across AI-powered Healthcare, Insurance, and Construction SaaS products using React, Next.js 16, TypeScript, and React Native.",
+      "Integrated OpenAI APIs, GPT models, MCP (Model Context Protocol), and Prompt Engineering into enterprise applications, boosting development efficiency and product capabilities by 50–60%.",
+      "Successfully managed 5 concurrent projects, ensuring high engineering quality, on-time delivery, and international stakeholder satisfaction.",
+      "Mentored 5–10 freshers and interns for UI/UX learning programs, conducting code reviews and establishing reusable frontend design standards.",
+      "Built scalable frontend applications integrating REST APIs, GraphQL (schema design & caching strategy), and WebSocket services for real-time data streaming.",
+      "Collaborated with global clients across the USA, UK, Europe, Australia, and the Middle East, translating business requirements into scalable technical solutions.",
+      "Optimized web performance, consistently achieving 90+ Google PageSpeed Insights scores and improving Core Web Vitals (LCP by 40%, SEO traffic by 28%).",
+      "Implemented Technical SEO, Answer Engine Optimization (AEO), and AI Optimization (AIO) across enterprise applications for maximum search visibility.",
+      "Designed reusable Storybook design systems & component libraries, establishing WCAG 2.1 AA accessibility and engineering quality standards.",
+      "Built React Native cross-platform mobile applications, Chrome Extensions, and Electron desktop solutions with secure JWT and OAuth 2.0 authentication.",
     ],
     technologies: [
       "React.js",
       "Next.js",
       "TypeScript",
       "React Native",
+      "OpenAI API",
+      "GPT Models",
+      "MCP",
       "GraphQL",
-      "REST API",
-      "Electron.js",
-      "Storybook",
+      "REST APIs",
+      "WebSockets",
       "Tailwind CSS",
+      "Storybook",
       "GSAP",
       "Jest",
     ],
@@ -50,10 +179,11 @@ export const EXPERIENCES: Experience[] = [
     period: "Dec 2020 – July 2022",
     location: "Noida, Uttar Pradesh, India",
     highlights: [
-      "Delivered 15+ production React applications while maintaining Lighthouse performance scores above 95 through responsive UI and frontend optimization.",
-      "Served as the frontend technical point of contact for domestic and international clients, translating business requirements into production-ready solutions.",
+      "Delivered 15+ production React applications while maintaining Lighthouse performance scores above 90+ through responsive UI and frontend optimization.",
+      "Interviewed engineering candidates and served as the frontend technical point of contact for domestic and international clients, translating business requirements into production-ready solutions.",
+      "Architected clean, component-driven UIs with Redux Toolkit and CSS3 for scalable client portals.",
     ],
-    technologies: ["React.js", "JavaScript (ES6+)", "CSS3", "HTML5", "Redux", "REST APIs"],
+    technologies: ["React.js", "JavaScript (ES6+)", "CSS3", "HTML5", "Redux Toolkit", "REST APIs"],
   },
   {
     id: "softclique",
@@ -80,6 +210,68 @@ export const EXPERIENCES: Experience[] = [
 ];
 
 export const PROJECTS: Project[] = [
+  {
+    id: "kraken-photography",
+    title: "Kraken – AI Underwater Photography Platform",
+    subtitle: "AI-Powered Underwater Photography & Hardware Integration App",
+    description:
+      "Native iOS & cross-platform Mobile application featuring Bluetooth LE camera connectivity, real-time AI image enhancement, and automated color restoration workflows.",
+    longDescription:
+      "Engineered Kraken, an AI-powered underwater photography platform using SwiftUI and React Native. Implemented Bluetooth Low Energy (BLE) protocol communication for seamless connectivity with underwater camera housings. Integrated REST AI APIs for automated underwater image enhancement, color restoration, and AI analysis.",
+    tags: ["React Native", "SwiftUI", "TypeScript", "AI APIs", "Bluetooth LE", "REST APIs", "Git"],
+    highlights: [
+      "SwiftUI native iOS modules & React Native cross-platform UI",
+      "Bluetooth Low Energy (BLE) communication for underwater cameras",
+      "AI-powered image enhancement & color restoration REST APIs",
+      "Optimized navigation & state management for seamless UX",
+    ],
+    category: "Mobile",
+    featured: true,
+  },
+  {
+    id: "icontentspro",
+    title: "iContentsPro – Enterprise Insurance App",
+    subtitle: "Cross-Platform Enterprise Claims & Policy Management Suite",
+    description:
+      "Cross-platform enterprise insurance application using React Native (Expo) and TypeScript for policy management, claims, and secure client workflows.",
+    longDescription:
+      "Developed and maintained iContentsPro, a high-performance enterprise insurance application using React Native (Expo), TypeScript, and Redux Toolkit. Built reusable scalable UI components and integrated REST APIs for policy management, user authentication, and claims processing.",
+    tags: ["React Native", "Expo", "TypeScript", "REST APIs", "Redux Toolkit", "Git"],
+    highlights: [
+      "Enterprise claims & policy management UI across iOS & Android",
+      "Redux Toolkit state management & offline-first caching",
+      "REST API integration for secure business workflows",
+      "Collaborated with international clients in Agile sprint cycles",
+    ],
+    category: "Mobile",
+    featured: true,
+  },
+  {
+    id: "hestabit-digital-ecosystem",
+    title: "Hestabit Digital Portfolio Ecosystem",
+    subtitle: "High-Performance Multi-Site Next.js Platform & SEO Engine",
+    description:
+      "Suite of company portfolio websites built with Next.js, TypeScript, Tailwind CSS, and Technical SEO achieving 90+ Google PageSpeed Insights scores.",
+    longDescription:
+      "Led frontend engineering for company portfolio platforms utilizing Next.js, React, and TypeScript. Implemented Technical SEO best practices including structured metadata, canonical URLs, JSON-LD, Open Graph, and Google Analytics/Search Console integrations.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "SCSS",
+      "Technical SEO",
+      "Google Analytics",
+    ],
+    highlights: [
+      "Consistently achieved 90+ Google PageSpeed Insights scores",
+      "Technical SEO, Schema.org JSON-LD & canonical URL optimization",
+      "Code splitting, lazy loading & RSC rendering optimizations",
+      "Google Analytics & Google Search Console integration",
+    ],
+    category: "Web App",
+    featured: true,
+  },
   {
     id: "pokedex-explorer",
     title: "Pokedex Explorer",
@@ -152,7 +344,7 @@ export const PROJECTS: Project[] = [
       "Performance-first rendering architecture",
     ],
     category: "SaaS",
-    featured: true,
+    featured: false,
   },
   {
     id: "enterprise-design-system",
@@ -161,10 +353,10 @@ export const PROJECTS: Project[] = [
     description:
       "Accessible Storybook design system providing standardized UI tokens, micro-interactions, and reusable React components across enterprise products.",
     longDescription:
-      "Architected a centralized Storybook design system establishing design tokens, WCAG AA accessibility standards, and reusable component libraries. Reduced development cycle time by 35% across multi-repo frontend teams.",
+      "Architected a centralized Storybook design system establishing design tokens, WCAG 2.1 AA accessibility standards, and reusable component libraries. Reduced development cycle time by 35% across multi-repo frontend teams.",
     tags: ["Storybook", "React", "TypeScript", "Tailwind CSS", "WCAG AA"],
     highlights: [
-      "WCAG AA accessible component tokens",
+      "WCAG 2.1 AA accessible component tokens",
       "Standardized UI states, micro-interactions & animations",
       "Multi-brand theme token distribution",
       "Storybook visual regression testing",
@@ -194,55 +386,54 @@ export const PROJECTS: Project[] = [
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
-    title: "Architecture & Patterns",
-    skills: [
-      { name: "System Design", level: "Advanced" },
-      { name: "Frontend Architecture", level: "Expert" },
-      { name: "Micro-frontends", level: "Advanced" },
-      { name: "Monorepo (Nx / Turborepo)", level: "Advanced" },
-      { name: "RFC Authorship", level: "Advanced" },
-      { name: "PWA", level: "Advanced" },
-    ],
-  },
-  {
-    title: "Frontend Frameworks",
+    title: "Frontend & Core Frameworks",
     skills: [
       { name: "React.js", level: "Expert" },
-      { name: "Next.js (App Router)", level: "Expert" },
-      { name: "Vue.js", level: "Proficient" },
-      { name: "Svelte", level: "Intermediate" },
-      { name: "Astro", level: "Proficient" },
-      { name: "Alpine.js", level: "Proficient" },
-      { name: "Electron.js", level: "Proficient" },
-    ],
-  },
-  {
-    title: "Languages & Core",
-    skills: [
+      { name: "Next.js", level: "Expert" },
       { name: "TypeScript", level: "Expert" },
       { name: "JavaScript (ES6+)", level: "Expert" },
-      { name: "HTML5 & Semantic Markup", level: "Expert" },
-      { name: "CSS3 & Modern Layouts", level: "Expert" },
-      { name: "PHP", level: "Intermediate" },
-      { name: "Python", level: "Beginner" },
-      { name: "SQL", level: "Advanced" },
+      { name: "Vue.js", level: "Proficient" },
+      { name: "HTML5", level: "Expert" },
+      { name: "CSS3", level: "Expert" },
     ],
   },
   {
-    title: "UI & Styling",
+    title: "Next.js & React Architecture",
+    skills: [
+      { name: "SSR (Server-Side Rendering)", level: "Expert" },
+      { name: "SSG (Static Site Generation)", level: "Expert" },
+      { name: "ISR (Incremental Static Regeneration)", level: "Expert" },
+      { name: "React Server Components (RSC)", level: "Expert" },
+      { name: "Server Actions", level: "Expert" },
+      { name: "Middleware", level: "Expert" },
+      { name: "API Routes", level: "Expert" },
+      { name: "Edge Runtime", level: "Advanced" },
+    ],
+  },
+  {
+    title: "Modern CSS, Styling & UI",
     skills: [
       { name: "Tailwind CSS (v3 & v4)", level: "Expert" },
       { name: "Bootstrap", level: "Expert" },
       { name: "SCSS / SASS", level: "Expert" },
+      { name: "CSS Variables & Container Queries", level: "Expert" },
+      { name: "CSS Modules", level: "Expert" },
       { name: "Styled-components", level: "Advanced" },
-      { name: "Responsive Design", level: "Expert" },
-      { name: "Semantic HTML", level: "Expert" },
       { name: "Storybook & Design Systems", level: "Expert" },
-      { name: "Accessibility (WCAG 2.1 AA)", level: "Expert" },
+      { name: "Responsive Design & WCAG 2.1 AA", level: "Expert" },
     ],
   },
   {
-    title: "Animation & Motion",
+    title: "UI Component Libraries",
+    skills: [
+      { name: "shadcn/ui", level: "Expert" },
+      { name: "Radix UI", level: "Advanced" },
+      { name: "Material UI (MUI)", level: "Proficient" },
+      { name: "Ant Design", level: "Proficient" },
+    ],
+  },
+  {
+    title: "Frontend Animation",
     skills: [
       { name: "GSAP & ScrollTrigger", level: "Advanced" },
       { name: "Framer Motion", level: "Advanced" },
@@ -250,29 +441,33 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "AOS (Animate On Scroll)", level: "Expert" },
       { name: "Lottie", level: "Advanced" },
       { name: "Three.js", level: "Intermediate" },
-      { name: "hover.css", level: "Advanced" },
     ],
   },
   {
-    title: "State Management",
+    title: "AI Development",
     skills: [
-      { name: "TanStack Query", level: "Expert" },
-      { name: "Zustand", level: "Advanced" },
-      { name: "Redux Toolkit", level: "Advanced" },
-      { name: "Context API", level: "Proficient" },
-      { name: "React Hook Form & Zod", level: "Expert" },
-      { name: "moment.js", level: "Proficient" },
+      { name: "OpenAI API", level: "Advanced" },
+      { name: "Google Gemini API", level: "Advanced" },
+      { name: "Claude API", level: "Advanced" },
+      { name: "Vercel AI SDK", level: "Advanced" },
+      { name: "AI Chatbots & Conversational UX", level: "Advanced" },
+      { name: "AI Search & Semantic Retrieval", level: "Advanced" },
+      { name: "RAG (Retrieval-Augmented Generation)", level: "Advanced" },
+      { name: "Prompt Engineering", level: "Expert" },
+      { name: "MCP (Model Context Protocol)", level: "Advanced" },
+      { name: "Vector Databases (Pinecone, Chroma, Supabase)", level: "Advanced" },
+      { name: "Embeddings & Vectorization", level: "Advanced" },
+      { name: "AI Agents & Automation", level: "Advanced" },
     ],
   },
   {
-    title: "API & Authentication",
+    title: "AI Productivity",
     skills: [
-      { name: "REST APIs", level: "Expert" },
-      { name: "GraphQL (Schema Design & Caching)", level: "Advanced" },
-      { name: "Axios", level: "Expert" },
-      { name: "JWT", level: "Advanced" },
-      { name: "OAuth2", level: "Advanced" },
-      { name: "NextAuth", level: "Advanced" },
+      { name: "GitHub Copilot", level: "Advanced" },
+      { name: "Cursor", level: "Advanced" },
+      { name: "OpenAI Codex", level: "Advanced" },
+      { name: "Lovable", level: "Proficient" },
+      { name: "v0 by Vercel", level: "Proficient" },
     ],
   },
   {
@@ -280,96 +475,136 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: [
       { name: "React Native", level: "Advanced" },
       { name: "Expo", level: "Advanced" },
+      { name: "SwiftUI", level: "Proficient" },
       { name: "Swift", level: "Proficient" },
       { name: "Flutter", level: "Proficient" },
+      { name: "Bluetooth LE (BLE)", level: "Proficient" },
     ],
   },
   {
-    title: "Databases",
+    title: "State Management & Dates",
     skills: [
+      { name: "TanStack Query", level: "Expert" },
+      { name: "Zustand", level: "Advanced" },
+      { name: "Redux Toolkit", level: "Advanced" },
+      { name: "Context API", level: "Proficient" },
+      { name: "React Hook Form & Zod", level: "Expert" },
+      { name: "Day.js", level: "Expert" },
+      { name: "date-fns", level: "Expert" },
+    ],
+  },
+  {
+    title: "APIs & Web APIs",
+    skills: [
+      { name: "REST APIs", level: "Expert" },
+      { name: "GraphQL (Schema Design & Caching)", level: "Advanced" },
+      { name: "WebSockets", level: "Advanced" },
+      { name: "Service Workers & PWAs", level: "Advanced" },
+      { name: "Web Workers", level: "Advanced" },
+      { name: "IndexedDB", level: "Advanced" },
+      { name: "Notifications API", level: "Advanced" },
+      { name: "Clipboard API", level: "Advanced" },
+    ],
+  },
+  {
+    title: "Authentication",
+    skills: [
+      { name: "JWT", level: "Advanced" },
+      { name: "OAuth2", level: "Advanced" },
+      { name: "NextAuth / Auth.js", level: "Advanced" },
+      { name: "Firebase Auth", level: "Advanced" },
+      { name: "Clerk", level: "Advanced" },
+      { name: "Supabase Auth", level: "Advanced" },
+    ],
+  },
+  {
+    title: "Cloud, Backend & Databases",
+    skills: [
+      { name: "Firebase", level: "Advanced" },
+      { name: "Supabase", level: "Advanced" },
+      { name: "AWS S3", level: "Intermediate" },
+      { name: "Cloudflare", level: "Proficient" },
+      { name: "Vercel", level: "Expert" },
+      { name: "Netlify", level: "Proficient" },
       { name: "MongoDB", level: "Advanced" },
       { name: "PostgreSQL", level: "Proficient" },
       { name: "Prisma", level: "Proficient" },
+      { name: "SQL", level: "Advanced" },
+      { name: "PHP & Laravel", level: "Intermediate" },
     ],
   },
   {
     title: "CMS & E-Commerce",
     skills: [
       { name: "WordPress", level: "Expert" },
+      { name: "Headless WordPress", level: "Advanced" },
+      { name: "WooCommerce", level: "Proficient" },
       { name: "Magento", level: "Proficient" },
-      { name: "Shopify", level: "Proficient" },
+      { name: "Shopify & Shopify APIs", level: "Proficient" },
+      { name: "Sanity", level: "Proficient" },
+      { name: "Strapi", level: "Proficient" },
+      { name: "Contentful", level: "Proficient" },
     ],
   },
   {
-    title: "Testing & Tooling",
+    title: "Payments & Integration",
     skills: [
-      { name: "React Testing Library (TDD)", level: "Expert" },
-      { name: "Jest", level: "Expert" },
-      { name: "Playwright", level: "Advanced" },
-      { name: "Vite & Webpack", level: "Advanced" },
-      { name: "Bun", level: "Advanced" },
-      { name: "pnpm / npm / Yarn", level: "Expert" },
+      { name: "Stripe", level: "Advanced" },
+      { name: "Razorpay", level: "Advanced" },
+      { name: "PayPal", level: "Proficient" },
     ],
   },
   {
-    title: "DevOps & Deployment",
+    title: "SEO, AEO, AIO & Analytics",
     skills: [
+      { name: "Technical SEO", level: "Expert" },
+      { name: "Schema.org & JSON-LD", level: "Expert" },
+      { name: "Open Graph & Twitter Cards", level: "Expert" },
+      { name: "Core Web Vitals (90+ Scores)", level: "Expert" },
+      { name: "AEO (Answer Engine Optimization)", level: "Expert" },
+      { name: "AIO (AI Optimization)", level: "Expert" },
+      { name: "GEO (Generative Engine Optimization)", level: "Advanced" },
+      { name: "Google Analytics & Tag Manager", level: "Expert" },
+      { name: "Microsoft Clarity", level: "Advanced" },
+      { name: "Meta Pixel", level: "Proficient" },
+    ],
+  },
+  {
+    title: "DevOps & Delivery",
+    skills: [
+      { name: "Git & GitHub", level: "Expert" },
+      { name: "GitHub Actions", level: "Advanced" },
+      { name: "GitLab", level: "Advanced" },
       { name: "CI/CD Pipelines", level: "Proficient" },
-      { name: "GitHub Actions", level: "Proficient" },
+      { name: "Azure DevOps", level: "Proficient" },
       { name: "Jenkins", level: "Intermediate" },
       { name: "Docker", level: "Intermediate" },
       { name: "Kubernetes", level: "Proficient" },
-      { name: "Vercel & Netlify", level: "Proficient" },
-      { name: "Bitbucket", level: "Proficient" },
+      { name: "Linux", level: "Proficient" },
     ],
   },
   {
-    title: "Performance & Observability",
+    title: "Engineering Leadership",
     skills: [
-      { name: "Core Web Vitals", level: "Expert" },
-      { name: "Lighthouse CI", level: "Expert" },
-      { name: "Sentry & RUM Monitoring", level: "Advanced" },
-      { name: "Bundle Analysis", level: "Advanced" },
-      { name: "Profiling & Optimization", level: "Advanced" },
+      { name: "Engineering Leadership", level: "Expert" },
+      { name: "Team Management (4-5 UI Team)", level: "Expert" },
+      { name: "Fresher & Intern Mentorship (5-10 Interns)", level: "Expert" },
+      { name: "Technical Hiring & Candidate Interviewing", level: "Expert" },
+      { name: "Sprint Planning & Agile/Scrum", level: "Expert" },
+      { name: "Global Client Collaboration (USA, UK, Middle East)", level: "Expert" },
     ],
   },
   {
-    title: "Methodologies",
-    skills: [
-      { name: "Agile & Scrum", level: "Expert" },
-      { name: "RFC-driven Development", level: "Advanced" },
-      { name: "Test-Driven Development (TDD)", level: "Expert" },
-      { name: "Code Review & Mentorship", level: "Expert" },
-    ],
-  },
-  {
-    title: "IDE & Developer Tools",
-    skills: [
-      { name: "Visual Studio Code", level: "Expert" },
-      { name: "Brackets", level: "Expert" },
-      { name: "Sublime Text", level: "Advanced" },
-      { name: "Notepad++", level: "Advanced" },
-      { name: "Adobe Dreamweaver", level: "Advanced" },
-    ],
-  },
-  {
-    title: "Design Tools",
+    title: "Tools & Platforms",
     skills: [
       { name: "Figma", level: "Proficient" },
-      { name: "Adobe XD", level: "Proficient" },
-      { name: "Adobe Photoshop", level: "Proficient" },
-    ],
-  },
-  {
-    title: "AI Tools & Platforms",
-    skills: [
-      { name: "GitHub Copilot", level: "Advanced" },
-      { name: "Gemini Code", level: "Advanced" },
-      { name: "OpenAI Codex", level: "Advanced" },
-      { name: "Claude Code", level: "Proficient" },
-      { name: "Cursor", level: "Proficient" },
-      { name: "v0 by Vercel", level: "Proficient" },
-      { name: "Lovable", level: "Proficient" },
+      { name: "Adobe XD & Photoshop", level: "Proficient" },
+      { name: "ZOHO", level: "Proficient" },
+      { name: "VS Code", level: "Expert" },
+      { name: "Antigravity", level: "Expert" },
+      { name: "Postman", level: "Expert" },
+      { name: "Chrome DevTools", level: "Expert" },
+      { name: "npm / pnpm / Yarn", level: "Expert" },
     ],
   },
 ];
@@ -408,12 +643,13 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     title: "Excellence in Mentorship Award",
     description:
-      "Recognized for leading engineering standards and mentoring junior/mid developers.",
+      "Recognized for leading engineering standards and mentoring 5-10 junior/mid developers and interns.",
     issuer: "Hestabit Technologies",
   },
   {
-    title: "Lighthouse 95+ & Core Web Vitals 90+",
-    description: "Consistently achieved top-tier performance scores across production web apps.",
+    title: "Lighthouse 90+ & Core Web Vitals 90+",
+    description:
+      "Consistently achieved top-tier 90+ performance scores across production web apps.",
     issuer: "Performance Engineering",
   },
 ];

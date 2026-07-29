@@ -157,7 +157,7 @@ export const Hero: React.FC = () => {
               </div>
               <div>
                 <div className="text-xs font-bold text-[var(--text-primary)]">LCP Optimized</div>
-                <div className="text-[10px] text-[#709FA8] font-mono">100/100 Lighthouse</div>
+                <div className="text-[10px] text-[#709FA8] font-mono">90+/100 Lighthouse</div>
               </div>
             </div>
 
@@ -222,7 +222,7 @@ export const Hero: React.FC = () => {
                 <div className="pl-4">
                   <span className="text-[var(--text-muted)]">passion:</span>{" "}
                   <span className="text-white font-bold">
-                    &quot;Crafting 100/100 UI &amp; AI UX&quot;
+                    &quot;Crafting 90+/100 UI &amp; AI UX&quot;
                   </span>
                   ,
                 </div>

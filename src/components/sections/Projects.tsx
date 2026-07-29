@@ -81,7 +81,7 @@ export const Projects: React.FC = () => {
                       <div>
                         <div className="text-xs font-bold text-white">{project.title}</div>
                         <div className="text-[10px] text-[#B1B8C0] font-mono">
-                          {project.liveUrl ? "Live Production Build" : "100/100 Core Web Vitals"}
+                          {project.liveUrl ? "Live Production Build" : "90+/100 Core Web Vitals"}
                         </div>
                       </div>
                     </div>

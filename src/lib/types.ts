@@ -19,7 +19,7 @@ export interface Project {
   liveUrl?: string;
   githubUrl?: string;
   featured: boolean;
-  category: "AI" | "Healthcare" | "Fintech" | "SaaS" | "Web App" | "Frontend";
+  category: string;
 }
 
 export interface SkillCategory {
@@ -29,6 +29,14 @@ export interface SkillCategory {
     level?: "Expert" | "Advanced" | "Proficient" | "Intermediate" | "Beginner";
     icon?: string;
   }[];
+}
+
+export interface Service {
+  id: string;
+  title: string;
+  description: string;
+  iconName?: string;
+  tags: string[];
 }
 
 export interface Education {
