@@ -71,10 +71,10 @@ export const Hero: React.FC = () => {
   };
 
   const stats = [
-    { label: "Years Experience", end: 7, suffix: "+" },
-    { label: "Users Served", end: 50, suffix: "K+" },
-    { label: "Lighthouse Target", end: 100, suffix: "/100" },
-    { label: "Production Apps", end: 100, suffix: "+" },
+    { label: "Years Experience", end: 7, prefix: "", suffix: "+" },
+    { label: "Users Served", end: 50, prefix: "", suffix: "K+" },
+    { label: "Lighthouse Target", end: 90, prefix: "", suffix: "+/100" },
+    { label: "Production Apps", end: 100, prefix: "", suffix: "+" },
   ];
 
   return (
@@ -95,7 +95,7 @@ export const Hero: React.FC = () => {
           {/* Left Column — Text & CTAs */}
           <div className="lg:col-span-7 flex flex-col items-start gap-6">
             {/* Expert UI Badge */}
-            <div className="hero-animate inline-flex items-center gap-2.5 rounded-full glass-panel px-4 py-1.5 border border-[#709FA8]/40 text-xs font-bold uppercase tracking-widest text-[#709FA8] shadow-lg shadow-[#2B5866]/10">
+            <div className="hero-animate inline-flex items-center gap-2.5 rounded-full bg-[#2B5866]/40 px-4 py-1.5 border border-[#709FA8]/60 text-xs font-bold uppercase tracking-widest text-[#709FA8] shadow-lg shadow-[#2B5866]/20 backdrop-blur-md">
               <span className="flex h-2 w-2 rounded-full bg-[#709FA8] animate-ping" />
               <span>Senior Frontend Engineer &amp; UI Expert</span>
             </div>
@@ -106,7 +106,7 @@ export const Hero: React.FC = () => {
                 Crafting Exceptional Digital Products
               </span>
               <h1 className="mt-1 font-heading text-4xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-black tracking-tight text-[var(--text-primary)] leading-[1.05]">
-                Kumar <span className="gradient-text">Kartikey</span>
+                Kumar <span className="gradient-text text-[#709FA8]">Kartikey</span>
               </h1>
             </div>
 
@@ -119,7 +119,7 @@ export const Hero: React.FC = () => {
 
             <p className="hero-animate text-sm sm:text-base text-[var(--text-muted)] max-w-xl leading-relaxed">
               Specialized in Next.js 16, TypeScript, Tailwind CSS v4 &amp; GSAP animations —
-              creating blazing-fast web experiences scoring 100 on Google PageSpeed Insights.
+              creating blazing-fast web experiences scoring 90+ on Google PageSpeed Insights.
             </p>
 
             {/* Interactive CTAs */}
@@ -253,7 +253,12 @@ export const Hero: React.FC = () => {
               className="glass-panel rounded-2xl p-4 sm:p-6 border border-[var(--bg-card-border)] hover:border-[#709FA8]/40 hover:shadow-xl hover:shadow-[#2B5866]/10 transition-all text-center flex flex-col items-center justify-center group"
             >
               <div className="font-heading text-3xl sm:text-5xl font-black text-[var(--text-primary)] group-hover:scale-105 transition-transform">
-                <Counter end={stat.end} suffix={stat.suffix} className="gradient-text" />
+                <Counter
+                  end={stat.end}
+                  prefix={stat.prefix || ""}
+                  suffix={stat.suffix}
+                  className="gradient-text text-[#709FA8]"
+                />
               </div>
               <div className="mt-2 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
                 {stat.label}

@@ -29,12 +29,12 @@ export const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, Bu
 
     const variants = {
       primary:
-        "bg-gradient-to-r from-[#2B5866] via-[#488293] to-[#709FA8] text-white shadow-lg shadow-[#2B5866]/30 hover:shadow-[#488293]/40 hover:scale-[1.02] active:scale-[0.98]",
+        "bg-gradient-to-r from-[#2B5866] via-[#488293] to-[#709FA8] text-white shadow-lg shadow-[#2B5866]/30 hover:shadow-[#488293]/40 hover:scale-[1.02] active:scale-[0.98] font-bold",
       secondary:
-        "glass-panel text-[var(--text-primary)] border border-[var(--bg-card-border)] hover:border-[#709FA8]/50 hover:scale-[1.02] active:scale-[0.98]",
+        "bg-[#2B5866]/30 text-white border border-[#709FA8]/40 hover:border-[#709FA8] hover:bg-[#2B5866]/50 hover:scale-[1.02] active:scale-[0.98] font-bold backdrop-blur-md",
       outline:
-        "border-2 border-[#709FA8] text-[#709FA8] hover:bg-[#709FA8]/10 hover:scale-[1.02] active:scale-[0.98]",
-      ghost: "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[#709FA8]/10",
+        "border-2 border-[#709FA8] text-[#709FA8] hover:bg-[#709FA8]/20 hover:scale-[1.02] active:scale-[0.98] font-bold",
+      ghost: "text-[#709FA8] hover:text-white hover:bg-[#709FA8]/20 font-semibold",
     };
 
     const sizes = {

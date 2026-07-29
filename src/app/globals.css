@@ -6,9 +6,9 @@
     --bg-secondary: #ffffff;
     --bg-card: rgba(255, 255, 255, 0.95);
     --bg-card-border: rgba(43, 88, 102, 0.22);
-    --text-primary: #192026;
-    --text-secondary: #2b5866;
-    --text-muted: #488293;
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #475569;
     --accent-cyan: #2b5866;
     --accent-teal: #2b5866;
     --accent-steel: #488293;
@@ -23,7 +23,7 @@
     --bg-card: rgba(28, 32, 35, 0.85);
     --bg-card-border: rgba(112, 159, 168, 0.18);
     --text-primary: #ffffff;
-    --text-secondary: #b1b8c0;
+    --text-secondary: #cbd5e1;
     --text-muted: #709fa8;
     --accent-cyan: #709fa8;
     --accent-teal: #2b5866;
@@ -35,7 +35,7 @@
 
   html {
     scroll-behavior: smooth;
-    color-scheme: light dark;
+    color-scheme: dark light;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-size-adjust: 100%;
@@ -76,27 +76,27 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #2b5866 0%, #488293 50%, #709fa8 100%);
+  background: linear-gradient(135deg, #488293 0%, #709fa8 50%, #38bdf8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: #709fa8;
 }
 
 .dark .gradient-text {
-  background: linear-gradient(135deg, #709fa8 0%, #ffffff 50%, #488293 100%);
+  background: linear-gradient(135deg, #709fa8 0%, #ffffff 50%, #38bdf8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: #709fa8;
 }
 
 .teal-gradient-text {
-  background: linear-gradient(135deg, #2b5866 0%, #488293 50%, #709fa8 100%);
+  background: linear-gradient(135deg, #488293 0%, #709fa8 50%, #5eead4 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: #709fa8;
 }
 
 /* Metallic Silver Nameplate Sheen Effect */
