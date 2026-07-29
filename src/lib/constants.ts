@@ -18,7 +18,7 @@ export const PERSONAL_INFO = {
   linkedin: "https://linkedin.com/in/kumar-kartikey-web",
   github: "https://github.com/kartikey-dev",
   summary:
-    "Senior Frontend Engineer & UI Expert with 7+ years of experience engineering scalable AI-powered SaaS, web, mobile, and desktop applications using React, Next.js, TypeScript, and React Native. Proven track record of leading 4–5 member UI teams, managing 5 concurrent enterprise projects, mentoring 5–10 freshers/interns, and integrating OpenAI APIs, GPT models, MCP, and Prompt Engineering to boost engineering productivity by 50–60%.",
+    "Senior Frontend Engineer & UI Expert with 7+ years of experience engineering scalable AI-powered SaaS, web, mobile, and desktop applications using React, Next.js, TypeScript, and React Native. Proven track record of leading 4–5 member UI teams, managing 5 concurrent enterprise projects, mentoring 5–10 freshers/interns, interviewing engineering candidates, and integrating OpenAI APIs, GPT models, MCP, and Prompt Engineering to boost engineering productivity by 50–60%.",
 };
 
 export const WHAT_I_BUILD_SERVICES: Service[] = [
@@ -145,13 +145,14 @@ export const EXPERIENCES: Experience[] = [
     location: "Noida, Uttar Pradesh, India",
     highlights: [
       "Led frontend architecture and managed a 4–5 member UI engineering team across AI-powered Healthcare, Insurance, and Construction SaaS products using React, Next.js 16, TypeScript, and React Native.",
+      "Mentored 5–10 freshers and interns for UI/UX learning programs, conducting code reviews and establishing reusable development standards.",
       "Integrated OpenAI APIs, GPT models, MCP (Model Context Protocol), and Prompt Engineering into enterprise applications, boosting development efficiency and product capabilities by 50–60%.",
       "Successfully managed 5 concurrent projects, ensuring high engineering quality, on-time delivery, and international stakeholder satisfaction.",
-      "Mentored 5–10 freshers and interns for UI/UX learning programs, conducting code reviews and establishing reusable frontend design standards.",
       "Built scalable frontend applications integrating REST APIs, GraphQL (schema design & caching strategy), and WebSocket services for real-time data streaming.",
       "Collaborated with global clients across the USA, UK, Europe, Australia, and the Middle East, translating business requirements into scalable technical solutions.",
       "Optimized web performance, consistently achieving 90+ Google PageSpeed Insights scores and improving Core Web Vitals (LCP by 40%, SEO traffic by 28%).",
       "Implemented Technical SEO, Answer Engine Optimization (AEO), and AI Optimization (AIO) across enterprise applications for maximum search visibility.",
+      "Improved engineering productivity by 50–60% through AI-assisted development workflows, automation, and prompt engineering.",
       "Designed reusable Storybook design systems & component libraries, establishing WCAG 2.1 AA accessibility and engineering quality standards.",
       "Built React Native cross-platform mobile applications, Chrome Extensions, and Electron desktop solutions with secure JWT and OAuth 2.0 authentication.",
     ],
@@ -180,7 +181,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Noida, Uttar Pradesh, India",
     highlights: [
       "Delivered 15+ production React applications while maintaining Lighthouse performance scores above 90+ through responsive UI and frontend optimization.",
-      "Interviewed engineering candidates and served as the frontend technical point of contact for domestic and international clients, translating business requirements into production-ready solutions.",
+      "Interviewed engineering candidates for technical hiring and served as the frontend technical point of contact for domestic and international clients.",
       "Architected clean, component-driven UIs with Redux Toolkit and CSS3 for scalable client portals.",
     ],
     technologies: ["React.js", "JavaScript (ES6+)", "CSS3", "HTML5", "Redux Toolkit", "REST APIs"],
@@ -217,31 +218,38 @@ export const PROJECTS: Project[] = [
     description:
       "Native iOS & cross-platform Mobile application featuring Bluetooth LE camera connectivity, real-time AI image enhancement, and automated color restoration workflows.",
     longDescription:
-      "Engineered Kraken, an AI-powered underwater photography platform using SwiftUI and React Native. Implemented Bluetooth Low Energy (BLE) protocol communication for seamless connectivity with underwater camera housings. Integrated REST AI APIs for automated underwater image enhancement, color restoration, and AI analysis.",
+      "Engineered Kraken, an AI-powered underwater photography platform using SwiftUI and React Native. Built native iOS features using SwiftUI alongside cross-platform functionality built with React Native. Built reusable and responsive UI components, delivering a seamless user experience across iOS and Android platforms. Integrated AI-powered image enhancement and analysis services through REST APIs to support underwater photography workflows. Implemented Bluetooth Low Energy (BLE) communication for seamless connectivity with underwater camera devices. Optimized application performance, navigation, and state management to improve responsiveness and overall UX. Collaborated closely with AI engineers, backend developers, designers, and QA teams to deliver production-ready features.",
     tags: ["React Native", "SwiftUI", "TypeScript", "AI APIs", "Bluetooth LE", "REST APIs", "Git"],
     highlights: [
-      "SwiftUI native iOS modules & React Native cross-platform UI",
-      "Bluetooth Low Energy (BLE) communication for underwater cameras",
-      "AI-powered image enhancement & color restoration REST APIs",
-      "Optimized navigation & state management for seamless UX",
+      "Developed native iOS features using SwiftUI alongside cross-platform functionality built with React Native.",
+      "Built reusable and responsive UI components delivering a seamless user experience across iOS and Android platforms.",
+      "Integrated AI-powered image enhancement and analysis services through REST APIs to support underwater photography workflows.",
+      "Implemented Bluetooth Low Energy (BLE) communication for seamless connectivity with underwater camera devices.",
+      "Optimized application performance, navigation, and state management to improve responsiveness and overall user experience.",
+      "Collaborated closely with AI engineers, backend developers, designers, and QA teams to deliver production-ready features.",
+      "Participated in architecture discussions, sprint planning, code reviews, and Agile development.",
+      "Contributed to native iOS development using SwiftUI, expanding platform-specific capabilities and improving UX.",
     ],
     category: "Mobile",
     featured: true,
   },
   {
     id: "icontentspro",
-    title: "iContentsPro – Enterprise Insurance App",
+    title: "iContentsPro – Enterprise Insurance Mobile Application",
     subtitle: "Cross-Platform Enterprise Claims & Policy Management Suite",
     description:
       "Cross-platform enterprise insurance application using React Native (Expo) and TypeScript for policy management, claims, and secure client workflows.",
     longDescription:
-      "Developed and maintained iContentsPro, a high-performance enterprise insurance application using React Native (Expo), TypeScript, and Redux Toolkit. Built reusable scalable UI components and integrated REST APIs for policy management, user authentication, and claims processing.",
+      "Developed and maintained iContentsPro, a cross-platform enterprise insurance application using React Native (Expo) and TypeScript for iOS and Android. Built reusable, scalable UI components and implemented responsive interfaces to ensure a consistent user experience across devices. Integrated REST APIs for policy management, user authentication, claims, and other business workflows. Optimized application performance, navigation, and state management to improve responsiveness and maintainability. Collaborated closely with international clients, product managers, designers, and backend teams.",
     tags: ["React Native", "Expo", "TypeScript", "REST APIs", "Redux Toolkit", "Git"],
     highlights: [
-      "Enterprise claims & policy management UI across iOS & Android",
-      "Redux Toolkit state management & offline-first caching",
-      "REST API integration for secure business workflows",
-      "Collaborated with international clients in Agile sprint cycles",
+      "Developed and maintained a cross-platform enterprise insurance application using React Native (Expo) and TypeScript for iOS and Android.",
+      "Built reusable, scalable UI components and implemented responsive interfaces ensuring a consistent user experience across devices.",
+      "Integrated REST APIs for policy management, user authentication, claims, and other business workflows.",
+      "Optimized application performance, navigation, and state management to improve responsiveness and maintainability.",
+      "Collaborated closely with international clients, product managers, designers, and backend teams to deliver features aligned with business requirements.",
+      "Participated in sprint planning, code reviews, bug fixing, and release cycles following Agile development practices.",
+      "Maintained high code quality using Git-based workflows, reusable architecture, and frontend best practices.",
     ],
     category: "Mobile",
     featured: true,
@@ -253,7 +261,7 @@ export const PROJECTS: Project[] = [
     description:
       "Suite of company portfolio websites built with Next.js, TypeScript, Tailwind CSS, and Technical SEO achieving 90+ Google PageSpeed Insights scores.",
     longDescription:
-      "Led frontend engineering for company portfolio platforms utilizing Next.js, React, and TypeScript. Implemented Technical SEO best practices including structured metadata, canonical URLs, JSON-LD, Open Graph, and Google Analytics/Search Console integrations.",
+      "Led frontend development for multiple company portfolio websites using Next.js, React, and TypeScript. Designed scalable, reusable UI components and frontend architecture to accelerate development across multiple projects. Built high-performance, responsive, and SEO-optimized websites following Core Web Vitals, accessibility, and modern frontend best practices. Improved website performance through code splitting, image optimization, lazy loading, and rendering optimizations, achieving consistently high Google PageSpeed Insights scores.",
     tags: [
       "Next.js",
       "React",
@@ -262,12 +270,17 @@ export const PROJECTS: Project[] = [
       "SCSS",
       "Technical SEO",
       "Google Analytics",
+      "Google Search Console",
     ],
     highlights: [
-      "Consistently achieved 90+ Google PageSpeed Insights scores",
-      "Technical SEO, Schema.org JSON-LD & canonical URL optimization",
-      "Code splitting, lazy loading & RSC rendering optimizations",
-      "Google Analytics & Google Search Console integration",
+      "Led frontend development for multiple company portfolio websites using Next.js, React, and TypeScript.",
+      "Designed scalable, reusable UI components and frontend architecture to accelerate development across multiple projects.",
+      "Built high-performance, responsive, and SEO-optimized websites following Core Web Vitals, accessibility, and modern frontend best practices.",
+      "Improved website performance through code splitting, image optimization, lazy loading, and rendering optimizations (90+ PageSpeed).",
+      "Implemented Technical SEO best practices including structured metadata, sitemap optimization, canonical URLs, Open Graph, and schema markup.",
+      "Worked closely with UI/UX designers, marketing teams, and stakeholders to deliver modern digital experiences aligned with business objectives.",
+      "Integrated Google Analytics and Google Search Console to monitor website performance, user engagement, and search visibility.",
+      "Mentored junior developers, performed code reviews, and established reusable development standards across frontend projects.",
     ],
     category: "Web App",
     featured: true,
