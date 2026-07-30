@@ -13,7 +13,7 @@ export const PERSONAL_INFO = {
   title: "Senior Frontend Engineer & UI Expert",
   experienceYears: "7+",
   location: "Ghaziabad, UP, India",
-  email: "webkartikdevloper@gmail.com",
+  email: "hello@kumarkartikey.com",
   phone: "+91 9050102547",
   linkedin: "https://linkedin.com/in/kumar-kartikey-web",
   github: "https://github.com/kartikey-dev",

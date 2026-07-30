@@ -20,7 +20,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Invalid email format." }, { status: 400 });
     }
 
-    const targetEmail = "webkartikdevloper@gmail.com";
+    const targetEmail = "hello@kumarkartikey.com";
     const emailSubject = subject
       ? `[Portfolio Contact] ${subject}`
       : `[Portfolio Contact] New Inquiry from ${name}`;

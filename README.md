@@ -13,7 +13,7 @@
 
 ## 🚀 Live Demo
 
-🌐 **Live Website**: **[https://webkartikey-dev.vercel.app/](https://webkartikey-dev.vercel.app/)**
+🌐 **Live Website**: **[https://kumarkartikey.com/](https://kumarkartikey.com/)**
 
 ---
 
@@ -260,7 +260,7 @@ Every push and PR triggers the following GitHub Actions pipeline:
 
 ## Deployment
 
-This project is live on **Vercel** at **[https://webkartikey-dev.vercel.app/](https://webkartikey-dev.vercel.app/)** with automatic CI/CD deployments from the `main` branch.
+This project is live at **[https://kumarkartikey.com/](https://kumarkartikey.com/)** with automatic Vercel CI/CD deployments from the `main` branch.
 
 ```bash
 # Build locally to verify
@@ -274,7 +274,7 @@ pnpm build
 
 | Variable | Description |
 |---|---|
-| `CONTACT_EMAIL` | Email for contact form delivery |
+| `RESEND_API_KEY` | API key for Resend email dispatch |
 | `SONAR_TOKEN` | SonarCloud authentication token |
 
 ---
@@ -285,9 +285,10 @@ pnpm build
 |---|---|
 | **Hero** | Name, tagline, CTA — LCP-optimized with deferred GSAP animations |
 | **About** | Bio, profile photo, key stats (7+ years, 100+ projects, 50K+ users) |
+| **Services** | "What I Build" — 16 client-ready software capabilities |
 | **Experience** | Animated timeline with 4 roles across companies |
-| **Projects** | Bento grid showcasing 3 AI-powered projects |
-| **Skills** | Categorized tech stack visualization |
+| **Projects** | Bento grid showcasing AI-powered platforms & applications |
+| **Skills** | 18 categorized tech stack visualization groups |
 | **Contact** | Form with validation + social links |
 
 ---
@@ -313,6 +314,7 @@ MIT © Kumar Kartikey
 
 ## Contact
 
-- **Email**: webkartikdevloper@gmail.com
+- **Email**: hello@kumarkartikey.com
+- **Website**: [kumarkartikey.com](https://kumarkartikey.com)
 - **LinkedIn**: [kumar-kartikey-web](https://linkedin.com/in/kumar-kartikey-web)
 - **GitHub**: [kartikey-dev](https://github.com/kartikey-dev)
