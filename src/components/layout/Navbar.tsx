@@ -67,15 +67,15 @@ export const Navbar: React.FC = () => {
           <Link
             href="#"
             aria-label="Kumar Kartikey Nameplate Logo"
-            className="group flex items-center justify-center font-heading text-xl font-bold tracking-tight text-[var(--text-primary)]"
+            className="group flex shrink-0 items-center justify-center font-heading text-xl font-bold tracking-tight text-[var(--text-primary)]"
           >
-            <div className="relative h-11 sm:h-15 group-hover:scale-105 transition-all">
+            <div className="relative shrink-0 flex items-center group-hover:scale-105 transition-all">
               <Image
                 src="/images/kk-nameplate.jpg"
                 alt="Kumar Kartikey Metallic Nameplate Logo"
-                width={210}
-                height={60}
-                className="h-full w-full object-cover rounded"
+                width={160}
+                height={48}
+                className="h-9 sm:h-11 w-auto object-contain rounded-lg border border-[var(--bg-card-border)] shadow-sm"
                 priority
               />
             </div>
