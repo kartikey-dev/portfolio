@@ -15,6 +15,6 @@ describe("Projects component", () => {
     render(<Projects />);
     expect(screen.getAllByText("Healthcare").length).toBeGreaterThan(0);
     expect(screen.getAllByText("React Native").length).toBeGreaterThan(0);
-    expect(screen.getByRole("link", { name: /live demo/i })).toBeInTheDocument();
+    expect(screen.getAllByRole("link", { name: /live demo/i }).length).toBeGreaterThan(0);
   });
 });

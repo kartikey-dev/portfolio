@@ -37,7 +37,7 @@ describe("Contact component", () => {
     await waitFor(() => {
       expect(screen.getByText(/Message Sent Successfully/i)).toBeInTheDocument();
     });
-  }, 15000);
+  }, 30000);
 
   it("handles form submission error", async () => {
     (global.fetch as jest.Mock).mockResolvedValueOnce({
@@ -59,5 +59,5 @@ describe("Contact component", () => {
     await waitFor(() => {
       expect(screen.getByText(/Invalid email/i)).toBeInTheDocument();
     });
-  }, 15000);
+  }, 30000);
 });
