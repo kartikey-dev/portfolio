@@ -7,7 +7,7 @@ describe("Experience component", () => {
     expect(screen.getByText(/Work Experience/i)).toBeInTheDocument();
     expect(screen.getByText("Hestabit Technologies")).toBeInTheDocument();
     expect(screen.getByText("New Vision Digital")).toBeInTheDocument();
-    expect(screen.getByText("Softclique Technologies")).toBeInTheDocument();
+    expect(screen.getByText(/Softclique Technologies/i)).toBeInTheDocument();
   });
 
   it("renders role titles and dates", () => {
