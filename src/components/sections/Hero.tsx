@@ -153,26 +153,6 @@ export const Hero: React.FC = () => {
                 Resume PDF 📄
               </Button>
             </div>
-
-            {/* Trust Metrics Bar */}
-            <div className="hero-animate flex flex-wrap items-center gap-x-6 gap-y-2 pt-4 text-xs font-semibold text-[var(--text-secondary)] border-t border-[var(--bg-card-border)]/50 mt-2 w-full">
-              <div className="flex items-center gap-1.5">
-                <span className="h-2 w-2 rounded-full bg-[#709FA8]" />
-                <span>7+ Yrs Exp</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <span className="h-2 w-2 rounded-full bg-[#709FA8]" />
-                <span>100+ Projects Delivered</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <span className="h-2 w-2 rounded-full bg-[#709FA8]" />
-                <span>50K+ Users Served</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <span className="h-2 w-2 rounded-full bg-[#709FA8]" />
-                <span>95+ Lighthouse Target</span>
-              </div>
-            </div>
           </div>
 
           {/* Right Column — Code Window Interactive 3D Card */}
