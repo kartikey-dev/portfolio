@@ -12,20 +12,59 @@ export const Projects: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeTab, setActiveTab] = useState<string>("All");
 
-  const categories = ["All", "Featured", "Mobile", "E-Commerce", "SaaS & AI", "Web Apps"];
+  const categories = [
+    "All",
+    "Featured",
+    "Portfolio",
+    "Chrome Extension",
+    "AI Chatbot & SaaS",
+    "E-Commerce & Booking",
+    "Mobile Apps",
+    "Informative & Education",
+    "Training, GYM & Sports",
+    "Real Estate",
+  ];
 
   const filteredProjects = PROJECTS.filter((project) => {
     if (activeTab === "All") return true;
     if (activeTab === "Featured") return project.featured;
-    if (activeTab === "Mobile") return project.category === "Mobile";
-    if (activeTab === "E-Commerce") return project.category === "E-Commerce";
-    if (activeTab === "SaaS & AI") return project.category === "SaaS" || project.category === "AI";
-    if (activeTab === "Web Apps")
-      return (
-        project.category === "Web App" ||
-        project.category === "Frontend" ||
-        project.category === "Healthcare"
+
+    const cats = [project.category, ...(project.categories || [])];
+
+    if (activeTab === "Portfolio") {
+      return cats.some((c) => c.includes("Portfolio"));
+    }
+    if (activeTab === "Chrome Extension") {
+      return cats.some((c) => c.includes("Extension") || c.includes("Chrome"));
+    }
+    if (activeTab === "AI Chatbot & SaaS") {
+      return cats.some((c) => c.includes("AI") || c.includes("SaaS") || c.includes("Chatbot"));
+    }
+    if (activeTab === "E-Commerce & Booking") {
+      return cats.some(
+        (c) => c.includes("E-Commerce") || c.includes("Booking") || c.includes("Course")
       );
+    }
+    if (activeTab === "Mobile Apps") {
+      return cats.some((c) => c.includes("Mobile"));
+    }
+    if (activeTab === "Informative & Education") {
+      return cats.some(
+        (c) => c.includes("Informative") || c.includes("Education") || c.includes("Course")
+      );
+    }
+    if (activeTab === "Training, GYM & Sports") {
+      return cats.some(
+        (c) =>
+          c.includes("Training") ||
+          c.includes("GYM") ||
+          c.includes("Sport") ||
+          c.includes("Fitness")
+      );
+    }
+    if (activeTab === "Real Estate") {
+      return cats.some((c) => c.includes("Real Estate") || c.includes("Property"));
+    }
     return true;
   });
 
@@ -41,7 +80,7 @@ export const Projects: React.FC = () => {
           opacity: 1,
           y: 0,
           duration: 0.6,
-          stagger: 0.1,
+          stagger: 0.08,
           ease: "power2.out",
         }
       );
@@ -55,7 +94,7 @@ export const Projects: React.FC = () => {
         <SectionHeading
           badge="Portfolio Showcase"
           title="Featured Projects"
-          subtitle="Enterprise Web Applications, Cross-Platform Mobile Apps, E-Commerce Stores & Design Systems."
+          subtitle="Enterprise Web Applications, Cross-Platform Mobile Apps, Chrome Extensions, E-Commerce & Educational Portals."
         />
 
         {/* Category Filter Tabs */}
@@ -101,17 +140,26 @@ export const Projects: React.FC = () => {
                   <div className="pt-4 pb-2 flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <div className="h-10 w-10 rounded-xl bg-[#2B5866]/30 text-[#709FA8] flex items-center justify-center font-bold text-lg border border-[#709FA8]/30">
-                        {project.id.includes("pokedex")
-                          ? "⚡"
-                          : project.category === "Healthcare"
+                        {project.category.includes("Chrome") ||
+                        project.category.includes("Extension")
+                          ? "🧩"
+                          : project.category.includes("Healthcare")
                             ? "🩺"
-                            : project.category === "AI"
-                              ? "🛡️"
-                              : project.category === "Mobile"
+                            : project.category.includes("AI")
+                              ? "🤖"
+                              : project.category.includes("Mobile")
                                 ? "📱"
-                                : project.category === "E-Commerce"
+                                : project.category.includes("E-Commerce")
                                   ? "🛍️"
-                                  : "🏗️"}
+                                  : project.category.includes("Booking") ||
+                                      project.category.includes("Course")
+                                    ? "📅"
+                                    : project.category.includes("Training") ||
+                                        project.category.includes("Sport")
+                                      ? "⚽"
+                                      : project.category.includes("Real Estate")
+                                        ? "🏢"
+                                        : "🌐"}
                       </div>
                       <div>
                         <div className="text-xs font-bold text-white">{project.title}</div>
@@ -122,19 +170,26 @@ export const Projects: React.FC = () => {
                     </div>
 
                     <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[#709FA8] bg-[#2B5866]/30 rounded-full border border-[#709FA8]/30">
-                      {project.tags.includes("TDD") ? "TDD Built" : project.category}
+                      {project.category}
                     </span>
                   </div>
                 </div>
 
                 {/* Category & Badge */}
                 <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#709FA8]">
-                    {project.category}
-                  </span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {(project.categories || [project.category]).map((cat) => (
+                      <span
+                        key={cat}
+                        className="text-[10px] font-bold uppercase tracking-wider text-[#709FA8] bg-[#2B5866]/20 px-2 py-0.5 rounded border border-[#709FA8]/20"
+                      >
+                        {cat}
+                      </span>
+                    ))}
+                  </div>
                   {project.featured && (
-                    <span className="text-xs font-bold text-amber-400 flex items-center gap-1">
-                      <span>★</span> Featured Project
+                    <span className="text-xs font-bold text-amber-400 flex items-center gap-1 shrink-0">
+                      <span>★</span> Featured
                     </span>
                   )}
                 </div>

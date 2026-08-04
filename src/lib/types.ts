@@ -20,6 +20,7 @@ export interface Project {
   githubUrl?: string;
   featured: boolean;
   category: string;
+  categories?: string[];
 }
 
 export interface SkillCategory {

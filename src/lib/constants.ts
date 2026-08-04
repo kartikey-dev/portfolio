@@ -324,6 +324,25 @@ export const PROJECTS: Project[] = [
     featured: true,
   },
   {
+    id: "hestabit-official-website",
+    title: "Hestabit Corporate Website",
+    subtitle: "WordPress & Modern Frontend Agency Portfolio Website",
+    description:
+      "Corporate agency portfolio website showcasing custom WordPress solutions, high-performance frontend interfaces, and enterprise digital engineering.",
+    longDescription:
+      "Engineered Hestabit's corporate portfolio website using WordPress, PHP, JavaScript, and custom styling. Built responsive service showcases, case study portfolios, dynamic lead generation forms, and sub-2-second page load optimizations.",
+    tags: ["WordPress", "PHP", "JavaScript", "Portfolio", "Bootstrap", "CSS3"],
+    highlights: [
+      "Designed and developed Hestabit corporate agency portfolio website",
+      "Custom WordPress theme development with responsive portfolio showcases",
+      "Sub-2-second page load times and Core Web Vitals optimization",
+      "Built dynamic client inquiry forms and responsive landing pages",
+    ],
+    category: "Portfolio",
+    categories: ["Portfolio", "Web App"],
+    featured: true,
+  },
+  {
     id: "pokedex-explorer",
     title: "Pokedex Explorer",
     subtitle: "Test-Driven Modern Pokémon Discovery Platform",
@@ -341,6 +360,7 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://pokemon-explorer-indol-psi.vercel.app/",
     githubUrl: "https://github.com/kartikey-dev",
     category: "Web App",
+    categories: ["Web App", "Game / Sport"],
     featured: true,
   },
   {
@@ -359,6 +379,7 @@ export const PROJECTS: Project[] = [
       "TDD approach with high test coverage",
     ],
     category: "Healthcare",
+    categories: ["Healthcare", "AI & SaaS", "Mobile"],
     featured: true,
   },
   {
@@ -376,7 +397,8 @@ export const PROJECTS: Project[] = [
       "High information discovery via conversational UX",
       "Reusable modular architecture",
     ],
-    category: "AI",
+    category: "AI Chatbot",
+    categories: ["AI Chatbot", "AI & SaaS"],
     featured: true,
   },
   {
@@ -394,7 +416,8 @@ export const PROJECTS: Project[] = [
       "TanStack Query for server state management",
       "Performance-first rendering architecture",
     ],
-    category: "SaaS",
+    category: "AI & SaaS",
+    categories: ["AI & SaaS", "Web App"],
     featured: false,
   },
   {
@@ -412,7 +435,8 @@ export const PROJECTS: Project[] = [
       "Multi-brand theme token distribution",
       "Storybook visual regression testing",
     ],
-    category: "Frontend",
+    category: "Design System",
+    categories: ["Design System", "Frontend"],
     featured: false,
   },
   {
@@ -430,7 +454,8 @@ export const PROJECTS: Project[] = [
       "OAuth 2.0 authentication & secure token storage",
       "Native IPC inter-process communication",
     ],
-    category: "SaaS",
+    category: "Chrome Extension",
+    categories: ["Chrome Extension", "Extension", "SaaS"],
     featured: false,
   },
   {
@@ -448,7 +473,8 @@ export const PROJECTS: Project[] = [
       "Led frontend development, ensuring a smooth and intuitive user experience",
       "Optimized extension performance and state synchronization during video playback",
     ],
-    category: "Web App",
+    category: "Chrome Extension",
+    categories: ["Chrome Extension", "Extension"],
     featured: true,
   },
   {
@@ -467,6 +493,7 @@ export const PROJECTS: Project[] = [
       "Integrated real-time campaign performance analytics and tracking dashboards",
     ],
     category: "SaaS",
+    categories: ["AI & SaaS", "Web App"],
     featured: true,
   },
   {
@@ -484,7 +511,8 @@ export const PROJECTS: Project[] = [
       "Implemented interactive UI features to enhance the user's workout experience",
       "Delivered smooth cross-platform performance across iOS and Android",
     ],
-    category: "Mobile",
+    category: "Training / GYM",
+    categories: ["Training / GYM", "Mobile", "Health & Fitness"],
     featured: true,
   },
   {
@@ -509,7 +537,8 @@ export const PROJECTS: Project[] = [
       "Led UI development, ensuring a seamless conversational experience for users",
       "Engineered document upload and interactive natural language chat workflows",
     ],
-    category: "AI",
+    category: "AI Chatbot",
+    categories: ["AI Chatbot", "AI & SaaS"],
     featured: true,
   },
   {
@@ -528,6 +557,7 @@ export const PROJECTS: Project[] = [
       "Optimized checkout process and secure payment gateway integration",
     ],
     category: "E-Commerce",
+    categories: ["E-Commerce", "Web App"],
     featured: true,
   },
   {
@@ -545,7 +575,8 @@ export const PROJECTS: Project[] = [
       "Built interactive property filter and image carousel galleries",
       "Optimized page load speed and mobile responsiveness for global tourists",
     ],
-    category: "Web App",
+    category: "Booking",
+    categories: ["Booking", "E-Commerce", "Web App"],
     featured: true,
   },
   {
@@ -570,7 +601,8 @@ export const PROJECTS: Project[] = [
       "Built smooth product catalog navigation, search filters, and cart workflows",
       "Delivered fluid animations and native mobile UX for iOS and Android",
     ],
-    category: "Mobile",
+    category: "E-Commerce",
+    categories: ["E-Commerce", "Mobile"],
     featured: true,
   },
   {
@@ -588,7 +620,8 @@ export const PROJECTS: Project[] = [
       "Built full frontend user portal and certificate generation engine",
     ],
     liveUrl: "https://builderscpdpointsonline.com.au/",
-    category: "Web App",
+    category: "Course Booking / Online Course",
+    categories: ["Course Booking / Online Course", "Informative / Education", "Booking"],
     featured: false,
   },
   {
@@ -606,7 +639,8 @@ export const PROJECTS: Project[] = [
       "Optimized site speed, mobile layout, and cross-browser compatibility",
     ],
     liveUrl: "https://sic.edu.au/",
-    category: "Web App",
+    category: "Informative / Education",
+    categories: ["Informative / Education", "Web App"],
     featured: false,
   },
   {
@@ -624,7 +658,8 @@ export const PROJECTS: Project[] = [
       "Built daily progress tracking and AI assistant features for golf rules, tips, and handicap calculations",
       "Engineered fluid mobile animations and intuitive navigation for golfers",
     ],
-    category: "Mobile",
+    category: "Game / Sport",
+    categories: ["Game / Sport", "Mobile", "AI & SaaS"],
     featured: true,
   },
   {
@@ -640,7 +675,8 @@ export const PROJECTS: Project[] = [
       "Designed and developed complete frontend interface for tutor-student matching",
       "Integrated Core PHP backend with dynamic subject and location filtering",
     ],
-    category: "Web App",
+    category: "Informative / Education",
+    categories: ["Informative / Education", "Web App"],
     featured: false,
   },
   {
@@ -656,7 +692,8 @@ export const PROJECTS: Project[] = [
       "Handled full frontend development for UK property management portal",
       "Built clean property listing search, landlord inquiries, and contact forms",
     ],
-    category: "Web App",
+    category: "Real Estate / Property Management",
+    categories: ["Real Estate / Property Management", "Web App"],
     featured: false,
   },
   {
@@ -672,7 +709,8 @@ export const PROJECTS: Project[] = [
       "Designed full frontend user experience for educational career counseling",
       "Integrated responsive Bootstrap components with Laravel backend services",
     ],
-    category: "Web App",
+    category: "Informative / Education",
+    categories: ["Informative / Education", "Web App"],
     featured: false,
   },
   {
@@ -688,7 +726,8 @@ export const PROJECTS: Project[] = [
       "Researched and designed primary school web portal interface",
       "Built responsive layout with Core PHP backend integration",
     ],
-    category: "Web App",
+    category: "Informative / Education",
+    categories: ["Informative / Education", "Web App"],
     featured: false,
   },
 ];
