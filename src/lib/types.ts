@@ -60,3 +60,18 @@ export interface Achievement {
   description: string;
   issuer: string;
 }
+
+export interface FAQItem {
+  id: string;
+  question: string;
+  answer: string;
+  category?: string;
+}
+
+export interface ProcessStep {
+  stepNumber: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  deliverables: string[];
+}

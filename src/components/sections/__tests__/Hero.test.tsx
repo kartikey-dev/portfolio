@@ -11,7 +11,7 @@ describe("Hero component", () => {
 
   it("renders key stats and CTAs", () => {
     render(<Hero />);
-    expect(screen.getByRole("link", { name: /explore showcase/i })).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /let's connect/i })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /book free consultation/i })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /direct whatsapp/i })).toBeInTheDocument();
   });
 });

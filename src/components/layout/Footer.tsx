@@ -151,6 +151,16 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
+                <a href="#services" className="hover:text-[#709FA8] transition-colors">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#process" className="hover:text-[#709FA8] transition-colors">
+                  Process
+                </a>
+              </li>
+              <li>
                 <a href="#experience" className="hover:text-[#709FA8] transition-colors">
                   Experience
                 </a>
@@ -161,8 +171,8 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="#skills" className="hover:text-[#709FA8] transition-colors">
-                  Skills
+                <a href="#faq" className="hover:text-[#709FA8] transition-colors">
+                  FAQ
                 </a>
               </li>
               <li>

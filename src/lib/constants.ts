@@ -6,6 +6,8 @@ import {
   Education,
   Certification,
   Achievement,
+  FAQItem,
+  ProcessStep,
 } from "./types";
 
 export const PERSONAL_INFO = {
@@ -18,6 +20,8 @@ export const PERSONAL_INFO = {
   linkedin: "https://linkedin.com/in/kumar-kartikey-web",
   github: "https://github.com/kartikey-dev",
   resumeUrl: "https://drive.google.com/file/d/1xCm78itTYlFaggPuMKpcWSx6WAj_NNZa/view?usp=sharing",
+  whatsappUrl:
+    "https://wa.me/919050102547?text=Hi%20Kartikey,%20I'm%20interested%20in%20discussing%20a%20project",
   summary:
     "Senior Frontend Engineer & UI Expert with 7+ years of experience engineering scalable AI-powered SaaS, web, mobile, and desktop applications using React, Next.js, TypeScript, and React Native. Proven track record of leading 4–5 member UI teams, managing 5 concurrent enterprise projects, mentoring 5–10 freshers/interns, interviewing engineering candidates, and integrating OpenAI APIs, GPT models, MCP, and Prompt Engineering to boost engineering productivity by 50–60%.",
 };
@@ -665,5 +669,91 @@ export const ACHIEVEMENTS: Achievement[] = [
     description:
       "Consistently achieved top-tier 90+ performance scores across production web apps.",
     issuer: "Performance Engineering",
+  },
+];
+
+export const PROCESS_STEPS: ProcessStep[] = [
+  {
+    stepNumber: "01",
+    title: "Discovery & Architecture Audit",
+    subtitle: "Understanding your vision & technical requirements",
+    description:
+      "We begin with a deep dive into your business goals, target audience, UI design specifications, and performance requirements to define a robust technical architecture.",
+    deliverables: ["Technical Specifications", "Architecture Roadmap", "Sprint Scope & Timeline"],
+  },
+  {
+    stepNumber: "02",
+    title: "Agile UI & Component Engineering",
+    subtitle: "Building pixel-perfect, interactive interfaces",
+    description:
+      "Using React, Next.js 16, TypeScript, and modern CSS/Tailwind, I construct modular, accessible, and high-performance component systems with seamless state management.",
+    deliverables: [
+      "Modular Component Suite",
+      "Interactive Prototypes",
+      "API & Database Integrations",
+    ],
+  },
+  {
+    stepNumber: "03",
+    title: "Performance, SEO & AEO Optimization",
+    subtitle: "Maxing out PageSpeed, Accessibility & AI readiness",
+    description:
+      "Every line of code undergoes strict Core Web Vitals optimization, cross-browser testing (iOS Safari, Chrome, Firefox, Edge), WCAG accessibility audits, and JSON-LD schema injection.",
+    deliverables: [
+      "95+ Lighthouse Score Report",
+      "Schema.org Rich Snippets",
+      "Cross-Browser Verification",
+    ],
+  },
+  {
+    stepNumber: "04",
+    title: "Deployment & Ongoing Engineering Support",
+    subtitle: "Smooth launch & scaling",
+    description:
+      "Automated CI/CD pipelines deploy your product onto Vercel or custom cloud infrastructure, complete with clean documentation and post-launch technical support.",
+    deliverables: [
+      "Production CI/CD Deployment",
+      "Codebase Handoff Documentation",
+      "Post-Launch Support",
+    ],
+  },
+];
+
+export const FAQ_ITEMS: FAQItem[] = [
+  {
+    id: "who-is-kumar-kartikey",
+    question: "Who is Kumar Kartikey and what frontend services does he provide?",
+    answer:
+      "Kumar Kartikey is a Senior Frontend Engineer & UI Specialist with over 7+ years of industry experience. He specializes in engineering high-performance web applications, AI-powered SaaS platforms, cross-platform React Native mobile apps, and custom enterprise design systems using React, Next.js, and TypeScript. He is available for freelance projects, fractional technical leadership, agency subcontracting, and full-time senior engineering opportunities.",
+  },
+  {
+    id: "why-hire-senior-engineer",
+    question: "Why should startups and businesses hire a Senior Frontend Specialist?",
+    answer:
+      "Hiring a Senior Frontend Specialist ensures your web product is built right the first time — with bulletproof TypeScript architecture, 95+ PageSpeed scores, WCAG AAA accessibility compliance, and clean code that scales seamlessly without technical debt. This speeds up your time-to-market, lowers maintenance costs, and maximizes visitor-to-customer conversion rates.",
+  },
+  {
+    id: "technologies-used",
+    question: "Which technologies and frameworks do you use?",
+    answer:
+      "My primary tech stack includes React 19, Next.js 16 (App Router & Turbopack), TypeScript, React Native (Expo/SwiftUI), Tailwind CSS, GSAP for rich micro-animations, Zustand/Redux for state management, TanStack Query, REST & GraphQL APIs, and OpenAI / Vercel AI SDK integrations.",
+  },
+  {
+    id: "timeline-and-process",
+    question: "How long does custom website or app development take?",
+    answer:
+      "Timelines depend on project scope. High-converting landing pages or marketing sites typically take 1 to 2 weeks. Full-scale Next.js SaaS web applications, dashboards, or React Native mobile MVP builds typically take 3 to 6 weeks. Every project follows a structured 4-step agile engineering methodology.",
+  },
+  {
+    id: "seo-aeo-geo-explained",
+    question: "How do you ensure web applications are SEO and AI Search (AEO / GEO) ready?",
+    answer:
+      "Every project is built with semantic HTML5 elements, Server-Side Rendering (SSR) / Static Site Generation (SSG), 95+ Core Web Vitals performance, automated XML sitemaps, Open Graph metadata, and rich Schema.org JSON-LD structured data (Person, ProfessionalService, FAQPage, Breadcrumbs). This ensures top rankings on traditional engines like Google and Bing as well as maximum visibility in AI search platforms such as ChatGPT, Perplexity, Gemini, and Claude.",
+  },
+  {
+    id: "freelance-contract-availability",
+    question: "Are you available for freelance work, agency subcontracting, or full-time roles?",
+    answer:
+      "Yes! I actively collaborate with business owners for custom freelance software development, partner with digital agencies as a senior UI contractor, and evaluate high-impact full-time Senior Frontend Engineer opportunities.",
   },
 ];

@@ -44,15 +44,24 @@ export const WhatIBuild: React.FC = () => {
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-1.5 pt-4 border-t border-[var(--bg-card-border)]">
-                {service.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-[10px] font-medium text-[var(--text-muted)] bg-[var(--bg-primary)] px-2 py-0.5 rounded border border-[var(--bg-card-border)]"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              <div className="pt-4 border-t border-[var(--bg-card-border)] flex flex-col gap-3">
+                <div className="flex flex-wrap gap-1.5">
+                  {service.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-[10px] font-medium text-[var(--text-muted)] bg-[var(--bg-primary)] px-2 py-0.5 rounded border border-[var(--bg-card-border)]"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <a
+                  href="#contact"
+                  className="inline-flex items-center text-xs font-semibold text-[#709FA8] hover:text-[var(--text-primary)] transition-colors gap-1 pt-1"
+                >
+                  <span>Inquire for {service.title}</span>
+                  <span>→</span>
+                </a>
               </div>
             </Card>
           ))}

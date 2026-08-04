@@ -5,9 +5,11 @@ import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { WhatIBuild } from "@/components/sections/WhatIBuild";
+import { Process } from "@/components/sections/Process";
 import { Experience } from "@/components/sections/Experience";
 import { Projects } from "@/components/sections/Projects";
 import { Skills } from "@/components/sections/Skills";
+import { FAQ } from "@/components/sections/FAQ";
 import { Contact } from "@/components/sections/Contact";
 import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 
@@ -24,9 +26,11 @@ export default function Home() {
         <Hero />
         <About />
         <WhatIBuild />
+        <Process />
         <Experience />
         <Projects />
         <Skills />
+        <FAQ />
         <Contact />
       </main>
 

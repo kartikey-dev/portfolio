@@ -124,6 +124,26 @@ export const Contact: React.FC = () => {
                   </div>
                 </div>
 
+                {/* WhatsApp Direct */}
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#25D366]/20 text-[#25D366] border border-[#25D366]/30">
+                    💬
+                  </div>
+                  <div>
+                    <span className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold">
+                      WhatsApp
+                    </span>
+                    <a
+                      href={PERSONAL_INFO.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-base font-medium text-[#25D366] hover:underline"
+                    >
+                      Chat Instantly on WhatsApp →
+                    </a>
+                  </div>
+                </div>
+
                 {/* Location */}
                 <div className="flex items-start gap-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#2B5866]/20 text-[#709FA8] border border-[#709FA8]/30">
@@ -138,6 +158,12 @@ export const Contact: React.FC = () => {
                     </p>
                   </div>
                 </div>
+              </div>
+
+              {/* Response Time Guarantee */}
+              <div className="mt-6 pt-4 border-t border-[var(--bg-card-border)] flex items-center gap-2 text-xs font-semibold text-[#709FA8]">
+                <span className="h-2 w-2 rounded-full bg-[#709FA8] animate-pulse" />
+                <span>⚡ Typical response time: Under 4 hours</span>
               </div>
             </Card>
 
