@@ -10,7 +10,7 @@ import { useGSAP } from "@gsap/react";
 
 export const Projects: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [activeTab, setActiveTab] = useState<string>("All");
+  const [activeTab, setActiveTab] = useState<string>("Featured");
 
   const categories = [
     "All",

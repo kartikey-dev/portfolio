@@ -324,25 +324,6 @@ export const PROJECTS: Project[] = [
     featured: true,
   },
   {
-    id: "hestabit-official-website",
-    title: "Hestabit Corporate Website",
-    subtitle: "WordPress & Modern Frontend Agency Portfolio Website",
-    description:
-      "Corporate agency portfolio website showcasing custom WordPress solutions, high-performance frontend interfaces, and enterprise digital engineering.",
-    longDescription:
-      "Engineered Hestabit's corporate portfolio website using WordPress, PHP, JavaScript, and custom styling. Built responsive service showcases, case study portfolios, dynamic lead generation forms, and sub-2-second page load optimizations.",
-    tags: ["WordPress", "PHP", "JavaScript", "Portfolio", "Bootstrap", "CSS3"],
-    highlights: [
-      "Designed and developed Hestabit corporate agency portfolio website",
-      "Custom WordPress theme development with responsive portfolio showcases",
-      "Sub-2-second page load times and Core Web Vitals optimization",
-      "Built dynamic client inquiry forms and responsive landing pages",
-    ],
-    category: "Portfolio",
-    categories: ["Portfolio", "Web App"],
-    featured: true,
-  },
-  {
     id: "pokedex-explorer",
     title: "Pokedex Explorer",
     subtitle: "Test-Driven Modern Pokémon Discovery Platform",
@@ -361,7 +342,7 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/kartikey-dev",
     category: "Web App",
     categories: ["Web App", "Game / Sport"],
-    featured: true,
+    featured: false,
   },
   {
     id: "ai-healthcare-platform",
@@ -399,7 +380,7 @@ export const PROJECTS: Project[] = [
     ],
     category: "AI Chatbot",
     categories: ["AI Chatbot", "AI & SaaS"],
-    featured: true,
+    featured: false,
   },
   {
     id: "ai-construction-copilot",
@@ -418,44 +399,6 @@ export const PROJECTS: Project[] = [
     ],
     category: "AI & SaaS",
     categories: ["AI & SaaS", "Web App"],
-    featured: false,
-  },
-  {
-    id: "enterprise-design-system",
-    title: "Enterprise Storybook Design System",
-    subtitle: "Modular UI Component Library & Micro-Frontend Tokens",
-    description:
-      "Accessible Storybook design system providing standardized UI tokens, micro-interactions, and reusable React components across enterprise products.",
-    longDescription:
-      "Architected a centralized Storybook design system establishing design tokens, WCAG 2.1 AA accessibility standards, and reusable component libraries. Reduced development cycle time by 35% across multi-repo frontend teams.",
-    tags: ["Storybook", "React", "TypeScript", "Tailwind CSS", "WCAG AA"],
-    highlights: [
-      "WCAG 2.1 AA accessible component tokens",
-      "Standardized UI states, micro-interactions & animations",
-      "Multi-brand theme token distribution",
-      "Storybook visual regression testing",
-    ],
-    category: "Design System",
-    categories: ["Design System", "Frontend"],
-    featured: false,
-  },
-  {
-    id: "electron-desktop-extension",
-    title: "Electron Desktop & Chrome Extension Suite",
-    subtitle: "Cross-Platform Desktop & Browser Integration Tools",
-    description:
-      "Cross-platform desktop application built with Electron.js alongside companion Chrome extensions for secure workflow automation.",
-    longDescription:
-      "Engineered secure desktop solutions using Electron.js and Chrome Extension API with OAuth 2.0 authentication, native system notifications, and background IPC bridge communication.",
-    tags: ["Electron.js", "JavaScript", "Chrome Extension API", "OAuth 2.0", "IPC"],
-    highlights: [
-      "Cross-platform desktop packaging with Electron",
-      "Chrome Extension API integration & background workers",
-      "OAuth 2.0 authentication & secure token storage",
-      "Native IPC inter-process communication",
-    ],
-    category: "Chrome Extension",
-    categories: ["Chrome Extension", "Extension", "SaaS"],
     featured: false,
   },
   {
@@ -494,7 +437,7 @@ export const PROJECTS: Project[] = [
     ],
     category: "SaaS",
     categories: ["AI & SaaS", "Web App"],
-    featured: true,
+    featured: false,
   },
   {
     id: "ovatime-personal-training",
@@ -513,7 +456,7 @@ export const PROJECTS: Project[] = [
     ],
     category: "Training / GYM",
     categories: ["Training / GYM", "Mobile", "Health & Fitness"],
-    featured: true,
+    featured: false,
   },
   {
     id: "synthexa-ai-chatbot",
@@ -539,7 +482,7 @@ export const PROJECTS: Project[] = [
     ],
     category: "AI Chatbot",
     categories: ["AI Chatbot", "AI & SaaS"],
-    featured: true,
+    featured: false,
   },
   {
     id: "pbt-workwear",
@@ -558,7 +501,7 @@ export const PROJECTS: Project[] = [
     ],
     category: "E-Commerce",
     categories: ["E-Commerce", "Web App"],
-    featured: true,
+    featured: false,
   },
   {
     id: "costa-mar-villas",
@@ -577,7 +520,7 @@ export const PROJECTS: Project[] = [
     ],
     category: "Booking",
     categories: ["Booking", "E-Commerce", "Web App"],
-    featured: true,
+    featured: false,
   },
   {
     id: "shopping-points",
@@ -603,7 +546,7 @@ export const PROJECTS: Project[] = [
     ],
     category: "E-Commerce",
     categories: ["E-Commerce", "Mobile"],
-    featured: true,
+    featured: false,
   },
   {
     id: "builders-cpd-points",
@@ -660,7 +603,7 @@ export const PROJECTS: Project[] = [
     ],
     category: "Game / Sport",
     categories: ["Game / Sport", "Mobile", "AI & SaaS"],
-    featured: true,
+    featured: false,
   },
   {
     id: "moulders-tutor",
