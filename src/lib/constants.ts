@@ -134,10 +134,10 @@ export const WHAT_I_BUILD_SERVICES: Service[] = [
   },
   {
     id: "ai-search",
-    title: "AI Search & RAG Systems",
+    title: "AI Search & Vector Systems",
     description:
-      "Retrieval-Augmented Generation (RAG) search experiences connecting vector databases to intelligent prompt engines.",
-    tags: ["Pinecone", "Chroma", "Supabase Vector", "MCP", "Embeddings"],
+      "Intelligent semantic search experiences connecting vector databases to custom prompt engines.",
+    tags: ["Pinecone", "Chroma", "Supabase Vector", "MCP", "Semantic Search"],
   },
 ];
 
@@ -221,15 +221,15 @@ export const PROJECTS: Project[] = [
     title: "Kraken – AI Underwater Photography Platform",
     subtitle: "AI-Powered Underwater Photography & Hardware Integration App",
     description:
-      "Native iOS & cross-platform Mobile application featuring Bluetooth LE camera connectivity, real-time AI image enhancement, and automated color restoration workflows.",
+      "Native iOS & cross-platform Mobile application featuring smart camera connectivity, real-time AI image enhancement, and automated color restoration workflows.",
     longDescription:
-      "Engineered Kraken, an AI-powered underwater photography platform using SwiftUI and React Native. Built native iOS features using SwiftUI alongside cross-platform functionality built with React Native. Built reusable and responsive UI components, delivering a seamless user experience across iOS and Android platforms. Integrated AI-powered image enhancement and analysis services through REST APIs to support underwater photography workflows. Implemented Bluetooth Low Energy (BLE) communication for seamless connectivity with underwater camera devices. Optimized application performance, navigation, and state management to improve responsiveness and overall UX. Collaborated closely with AI engineers, backend developers, designers, and QA teams to deliver production-ready features.",
-    tags: ["React Native", "SwiftUI", "TypeScript", "AI APIs", "Bluetooth LE", "REST APIs", "Git"],
+      "Engineered Kraken, an AI-powered underwater photography platform using SwiftUI and React Native. Built native iOS features using SwiftUI alongside cross-platform functionality built with React Native. Built reusable and responsive UI components, delivering a seamless user experience across iOS and Android platforms. Integrated AI-powered image enhancement and analysis services through REST APIs to support underwater photography workflows. Implemented hardware communication protocols for seamless connectivity with underwater camera devices. Optimized application performance, navigation, and state management to improve responsiveness and overall UX. Collaborated closely with AI engineers, backend developers, designers, and QA teams to deliver production-ready features.",
+    tags: ["React Native", "SwiftUI", "TypeScript", "AI APIs", "Hardware APIs", "REST APIs", "Git"],
     highlights: [
       "Developed native iOS features using SwiftUI alongside cross-platform functionality built with React Native.",
       "Built reusable and responsive UI components delivering a seamless user experience across iOS and Android platforms.",
       "Integrated AI-powered image enhancement and analysis services through REST APIs to support underwater photography workflows.",
-      "Implemented Bluetooth Low Energy (BLE) communication for seamless connectivity with underwater camera devices.",
+      "Implemented hardware communication protocols for seamless connectivity with underwater camera devices.",
       "Optimized application performance, navigation, and state management to improve responsiveness and overall user experience.",
       "Collaborated closely with AI engineers, backend developers, designers, and QA teams to deliver production-ready features.",
       "Participated in architecture discussions, sprint planning, code reviews, and Agile development.",
@@ -425,7 +425,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Server Actions", level: "Expert" },
       { name: "Middleware", level: "Expert" },
       { name: "API Routes", level: "Expert" },
-      { name: "Edge Runtime", level: "Advanced" },
     ],
   },
   {
@@ -470,11 +469,9 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Vercel AI SDK", level: "Advanced" },
       { name: "AI Chatbots & Conversational UX", level: "Advanced" },
       { name: "AI Search & Semantic Retrieval", level: "Advanced" },
-      { name: "RAG (Retrieval-Augmented Generation)", level: "Advanced" },
       { name: "Prompt Engineering", level: "Expert" },
       { name: "MCP (Model Context Protocol)", level: "Advanced" },
       { name: "Vector Databases (Pinecone, Chroma, Supabase)", level: "Advanced" },
-      { name: "Embeddings & Vectorization", level: "Advanced" },
       { name: "AI Agents & Automation", level: "Advanced" },
     ],
   },
@@ -496,7 +493,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "SwiftUI", level: "Proficient" },
       { name: "Swift", level: "Proficient" },
       { name: "Flutter", level: "Proficient" },
-      { name: "Bluetooth LE (BLE)", level: "Proficient" },
     ],
   },
   {
@@ -531,7 +527,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "OAuth2", level: "Advanced" },
       { name: "NextAuth / Auth.js", level: "Advanced" },
       { name: "Firebase Auth", level: "Advanced" },
-      { name: "Clerk", level: "Advanced" },
       { name: "Supabase Auth", level: "Advanced" },
     ],
   },
@@ -560,8 +555,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Magento", level: "Proficient" },
       { name: "Shopify & Shopify APIs", level: "Proficient" },
       { name: "Sanity", level: "Proficient" },
-      { name: "Strapi", level: "Proficient" },
-      { name: "Contentful", level: "Proficient" },
     ],
   },
   {
