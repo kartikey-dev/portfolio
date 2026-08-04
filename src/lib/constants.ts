@@ -320,7 +320,8 @@ export const PROJECTS: Project[] = [
       "Integrated Google Analytics and Google Search Console to monitor website performance, user engagement, and search visibility.",
       "Mentored junior developers, performed code reviews, and established reusable development standards across frontend projects.",
     ],
-    category: "Web App",
+    category: "Portfolio",
+    categories: ["Portfolio"],
     featured: true,
   },
   {
