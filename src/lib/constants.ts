@@ -610,6 +610,24 @@ export const PROJECTS: Project[] = [
     featured: false,
   },
   {
+    id: "golf-assistant",
+    title: "Golf Assistant",
+    subtitle: "Flutter & AI Golf Tracking & Live Tournament Assistant",
+    description:
+      "Flutter mobile application for golf enthusiasts to ask golf questions, track daily progress, and view live tournament statistics via real-time APIs.",
+    longDescription:
+      "Engineered Golf Assistant, a cross-platform mobile application built with Flutter and Dart. Designed interactive daily golf progress tracking, AI-powered golf Q&A assistance, and real-time live tournament statistics fetched via tournament REST APIs.",
+    tags: ["Flutter", "Dart", "Tournament APIs", "AI Integrations", "Mobile UX", "REST APIs"],
+    highlights: [
+      "Developed cross-platform mobile application using Flutter and Dart for golf tracking & assistance",
+      "Integrated real-time tournament APIs for live leaderboards, player stats, and event updates",
+      "Built daily progress tracking and AI assistant features for golf rules, tips, and handicap calculations",
+      "Engineered fluid mobile animations and intuitive navigation for golfers",
+    ],
+    category: "Mobile",
+    featured: true,
+  },
+  {
     id: "moulders-tutor",
     title: "Moulder's Tutor Website",
     subtitle: "PHP & Bootstrap Tutor-Student Discovery Portal",
@@ -622,7 +640,6 @@ export const PROJECTS: Project[] = [
       "Designed and developed complete frontend interface for tutor-student matching",
       "Integrated Core PHP backend with dynamic subject and location filtering",
     ],
-    liveUrl: "https://moulderstutor.com/",
     category: "Web App",
     featured: false,
   },
@@ -639,7 +656,6 @@ export const PROJECTS: Project[] = [
       "Handled full frontend development for UK property management portal",
       "Built clean property listing search, landlord inquiries, and contact forms",
     ],
-    liveUrl: "https://www.rkmrproperties.co.uk/",
     category: "Web App",
     featured: false,
   },
@@ -656,7 +672,6 @@ export const PROJECTS: Project[] = [
       "Designed full frontend user experience for educational career counseling",
       "Integrated responsive Bootstrap components with Laravel backend services",
     ],
-    liveUrl: "https://www.shikshaadvisor.in/",
     category: "Web App",
     featured: false,
   },
@@ -673,7 +688,6 @@ export const PROJECTS: Project[] = [
       "Researched and designed primary school web portal interface",
       "Built responsive layout with Core PHP backend integration",
     ],
-    liveUrl: "https://psmotiramadda.com/",
     category: "Web App",
     featured: false,
   },
@@ -720,6 +734,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: "UI Component Libraries",
     skills: [
+      { name: "Bootstrap", level: "Expert" },
       { name: "shadcn/ui", level: "Expert" },
       { name: "Radix UI", level: "Advanced" },
       { name: "Material UI (MUI)", level: "Proficient" },
@@ -773,15 +788,13 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     ],
   },
   {
-    title: "State Management & Dates",
+    title: "State Management & Form Controls",
     skills: [
       { name: "TanStack Query", level: "Expert" },
       { name: "Zustand", level: "Advanced" },
       { name: "Redux Toolkit", level: "Advanced" },
       { name: "Context API", level: "Proficient" },
       { name: "React Hook Form & Zod", level: "Expert" },
-      { name: "Day.js", level: "Expert" },
-      { name: "date-fns", level: "Expert" },
     ],
   },
   {
@@ -828,11 +841,12 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     title: "CMS & E-Commerce",
     skills: [
       { name: "WordPress", level: "Expert" },
+      { name: "WooCommerce", level: "Expert" },
+      { name: "Elementor", level: "Expert" },
+      { name: "WPBakery", level: "Advanced" },
       { name: "Headless WordPress", level: "Advanced" },
-      { name: "WooCommerce", level: "Proficient" },
       { name: "Magento", level: "Proficient" },
       { name: "Shopify & Shopify APIs", level: "Proficient" },
-      { name: "Sanity", level: "Proficient" },
     ],
   },
   {

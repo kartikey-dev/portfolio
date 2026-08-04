@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
@@ -10,6 +10,24 @@ import { useGSAP } from "@gsap/react";
 
 export const Projects: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [activeTab, setActiveTab] = useState<string>("All");
+
+  const categories = ["All", "Featured", "Mobile", "E-Commerce", "SaaS & AI", "Web Apps"];
+
+  const filteredProjects = PROJECTS.filter((project) => {
+    if (activeTab === "All") return true;
+    if (activeTab === "Featured") return project.featured;
+    if (activeTab === "Mobile") return project.category === "Mobile";
+    if (activeTab === "E-Commerce") return project.category === "E-Commerce";
+    if (activeTab === "SaaS & AI") return project.category === "SaaS" || project.category === "AI";
+    if (activeTab === "Web Apps")
+      return (
+        project.category === "Web App" ||
+        project.category === "Frontend" ||
+        project.category === "Healthcare"
+      );
+    return true;
+  });
 
   useGSAP(
     () => {
@@ -18,21 +36,17 @@ export const Projects: React.FC = () => {
 
       gsap.fromTo(
         cards,
-        { opacity: 0, y: 40 },
+        { opacity: 0, y: 30 },
         {
           opacity: 1,
           y: 0,
-          duration: 0.8,
-          stagger: 0.15,
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: "top 75%",
-            toggleActions: "play none none reverse",
-          },
+          duration: 0.6,
+          stagger: 0.1,
+          ease: "power2.out",
         }
       );
     },
-    { scope: containerRef }
+    { scope: containerRef, dependencies: [activeTab] }
   );
 
   return (
@@ -41,12 +55,29 @@ export const Projects: React.FC = () => {
         <SectionHeading
           badge="Portfolio Showcase"
           title="Featured Projects"
-          subtitle="Production-grade AI platforms, healthcare SaaS applications, and modern web applications built test-first."
+          subtitle="Enterprise Web Applications, Cross-Platform Mobile Apps, E-Commerce Stores & Design Systems."
         />
+
+        {/* Category Filter Tabs */}
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
+          {categories.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-4 py-2 text-xs font-semibold rounded-xl transition-all duration-200 cursor-pointer ${
+                activeTab === tab
+                  ? "bg-[#2B5866] text-white border border-[#709FA8] shadow-lg shadow-[#2B5866]/30 scale-105"
+                  : "glass-panel text-[var(--text-secondary)] border border-[var(--bg-card-border)] hover:border-[#709FA8]/50 hover:text-[var(--text-primary)]"
+              }`}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
 
         {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {PROJECTS.map((project) => (
+          {filteredProjects.map((project) => (
             <Card
               key={project.id}
               gradientBorder
@@ -76,7 +107,11 @@ export const Projects: React.FC = () => {
                             ? "🩺"
                             : project.category === "AI"
                               ? "🛡️"
-                              : "🏗️"}
+                              : project.category === "Mobile"
+                                ? "📱"
+                                : project.category === "E-Commerce"
+                                  ? "🛍️"
+                                  : "🏗️"}
                       </div>
                       <div>
                         <div className="text-xs font-bold text-white">{project.title}</div>
@@ -87,7 +122,7 @@ export const Projects: React.FC = () => {
                     </div>
 
                     <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[#709FA8] bg-[#2B5866]/30 rounded-full border border-[#709FA8]/30">
-                      {project.tags.includes("TDD") ? "TDD Built" : "AI Powered"}
+                      {project.tags.includes("TDD") ? "TDD Built" : project.category}
                     </span>
                   </div>
                 </div>

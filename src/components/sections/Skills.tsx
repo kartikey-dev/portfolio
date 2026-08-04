@@ -84,8 +84,8 @@ export const Skills: React.FC = () => {
                     <span className="h-2.5 w-2.5 rounded-full bg-[#709FA8] animate-pulse" />
                     {cat.title}
                   </span>
-                  <span className="text-xs font-mono text-[var(--text-muted)] font-normal">
-                    {cat.skills.length} Stack Tools
+                  <span className="text-xs font-mono bg-[var(--accent-teal)] text-white rounded-full size-5 flex items-center justify-center font-normal">
+                    {cat.skills.length}
                   </span>
                 </h3>
 
