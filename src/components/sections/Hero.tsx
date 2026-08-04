@@ -6,6 +6,7 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 import { Counter } from "@/components/ui/Counter";
 import { gsap } from "@/lib/gsapConfig";
 import { useGSAP } from "@gsap/react";
+import { PERSONAL_INFO } from "@/lib/constants";
 
 export const Hero: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -137,7 +138,7 @@ export const Hero: React.FC = () => {
               </MagneticButton>
 
               <Button
-                href="https://drive.google.com/file/d/12ibCSR9kTBoX57rgNpt4LZCFpj6INueR/view?usp=sharing"
+                href={PERSONAL_INFO.resumeUrl}
                 external
                 variant="ghost"
                 size="lg"

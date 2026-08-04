@@ -20,8 +20,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Invalid email format." }, { status: 400 });
     }
 
-    const primaryTarget = process.env.CONTACT_RECEIVER_EMAIL || "hello@kumarkartikey.com";
-    const fallbackTarget = "webkartikdevloper@gmail.com";
+    const targetEmail = process.env.CONTACT_RECEIVER_EMAIL || "webkartikdevloper@gmail.com";
     const emailSubject = subject
       ? `[Portfolio Contact] ${subject}`
       : `[Portfolio Contact] New Inquiry from ${name}`;
@@ -50,36 +49,21 @@ export async function POST(request: Request) {
       `;
 
       try {
-        // First attempt: Primary target email
-        const res1 = await resend.emails.send({
+        const res = await resend.emails.send({
           from: process.env.RESEND_FROM_EMAIL || "Portfolio Contact <onboarding@resend.dev>",
-          to: primaryTarget,
+          to: targetEmail,
           replyTo: email,
           subject: emailSubject,
           html: emailHtml,
         });
 
-        if (!res1.error) {
+        if (!res.error) {
           emailSent = true;
+          console.log(
+            `Resend email successfully delivered to ${targetEmail} (ID: ${res.data?.id})`
+          );
         } else {
-          console.warn(`Resend failed for ${primaryTarget}:`, res1.error.message);
-          // If domain unverified or 403 restriction, attempt fallback to account owner email
-          if (primaryTarget !== fallbackTarget) {
-            const res2 = await resend.emails.send({
-              from: process.env.RESEND_FROM_EMAIL || "Portfolio Contact <onboarding@resend.dev>",
-              to: fallbackTarget,
-              replyTo: email,
-              subject: emailSubject,
-              html: emailHtml,
-            });
-
-            if (!res2.error) {
-              emailSent = true;
-              console.log(`Resend successfully delivered to fallback: ${fallbackTarget}`);
-            } else {
-              console.error("Resend fallback delivery failed:", res2.error);
-            }
-          }
+          console.error("Resend API error:", res.error);
         }
       } catch (resendError) {
         console.error("Resend execution error:", resendError);
@@ -105,7 +89,7 @@ export async function POST(request: Request) {
 
         await transporter.sendMail({
           from: `"${name}" <${process.env.SMTP_USER || process.env.GMAIL_USER}>`,
-          to: primaryTarget,
+          to: targetEmail,
           replyTo: email,
           subject: emailSubject,
           text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject || "N/A"}\n\nMessage:\n${message}`,
@@ -134,7 +118,7 @@ export async function POST(request: Request) {
     }
 
     // 3. Fallback log for Vercel Runtime Logs & Monitoring
-    console.log(`[Contact Form Submission] Target: ${primaryTarget}`, {
+    console.log(`[Contact Form Submission] Target: ${targetEmail}`, {
       name,
       email,
       subject: subject || "Portfolio Inquiry",

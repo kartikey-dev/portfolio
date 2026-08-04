@@ -17,6 +17,7 @@ export const PERSONAL_INFO = {
   phone: "+91 9050102547",
   linkedin: "https://linkedin.com/in/kumar-kartikey-web",
   github: "https://github.com/kartikey-dev",
+  resumeUrl: "https://drive.google.com/file/d/1xCm78itTYlFaggPuMKpcWSx6WAj_NNZa/view?usp=sharing",
   summary:
     "Senior Frontend Engineer & UI Expert with 7+ years of experience engineering scalable AI-powered SaaS, web, mobile, and desktop applications using React, Next.js, TypeScript, and React Native. Proven track record of leading 4–5 member UI teams, managing 5 concurrent enterprise projects, mentoring 5–10 freshers/interns, interviewing engineering candidates, and integrating OpenAI APIs, GPT models, MCP, and Prompt Engineering to boost engineering productivity by 50–60%.",
 };
