@@ -58,10 +58,19 @@ export const FAQ: React.FC = () => {
                 >
                   <span>{item.question}</span>
                   <span
-                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-100 dark:bg-[#2B5866]/10 border border-slate-300 dark:border-[#709FA8]/30 text-slate-900 dark:text-accent-teal shadow-sm transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"
-                      }`}
+                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-100 dark:bg-[#2B5866]/10 border border-slate-300 dark:border-[#709FA8]/30 text-slate-900 dark:text-accent-teal shadow-sm transition-transform duration-300 ${
+                      isOpen ? "rotate-180" : "rotate-0"
+                    }`}
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height={16} width={16}><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      height={16}
+                      width={16}
+                    >
+                      <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
+                    </svg>
                   </span>
                 </button>
 

@@ -2,8 +2,6 @@
  * @jest-environment node
  */
 import { POST } from "../route";
-import { Resend } from "resend";
-import nodemailer from "nodemailer";
 
 jest.mock("resend", () => {
   return {

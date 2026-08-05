@@ -59,8 +59,9 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
         </p>
       )}
       <div
-        className={`mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-[#2B5866] via-[#488293] to-[#709FA8] ${centered ? "mx-auto" : ""
-          }`}
+        className={`mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-[#2B5866] via-[#488293] to-[#709FA8] ${
+          centered ? "mx-auto" : ""
+        }`}
       />
     </div>
   );
