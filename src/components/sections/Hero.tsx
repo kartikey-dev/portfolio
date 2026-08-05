@@ -96,14 +96,14 @@ export const Hero: React.FC = () => {
           {/* Left Column — Text & CTAs */}
           <div className="lg:col-span-7 flex flex-col items-start gap-6">
             {/* Expert UI Badge */}
-            <div className="hero-animate inline-flex items-center gap-2.5 rounded-full bg-[#2B5866]/10 dark:bg-[#2B5866]/40 px-4 py-1.5 border border-[#2B5866]/30 dark:border-[#709FA8]/60 text-xs font-bold uppercase tracking-widest text-[#2B5866] dark:text-[#709FA8] shadow-md shadow-[#2B5866]/10 backdrop-blur-md">
-              <span className="flex h-2 w-2 rounded-full bg-[#2B5866] dark:bg-[#709FA8] animate-ping" />
+            <div className="hero-animate inline-flex items-center gap-2.5 rounded-full bg-slate-900 text-white border border-slate-900 dark:bg-[#2B5866]/50 dark:border-[#709FA8]/60 px-4 py-1.5 text-xs font-bold uppercase tracking-widest dark:text-[#709FA8] shadow-md shadow-black/10 backdrop-blur-md">
+              <span className="flex h-2 w-2 rounded-full bg-emerald-400 dark:bg-[#709FA8] animate-ping" />
               <span>Senior Frontend Engineer &amp; UI Expert</span>
             </div>
 
             {/* Main Name Heading */}
             <div className="hero-animate">
-              <span className="text-lg font-semibold text-[#2B5866] dark:text-[#709FA8] sm:text-xl tracking-wide">
+              <span className="text-lg font-bold text-slate-800 dark:text-[#709FA8] sm:text-xl tracking-wide">
                 Crafting Exceptional Digital Products
               </span>
               <h1 className="mt-1 font-heading text-4xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-black tracking-tight text-[var(--text-primary)] leading-[1.05]">

@@ -58,7 +58,7 @@ export const FAQ: React.FC = () => {
                 >
                   <span>{item.question}</span>
                   <span
-                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#2B5866]/10 dark:bg-[#2B5866]/30 border border-[#2B5866]/30 dark:border-[#709FA8]/30 text-[#2B5866] dark:text-[#709FA8] font-bold text-sm transition-transform duration-300 ${
+                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-100 dark:bg-[#2B5866]/30 border border-slate-300 dark:border-[#709FA8]/30 text-slate-900 dark:text-[#709FA8] font-bold text-sm shadow-sm transition-transform duration-300 ${
                       isOpen ? "rotate-180" : "rotate-0"
                     }`}
                   >

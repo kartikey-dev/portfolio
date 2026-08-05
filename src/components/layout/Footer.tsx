@@ -25,8 +25,8 @@ export const Footer: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div className="max-w-2xl">
               {/* Availability Indicator */}
-              <div className="inline-flex items-center gap-2 rounded-full bg-[#2B5866]/10 dark:bg-[#2B5866]/20 px-3 py-1 border border-[#2B5866]/30 dark:border-[#709FA8]/40 sm:text-xs text-[10px] font-semibold text-[#2B5866] dark:text-[#709FA8] mb-4">
-                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+              <div className="inline-flex items-center gap-2 rounded-full bg-slate-900 text-white border border-slate-900 shadow-md shadow-black/10 dark:bg-[#2B5866]/40 dark:text-[#709FA8] dark:border-[#709FA8]/50 sm:text-xs text-[10px] font-bold uppercase tracking-wider mb-4 px-3 py-1">
+                <span className="h-2 w-2 rounded-full bg-emerald-400 dark:bg-[#709FA8] animate-pulse" />
                 <span>Available for Senior Frontend Engineering &amp; UI Consulting</span>
               </div>
 

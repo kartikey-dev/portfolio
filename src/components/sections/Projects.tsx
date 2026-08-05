@@ -181,7 +181,7 @@ export const Projects: React.FC = () => {
                     {(project.categories || [project.category]).map((cat) => (
                       <span
                         key={cat}
-                        className="text-[10px] font-bold uppercase tracking-wider text-[#2B5866] dark:text-[#709FA8] bg-[#2B5866]/10 dark:bg-[#2B5866]/20 px-2 py-0.5 rounded border border-[#2B5866]/20 dark:border-[#709FA8]/20"
+                        className="text-[10px] font-bold uppercase tracking-wider text-slate-800 dark:text-[#709FA8] bg-slate-100 dark:bg-[#2B5866]/20 px-2 py-0.5 rounded border border-slate-300 dark:border-[#709FA8]/20"
                       >
                         {cat}
                       </span>

@@ -28,10 +28,10 @@ export const Process: React.FC = () => {
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-heading text-3xl font-black text-[#2B5866] dark:text-[#709FA8] font-mono tracking-tighter">
+                  <span className="font-heading text-3xl font-black text-slate-900 dark:text-[#709FA8] font-mono tracking-tighter">
                     {step.stepNumber}
                   </span>
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-[#2B5866] dark:text-[#709FA8] font-bold px-3 py-1 rounded-full bg-[#2B5866]/10 dark:bg-[#709FA8]/10 border border-[#2B5866]/20 dark:border-[#709FA8]/20">
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-slate-700 dark:text-[#709FA8] font-bold px-3 py-1 rounded-full bg-slate-100 dark:bg-[#709FA8]/10 border border-slate-300 dark:border-[#709FA8]/20">
                     Phase {step.stepNumber}
                   </span>
                 </div>

@@ -47,14 +47,14 @@ export const About: React.FC = () => {
           {/* Main Bio Card */}
           <Card className="about-animate lg:col-span-7 flex flex-col gap-6">
             <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#2B5866]/10 dark:bg-[#2B5866]/30 text-[#2B5866] dark:text-[#709FA8] text-2xl font-bold border border-[#2B5866]/20 dark:border-[#709FA8]/30">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-slate-900 border border-slate-200 shadow-sm dark:bg-[#2B5866]/30 dark:text-[#709FA8] dark:border-[#709FA8]/30 text-2xl font-bold">
                 👨‍💻
               </span>
               <div className="flex-1">
                 <h3 className="sm:text-2xl text-xl font-bold text-[var(--text-primary)] font-heading">
                   Engineering Scalable UI &amp; AI Products
                 </h3>
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#2B5866] dark:text-[#709FA8]">
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-[#709FA8]">
                   7+ Years of Engineering Excellence
                 </span>
               </div>

@@ -90,16 +90,16 @@ export const Contact: React.FC = () => {
               <div className="flex flex-col gap-6">
                 {/* Email */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#2B5866]/10 dark:bg-[#2B5866]/20 text-[#2B5866] dark:text-[#709FA8] border border-[#2B5866]/20 dark:border-[#709FA8]/30">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-slate-900 border border-slate-200 shadow-sm dark:bg-[#2B5866]/20 dark:text-[#709FA8] dark:border-[#709FA8]/30">
                     ✉️
                   </div>
                   <div>
-                    <span className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold">
+                    <span className="text-xs uppercase tracking-wider text-slate-600 dark:text-slate-400 font-bold">
                       Email
                     </span>
                     <a
                       href={`mailto:${PERSONAL_INFO.email}`}
-                      className="block text-base font-medium text-[var(--text-primary)] hover:text-[#2B5866] dark:hover:text-[#709FA8] transition-colors"
+                      className="block text-base font-bold text-[var(--text-primary)] hover:text-[#2B5866] dark:hover:text-[#709FA8] transition-colors"
                     >
                       {PERSONAL_INFO.email}
                     </a>
@@ -108,16 +108,16 @@ export const Contact: React.FC = () => {
 
                 {/* Phone */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#488293]/10 dark:bg-[#488293]/20 text-[#2B5866] dark:text-[#709FA8] border border-[#488293]/20 dark:border-[#488293]/30">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-slate-900 border border-slate-200 shadow-sm dark:bg-[#488293]/20 dark:text-[#709FA8] dark:border-[#488293]/30">
                     📞
                   </div>
                   <div>
-                    <span className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold">
+                    <span className="text-xs uppercase tracking-wider text-slate-600 dark:text-slate-400 font-bold">
                       Phone
                     </span>
                     <a
                       href={`tel:${PERSONAL_INFO.phone}`}
-                      className="block text-base font-medium text-[var(--text-primary)] hover:text-[#2B5866] dark:hover:text-[#709FA8] transition-colors"
+                      className="block text-base font-bold text-[var(--text-primary)] hover:text-[#2B5866] dark:hover:text-[#709FA8] transition-colors"
                     >
                       {PERSONAL_INFO.phone}
                     </a>
@@ -126,18 +126,18 @@ export const Contact: React.FC = () => {
 
                 {/* WhatsApp Direct */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#25D366]/20 text-[#25D366] border border-[#25D366]/30">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-200 shadow-sm dark:bg-[#25D366]/20 dark:text-[#25D366] dark:border-[#25D366]/30">
                     💬
                   </div>
                   <div>
-                    <span className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold">
+                    <span className="text-xs uppercase tracking-wider text-slate-600 dark:text-slate-400 font-bold">
                       WhatsApp
                     </span>
                     <a
                       href={PERSONAL_INFO.whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block text-base font-medium text-[#25D366] hover:underline"
+                      className="block text-base font-bold text-[#25D366] hover:underline"
                     >
                       Chat Instantly on WhatsApp →
                     </a>
@@ -146,14 +146,14 @@ export const Contact: React.FC = () => {
 
                 {/* Location */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#2B5866]/20 text-[#709FA8] border border-[#709FA8]/30">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-slate-900 border border-slate-200 shadow-sm dark:bg-[#2B5866]/20 dark:text-[#709FA8] dark:border-[#709FA8]/30">
                     📍
                   </div>
                   <div>
-                    <span className="text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold">
+                    <span className="text-xs uppercase tracking-wider text-slate-600 dark:text-slate-400 font-bold">
                       Location
                     </span>
-                    <p className="text-base font-medium text-[var(--text-primary)]">
+                    <p className="text-base font-bold text-[var(--text-primary)]">
                       {PERSONAL_INFO.location}
                     </p>
                   </div>
@@ -161,8 +161,8 @@ export const Contact: React.FC = () => {
               </div>
 
               {/* Response Time Guarantee */}
-              <div className="mt-6 pt-4 border-t border-[var(--bg-card-border)] flex items-center gap-2 text-xs font-semibold text-[#709FA8]">
-                <span className="h-2 w-2 rounded-full bg-[#709FA8] animate-pulse" />
+              <div className="mt-6 pt-4 border-t border-[var(--bg-card-border)] flex items-center gap-2 text-xs font-bold text-slate-700 dark:text-[#709FA8]">
+                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
                 <span>⚡ Typical response time: Under 4 hours</span>
               </div>
             </Card>
