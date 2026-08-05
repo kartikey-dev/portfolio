@@ -54,11 +54,11 @@ export const FAQ: React.FC = () => {
                   onClick={() => toggleItem(item.id)}
                   aria-expanded={isOpen}
                   aria-controls={`faq-answer-${item.id}`}
-                  className="w-full p-6 text-left flex items-center justify-between gap-4 font-heading text-base sm:text-lg font-bold text-[var(--text-primary)] hover:text-[#709FA8] transition-colors focus:outline-none focus:ring-2 focus:ring-[#709FA8]/50 rounded-2xl"
+                  className="w-full p-6 text-left flex items-center justify-between gap-4 font-heading text-base sm:text-lg font-bold text-[var(--text-primary)] hover:text-[#2B5866] dark:hover:text-[#709FA8] transition-colors focus:outline-none focus:ring-2 focus:ring-[#709FA8]/50 rounded-2xl"
                 >
                   <span>{item.question}</span>
                   <span
-                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#2B5866]/30 border border-[#709FA8]/30 text-[#709FA8] font-bold text-sm transition-transform duration-300 ${
+                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#2B5866]/10 dark:bg-[#2B5866]/30 border border-[#2B5866]/30 dark:border-[#709FA8]/30 text-[#2B5866] dark:text-[#709FA8] font-bold text-sm transition-transform duration-300 ${
                       isOpen ? "rotate-180" : "rotate-0"
                     }`}
                   >
@@ -87,7 +87,7 @@ export const FAQ: React.FC = () => {
           </p>
           <a
             href="#contact"
-            className="inline-block mt-2 font-heading font-bold text-[#709FA8] hover:text-[var(--text-primary)] text-base transition-colors"
+            className="inline-block mt-2 font-heading font-bold text-[#2B5866] dark:text-[#709FA8] hover:text-[var(--text-primary)] text-base transition-colors"
           >
             Ask Kartikey Directly →
           </a>

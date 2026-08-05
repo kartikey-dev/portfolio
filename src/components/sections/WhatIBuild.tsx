@@ -27,15 +27,15 @@ export const WhatIBuild: React.FC = () => {
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="flex items-center justify-center h-10 w-10 rounded-xl bg-gradient-to-br from-[#2B5866]/30 via-[#488293]/20 to-[#709FA8]/30 border border-[#709FA8]/30 text-[#709FA8] font-mono text-xs font-bold">
+                  <span className="flex items-center justify-center h-10 w-10 rounded-xl bg-gradient-to-br from-[#2B5866]/20 via-[#488293]/15 to-[#709FA8]/20 dark:from-[#2B5866]/30 dark:to-[#709FA8]/30 border border-[#2B5866]/30 dark:border-[#709FA8]/30 text-[#2B5866] dark:text-[#709FA8] font-mono text-xs font-bold">
                     {(index + 1).toString().padStart(2, "0")}
                   </span>
-                  <span className="text-[10px] font-mono uppercase tracking-wider text-[#709FA8] font-semibold px-2.5 py-0.5 rounded-full bg-[#709FA8]/10 border border-[#709FA8]/20">
+                  <span className="text-[10px] font-mono uppercase tracking-wider text-[#2B5866] dark:text-[#709FA8] font-semibold px-2.5 py-0.5 rounded-full bg-[#2B5866]/10 dark:bg-[#709FA8]/10 border border-[#2B5866]/20 dark:border-[#709FA8]/20">
                     Production Ready
                   </span>
                 </div>
 
-                <h3 className="text-lg font-bold text-[var(--text-primary)] font-heading mb-2.5 group-hover:text-[#709FA8] transition-colors">
+                <h3 className="text-lg font-bold text-[var(--text-primary)] font-heading mb-2.5 group-hover:text-[#2B5866] dark:group-hover:text-[#709FA8] transition-colors">
                   {service.title}
                 </h3>
 
@@ -57,7 +57,7 @@ export const WhatIBuild: React.FC = () => {
                 </div>
                 <a
                   href="#contact"
-                  className="inline-flex items-center text-xs font-semibold text-[#709FA8] hover:text-[var(--text-primary)] transition-colors gap-1 pt-1"
+                  className="inline-flex items-center text-xs font-semibold text-[#2B5866] dark:text-[#709FA8] hover:text-[var(--text-primary)] transition-colors gap-1 pt-1"
                 >
                   <span>Inquire for {service.title}</span>
                   <span>→</span>

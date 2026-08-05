@@ -28,10 +28,10 @@ export const Process: React.FC = () => {
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-heading text-3xl font-black text-[#709FA8] font-mono tracking-tighter">
+                  <span className="font-heading text-3xl font-black text-[#2B5866] dark:text-[#709FA8] font-mono tracking-tighter">
                     {step.stepNumber}
                   </span>
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-[#709FA8] font-bold px-3 py-1 rounded-full bg-[#709FA8]/10 border border-[#709FA8]/20">
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-[#2B5866] dark:text-[#709FA8] font-bold px-3 py-1 rounded-full bg-[#2B5866]/10 dark:bg-[#709FA8]/10 border border-[#2B5866]/20 dark:border-[#709FA8]/20">
                     Phase {step.stepNumber}
                   </span>
                 </div>
@@ -39,7 +39,9 @@ export const Process: React.FC = () => {
                 <h3 className="text-xl font-bold text-[var(--text-primary)] font-heading mb-1">
                   {step.title}
                 </h3>
-                <p className="text-xs font-semibold text-[#709FA8] mb-4">{step.subtitle}</p>
+                <p className="text-xs font-semibold text-[#2B5866] dark:text-[#709FA8] mb-4">
+                  {step.subtitle}
+                </p>
 
                 <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-6">
                   {step.description}
@@ -56,7 +58,7 @@ export const Process: React.FC = () => {
                       key={deliverable}
                       className="flex items-center gap-2 text-xs text-[var(--text-muted)]"
                     >
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#709FA8]" />
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#2B5866] dark:bg-[#709FA8]" />
                       <span>{deliverable}</span>
                     </li>
                   ))}

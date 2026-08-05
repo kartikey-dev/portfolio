@@ -89,7 +89,7 @@ export const Navbar: React.FC = () => {
                 key={item.label}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className="px-4 py-1.5 text-sm font-medium text-[var(--text-secondary)] hover:text-[#709FA8] rounded-full transition-colors"
+                className="px-4 py-1.5 text-sm font-medium text-[var(--text-secondary)] hover:text-[#2B5866] dark:hover:text-[#709FA8] rounded-full transition-colors"
               >
                 {item.label}
               </a>
@@ -101,7 +101,7 @@ export const Navbar: React.FC = () => {
             <button
               onClick={toggleTheme}
               aria-label="Toggle theme"
-              className="flex h-10 w-10 items-center justify-center rounded-full glass-panel border border-[var(--bg-card-border)] text-[var(--text-primary)] hover:border-[#709FA8]/50 hover:text-[#709FA8] transition-all"
+              className="flex h-10 w-10 items-center justify-center rounded-full glass-panel border border-[var(--bg-card-border)] text-[var(--text-primary)] hover:border-[#2B5866]/50 dark:hover:border-[#709FA8]/50 hover:text-[#2B5866] dark:hover:text-[#709FA8] transition-all"
             >
               {theme === "dark" ? (
                 // Sun Icon
@@ -195,7 +195,7 @@ export const Navbar: React.FC = () => {
                 key={item.label}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className="text-lg font-medium text-[var(--text-primary)] hover:text-[#709FA8] transition-colors py-2 border-b border-[var(--bg-card-border)]/50 last:border-none"
+                className="text-lg font-medium text-[var(--text-primary)] hover:text-[#2B5866] dark:hover:text-[#709FA8] transition-colors py-2 border-b border-[var(--bg-card-border)]/50 last:border-none"
               >
                 {item.label}
               </a>

@@ -47,14 +47,14 @@ export const About: React.FC = () => {
           {/* Main Bio Card */}
           <Card className="about-animate lg:col-span-7 flex flex-col gap-6">
             <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#2B5866]/30 text-[#709FA8] text-2xl font-bold border border-[#709FA8]/30">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#2B5866]/10 dark:bg-[#2B5866]/30 text-[#2B5866] dark:text-[#709FA8] text-2xl font-bold border border-[#2B5866]/20 dark:border-[#709FA8]/30">
                 👨‍💻
               </span>
               <div className="flex-1">
                 <h3 className="sm:text-2xl text-xl font-bold text-[var(--text-primary)] font-heading">
                   Engineering Scalable UI &amp; AI Products
                 </h3>
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#709FA8]">
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#2B5866] dark:text-[#709FA8]">
                   7+ Years of Engineering Excellence
                 </span>
               </div>
@@ -78,7 +78,7 @@ export const About: React.FC = () => {
                 <span className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] font-bold">
                   Email
                 </span>
-                <p className="text-xs font-semibold text-[#709FA8] truncate">
+                <p className="text-xs font-semibold text-[#2B5866] dark:text-[#709FA8] truncate">
                   {PERSONAL_INFO.email}
                 </p>
               </div>
@@ -94,7 +94,7 @@ export const About: React.FC = () => {
 
             {/* Recognition Badges */}
             <div className="pt-4 border-t border-[var(--bg-card-border)] flex flex-col gap-3">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-[#709FA8]">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-[#2B5866] dark:text-[#709FA8]">
                 Key Recognition
               </h4>
               <div className="grid grid-cols-1 gap-3">
@@ -103,7 +103,7 @@ export const About: React.FC = () => {
                     key={item.title}
                     className="flex items-start gap-3 p-3 glass-panel rounded-xl border border-[var(--bg-card-border)] hover:border-[#709FA8]/30 transition-colors"
                   >
-                    <span className="text-[#709FA8] text-xl">🏆</span>
+                    <span className="text-[#2B5866] dark:text-[#709FA8] text-xl">🏆</span>
                     <div>
                       <strong className="text-[var(--text-primary)] font-bold text-sm block">
                         {item.title}

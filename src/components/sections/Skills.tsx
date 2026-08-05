@@ -81,10 +81,10 @@ export const Skills: React.FC = () => {
               <div>
                 <h3 className="text-lg font-bold text-[var(--text-primary)] font-heading mb-5 pb-3 border-b border-[var(--bg-card-border)] flex items-center justify-between">
                   <span className="flex items-center gap-2">
-                    <span className="h-2.5 w-2.5 rounded-full bg-[#709FA8] animate-pulse" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-[#2B5866] dark:bg-[#709FA8] animate-pulse" />
                     {cat.title}
                   </span>
-                  <span className="text-xs font-mono bg-[var(--accent-teal)] text-white rounded-full size-5 flex items-center justify-center font-normal">
+                  <span className="text-xs font-mono bg-[#2B5866] text-white rounded-full size-5 flex items-center justify-center font-normal">
                     {cat.skills.length}
                   </span>
                 </h3>
@@ -99,9 +99,9 @@ export const Skills: React.FC = () => {
                           <span
                             className={`font-mono text-[10px] uppercase ${
                               skill.level === "Expert"
-                                ? "text-[#709FA8] font-bold"
+                                ? "text-[#2B5866] dark:text-[#709FA8] font-bold"
                                 : skill.level === "Advanced" || skill.level === "Proficient"
-                                  ? "text-[#B1B8C0]"
+                                  ? "text-slate-600 dark:text-[#B1B8C0] font-semibold"
                                   : "text-[var(--text-muted)]"
                             }`}
                           >

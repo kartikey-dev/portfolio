@@ -96,18 +96,18 @@ export const Hero: React.FC = () => {
           {/* Left Column — Text & CTAs */}
           <div className="lg:col-span-7 flex flex-col items-start gap-6">
             {/* Expert UI Badge */}
-            <div className="hero-animate inline-flex items-center gap-2.5 rounded-full bg-[#2B5866]/40 px-4 py-1.5 border border-[#709FA8]/60 text-xs font-bold uppercase tracking-widest text-[#709FA8] shadow-lg shadow-[#2B5866]/20 backdrop-blur-md">
-              <span className="flex h-2 w-2 rounded-full bg-[#709FA8] animate-ping" />
+            <div className="hero-animate inline-flex items-center gap-2.5 rounded-full bg-[#2B5866]/10 dark:bg-[#2B5866]/40 px-4 py-1.5 border border-[#2B5866]/30 dark:border-[#709FA8]/60 text-xs font-bold uppercase tracking-widest text-[#2B5866] dark:text-[#709FA8] shadow-md shadow-[#2B5866]/10 backdrop-blur-md">
+              <span className="flex h-2 w-2 rounded-full bg-[#2B5866] dark:bg-[#709FA8] animate-ping" />
               <span>Senior Frontend Engineer &amp; UI Expert</span>
             </div>
 
             {/* Main Name Heading */}
             <div className="hero-animate">
-              <span className="text-lg font-semibold text-[#709FA8] sm:text-xl tracking-wide">
+              <span className="text-lg font-semibold text-[#2B5866] dark:text-[#709FA8] sm:text-xl tracking-wide">
                 Crafting Exceptional Digital Products
               </span>
               <h1 className="mt-1 font-heading text-4xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-black tracking-tight text-[var(--text-primary)] leading-[1.05]">
-                Kumar <span className="gradient-text text-[#709FA8]">Kartikey</span>
+                Kumar <span className="gradient-text">Kartikey</span>
               </h1>
             </div>
 
@@ -158,18 +158,20 @@ export const Hero: React.FC = () => {
           {/* Right Column — Code Window Interactive 3D Card */}
           <div className="lg:col-span-5 relative flex justify-center w-full">
             {/* Floating Graphic Badge top right */}
-            <div className="hero-float hidden sm:flex absolute -top-6 -right-2 z-20 glass-panel rounded-2xl p-3 sm:p-4 border border-[#709FA8]/40 shadow-xl shadow-[#2B5866]/20 backdrop-blur-xl items-center gap-3">
+            <div className="hero-float hidden sm:flex absolute -top-6 -right-2 z-20 glass-panel rounded-2xl p-3 sm:p-4 border border-[#2B5866]/30 dark:border-[#709FA8]/40 shadow-xl shadow-[#2B5866]/10 backdrop-blur-xl items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-[#2B5866] to-[#709FA8] text-white font-bold text-lg">
                 ⚡
               </div>
               <div>
                 <div className="text-xs font-bold text-[var(--text-primary)]">LCP Optimized</div>
-                <div className="text-[10px] text-[#709FA8] font-mono">90+/100 Lighthouse</div>
+                <div className="text-[10px] text-[#2B5866] dark:text-[#709FA8] font-mono font-semibold">
+                  90+/100 Lighthouse
+                </div>
               </div>
             </div>
 
             {/* Floating Badge bottom left */}
-            <div className="hero-float hidden sm:flex absolute -bottom-6 -left-4 z-20 glass-panel rounded-2xl p-3 sm:p-4 border border-[#488293]/40 shadow-xl shadow-[#488293]/20 backdrop-blur-xl items-center gap-3">
+            <div className="hero-float hidden sm:flex absolute -bottom-6 -left-4 z-20 glass-panel rounded-2xl p-3 sm:p-4 border border-[#488293]/30 dark:border-[#488293]/40 shadow-xl shadow-[#488293]/10 backdrop-blur-xl items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-[#488293] to-[#709FA8] text-white font-bold text-lg">
                 🎨
               </div>
@@ -177,20 +179,22 @@ export const Hero: React.FC = () => {
                 <div className="text-xs font-bold text-[var(--text-primary)]">
                   UI/UX Architecture
                 </div>
-                <div className="text-[10px] text-[#709FA8] font-mono">7+ Yrs Expertise</div>
+                <div className="text-[10px] text-[#2B5866] dark:text-[#709FA8] font-mono font-semibold">
+                  7+ Yrs Expertise
+                </div>
               </div>
             </div>
 
-            {/* Interactive 3D Code Snippet Card */}
+            {/* Interactive 3D Code Snippet Card (Dark IDE Window) */}
             <div
               ref={heroCardRef}
               onMouseMove={handleMouseMove}
               onMouseLeave={handleMouseLeave}
-              className="relative w-full max-w-md glass-panel rounded-3xl p-6 sm:p-8 border border-[var(--bg-card-border)] shadow-2xl shadow-[#2B5866]/20 transition-transform duration-200 cursor-pointer overflow-hidden"
+              className="relative w-full max-w-md rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-[#1C2023] via-[#14181B] to-[#1C2023] border border-white/10 shadow-2xl shadow-black/30 transition-transform duration-200 cursor-pointer overflow-hidden"
               style={{ transformStyle: "preserve-3d" }}
             >
               {/* Card Top Header / Code Window Style */}
-              <div className="flex items-center justify-between pb-4 sm:pb-6 border-b border-[var(--bg-card-border)]">
+              <div className="flex items-center justify-between pb-4 sm:pb-6 border-b border-white/10">
                 <div className="flex items-center gap-2">
                   <span className="h-3 w-3 rounded-full bg-red-500/80" />
                   <span className="h-3 w-3 rounded-full bg-amber-500/80" />
@@ -200,35 +204,35 @@ export const Hero: React.FC = () => {
               </div>
 
               {/* Code Snippet Visual Representation */}
-              <div className="py-4 sm:py-6 font-mono text-xs leading-relaxed space-y-2 text-[var(--text-secondary)]">
+              <div className="py-4 sm:py-6 font-mono text-xs leading-relaxed space-y-2 text-slate-300">
                 <div>
                   <span className="text-[#709FA8]">const</span>{" "}
-                  <span className="text-[#488293]">engineer</span> = &#123;
+                  <span className="text-[#38bdf8]">engineer</span> = &#123;
                 </div>
                 <div className="pl-4">
-                  <span className="text-[var(--text-muted)]">name:</span>{" "}
+                  <span className="text-slate-400">name:</span>{" "}
                   <span className="text-white font-bold">&quot;Kumar Kartikey&quot;</span>,
                 </div>
                 <div className="pl-4">
-                  <span className="text-[var(--text-muted)]">role:</span>{" "}
+                  <span className="text-slate-400">role:</span>{" "}
                   <span className="text-[#709FA8]">
                     &quot;Senior Frontend Engineer &amp; UI Expert&quot;
                   </span>
                   ,
                 </div>
                 <div className="pl-4">
-                  <span className="text-[var(--text-muted)]">experience:</span>{" "}
-                  <span className="text-[#B1B8C0]">&quot;7+ Years&quot;</span>,
+                  <span className="text-slate-400">experience:</span>{" "}
+                  <span className="text-amber-300">&quot;7+ Years&quot;</span>,
                 </div>
                 <div className="pl-4">
-                  <span className="text-[var(--text-muted)]">stack:</span> [
+                  <span className="text-slate-400">stack:</span> [
                   <span className="text-[#709FA8]">&quot;Next.js 16&quot;</span>,{" "}
-                  <span className="text-[#488293]">&quot;GSAP&quot;</span>,{" "}
+                  <span className="text-[#38bdf8]">&quot;GSAP&quot;</span>,{" "}
                   <span className="text-[#709FA8]">&quot;Tailwind v4&quot;</span>],
                 </div>
                 <div className="pl-4">
-                  <span className="text-[var(--text-muted)]">passion:</span>{" "}
-                  <span className="text-white font-bold">
+                  <span className="text-slate-400">passion:</span>{" "}
+                  <span className="text-emerald-400 font-bold">
                     &quot;Crafting 90+/100 UI &amp; AI UX&quot;
                   </span>
                   ,
@@ -237,14 +241,14 @@ export const Hero: React.FC = () => {
               </div>
 
               {/* Skill Visual Chips inside card */}
-              <div className="pt-4 border-t border-[var(--bg-card-border)] flex flex-wrap gap-2">
-                <span className="px-2.5 py-1 rounded-lg text-[10px] font-bold bg-[#2B5866]/30 text-[#709FA8] border border-[#709FA8]/30">
+              <div className="pt-4 border-t border-white/10 flex flex-wrap gap-2">
+                <span className="px-2.5 py-1 rounded-lg text-[10px] font-bold bg-[#2B5866]/40 text-[#709FA8] border border-[#709FA8]/30">
                   Next.js App Router
                 </span>
-                <span className="px-2.5 py-1 rounded-lg text-[10px] font-bold bg-[#488293]/30 text-[#B1B8C0] border border-[#488293]/30">
+                <span className="px-2.5 py-1 rounded-lg text-[10px] font-bold bg-[#488293]/40 text-slate-200 border border-[#488293]/40">
                   GSAP Animations
                 </span>
-                <span className="px-2.5 py-1 rounded-lg text-[10px] font-bold bg-[#2B5866]/30 text-white border border-[#2B5866]/50">
+                <span className="px-2.5 py-1 rounded-lg text-[10px] font-bold bg-sky-500/20 text-sky-300 border border-sky-400/30">
                   Tailwind CSS v4
                 </span>
               </div>

@@ -181,24 +181,26 @@ export const Projects: React.FC = () => {
                     {(project.categories || [project.category]).map((cat) => (
                       <span
                         key={cat}
-                        className="text-[10px] font-bold uppercase tracking-wider text-[#709FA8] bg-[#2B5866]/20 px-2 py-0.5 rounded border border-[#709FA8]/20"
+                        className="text-[10px] font-bold uppercase tracking-wider text-[#2B5866] dark:text-[#709FA8] bg-[#2B5866]/10 dark:bg-[#2B5866]/20 px-2 py-0.5 rounded border border-[#2B5866]/20 dark:border-[#709FA8]/20"
                       >
                         {cat}
                       </span>
                     ))}
                   </div>
                   {project.featured && (
-                    <span className="text-xs font-bold text-amber-400 flex items-center gap-1 shrink-0">
+                    <span className="text-xs font-bold text-amber-600 dark:text-amber-400 flex items-center gap-1 shrink-0">
                       <span>★</span> Featured
                     </span>
                   )}
                 </div>
 
                 {/* Title & Subtitle */}
-                <h3 className="text-2xl font-black text-[var(--text-primary)] font-heading mb-1 group-hover:text-[#709FA8] transition-colors">
+                <h3 className="text-2xl font-black text-[var(--text-primary)] font-heading mb-1 group-hover:text-[#2B5866] dark:group-hover:text-[#709FA8] transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-xs font-semibold text-[#709FA8] mb-4">{project.subtitle}</p>
+                <p className="text-xs font-semibold text-[#2B5866] dark:text-[#709FA8] mb-4">
+                  {project.subtitle}
+                </p>
 
                 {/* Description */}
                 <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-6">
@@ -215,7 +217,7 @@ export const Projects: React.FC = () => {
                       key={i}
                       className="flex items-start gap-2 text-xs text-[var(--text-secondary)]"
                     >
-                      <span className="text-[#709FA8] font-bold">✓</span>
+                      <span className="text-[#2B5866] dark:text-[#709FA8] font-bold">✓</span>
                       <span>{h}</span>
                     </div>
                   ))}

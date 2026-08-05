@@ -31,10 +31,11 @@ export const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, Bu
       primary:
         "bg-gradient-to-r from-[#2B5866] via-[#488293] to-[#709FA8] text-white shadow-lg shadow-[#2B5866]/30 hover:shadow-[#488293]/40 hover:scale-[1.02] active:scale-[0.98] font-bold",
       secondary:
-        "bg-[#2B5866]/30 text-white border border-[#709FA8]/40 hover:border-[#709FA8] hover:bg-[#2B5866]/50 hover:scale-[1.02] active:scale-[0.98] font-bold backdrop-blur-md",
+        "bg-[#2B5866] text-white hover:bg-[#204450] dark:bg-[#2B5866]/40 dark:text-white dark:border dark:border-[#709FA8]/40 dark:hover:bg-[#2B5866]/60 hover:scale-[1.02] active:scale-[0.98] font-bold backdrop-blur-md shadow-md shadow-black/5",
       outline:
-        "border-2 border-[#709FA8] text-[#709FA8] hover:bg-[#709FA8]/20 hover:scale-[1.02] active:scale-[0.98] font-bold",
-      ghost: "text-[#709FA8] hover:text-white hover:bg-[#709FA8]/20 font-semibold",
+        "border-2 border-[#2B5866] dark:border-[#709FA8] text-[#2B5866] dark:text-[#709FA8] hover:bg-[#2B5866]/10 dark:hover:bg-[#709FA8]/20 hover:scale-[1.02] active:scale-[0.98] font-bold",
+      ghost:
+        "text-[#2B5866] dark:text-[#709FA8] hover:text-[var(--text-primary)] hover:bg-[#2B5866]/10 dark:hover:bg-[#709FA8]/20 font-semibold",
     };
 
     const sizes = {

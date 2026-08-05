@@ -76,11 +76,13 @@ export const Experience: React.FC = () => {
                     <h3 className="text-xl font-bold text-[var(--text-primary)] font-heading">
                       {exp.role}
                     </h3>
-                    <span className="text-base font-medium text-cyan-500">{exp.company}</span>
+                    <span className="text-base font-semibold text-[#2B5866] dark:text-cyan-400">
+                      {exp.company}
+                    </span>
                   </div>
 
                   <div className="flex flex-col items-start sm:items-end">
-                    <span className="inline-flex items-center px-3 py-1 text-xs font-semibold text-purple-400 glass-panel rounded-full border border-purple-500/20">
+                    <span className="inline-flex items-center px-3 py-1 text-xs font-bold text-purple-700 dark:text-purple-300 bg-purple-500/10 rounded-full border border-purple-500/30">
                       {exp.period}
                     </span>
                     <span className="text-xs text-[var(--text-muted)] mt-1">{exp.location}</span>
@@ -94,7 +96,7 @@ export const Experience: React.FC = () => {
                       key={idx}
                       className="flex items-start gap-3 text-sm text-[var(--text-secondary)]"
                     >
-                      <span className="text-cyan-500">▹</span>
+                      <span className="text-[#2B5866] dark:text-cyan-400 font-bold">▹</span>
                       <span className="leading-relaxed">{renderFormattedText(highlight)}</span>
                     </li>
                   ))}
@@ -105,7 +107,7 @@ export const Experience: React.FC = () => {
                   {exp.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-2.5 py-1 text-xs font-medium text-[var(--text-secondary)] bg-cyan-500/10 rounded-md border border-cyan-500/20 hover:border-cyan-500/40 transition-colors"
+                      className="px-2.5 py-1 text-xs font-medium text-[var(--text-secondary)] bg-[#2B5866]/10 dark:bg-cyan-500/10 rounded-md border border-[#2B5866]/20 dark:border-cyan-500/20 hover:border-[#2B5866]/40 dark:hover:border-cyan-500/40 transition-colors"
                     >
                       {tech}
                     </span>

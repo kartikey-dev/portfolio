@@ -2,7 +2,7 @@
 
 @layer base {
   :root {
-    --bg-primary: #f4f6f8;
+    --bg-primary: #f8fafc;
     --bg-secondary: #ffffff;
     --bg-card: rgba(255, 255, 255, 0.95);
     --bg-card-border: rgba(43, 88, 102, 0.22);
@@ -12,8 +12,8 @@
     --accent-cyan: #2b5866;
     --accent-teal: #2b5866;
     --accent-steel: #488293;
-    --accent-ice: #709fa8;
-    --accent-silver: #b1b8c0;
+    --accent-ice: #2b5866;
+    --accent-silver: #475569;
     --accent-glow: rgba(72, 130, 147, 0.15);
   }
 
@@ -76,11 +76,11 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #488293 0%, #709fa8 50%, #38bdf8 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #2b5866 50%, #0284c7 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #709fa8;
+  color: #2b5866;
 }
 
 .dark .gradient-text {

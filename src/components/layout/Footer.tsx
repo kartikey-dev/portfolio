@@ -25,8 +25,8 @@ export const Footer: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div className="max-w-2xl">
               {/* Availability Indicator */}
-              <div className="inline-flex items-center gap-2 rounded-full bg-[#2B5866]/20 px-3 py-1 border border-[#709FA8]/40 sm:text-xs text-[10px] font-semibold text-[#709FA8] mb-4">
-                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+              <div className="inline-flex items-center gap-2 rounded-full bg-[#2B5866]/10 dark:bg-[#2B5866]/20 px-3 py-1 border border-[#2B5866]/30 dark:border-[#709FA8]/40 sm:text-xs text-[10px] font-semibold text-[#2B5866] dark:text-[#709FA8] mb-4">
+                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
                 <span>Available for Senior Frontend Engineering &amp; UI Consulting</span>
               </div>
 
@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
               <span className="font-heading text-2xl font-black tracking-tight text-[var(--text-primary)]">
                 Kumar <span className="gradient-text">Kartikey</span>
               </span>
-              <span className="text-[10px] font-mono font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-[#2B5866]/20 text-[#709FA8] border border-[#709FA8]/30">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-[#2B5866]/10 dark:bg-[#2B5866]/20 text-[#2B5866] dark:text-[#709FA8] border border-[#2B5866]/30 dark:border-[#709FA8]/30">
                 7+ Yrs Exp
               </span>
             </div>

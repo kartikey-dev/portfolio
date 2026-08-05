@@ -90,7 +90,7 @@ export const Contact: React.FC = () => {
               <div className="flex flex-col gap-6">
                 {/* Email */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#2B5866]/20 text-[#709FA8] border border-[#709FA8]/30">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#2B5866]/10 dark:bg-[#2B5866]/20 text-[#2B5866] dark:text-[#709FA8] border border-[#2B5866]/20 dark:border-[#709FA8]/30">
                     ✉️
                   </div>
                   <div>
@@ -99,7 +99,7 @@ export const Contact: React.FC = () => {
                     </span>
                     <a
                       href={`mailto:${PERSONAL_INFO.email}`}
-                      className="block text-base font-medium text-[var(--text-primary)] hover:text-[#709FA8] transition-colors"
+                      className="block text-base font-medium text-[var(--text-primary)] hover:text-[#2B5866] dark:hover:text-[#709FA8] transition-colors"
                     >
                       {PERSONAL_INFO.email}
                     </a>
@@ -108,7 +108,7 @@ export const Contact: React.FC = () => {
 
                 {/* Phone */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#488293]/20 text-[#709FA8] border border-[#488293]/30">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#488293]/10 dark:bg-[#488293]/20 text-[#2B5866] dark:text-[#709FA8] border border-[#488293]/20 dark:border-[#488293]/30">
                     📞
                   </div>
                   <div>
@@ -117,7 +117,7 @@ export const Contact: React.FC = () => {
                     </span>
                     <a
                       href={`tel:${PERSONAL_INFO.phone}`}
-                      className="block text-base font-medium text-[var(--text-primary)] hover:text-[#709FA8] transition-colors"
+                      className="block text-base font-medium text-[var(--text-primary)] hover:text-[#2B5866] dark:hover:text-[#709FA8] transition-colors"
                     >
                       {PERSONAL_INFO.phone}
                     </a>
@@ -213,7 +213,7 @@ export const Contact: React.FC = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-semibold uppercase tracking-wider text-[#709FA8] mb-1">
+                    <label className="block text-xs font-semibold uppercase tracking-wider text-[#2B5866] dark:text-[#709FA8] mb-1">
                       Your Name *
                     </label>
                     <input
@@ -222,12 +222,12 @@ export const Contact: React.FC = () => {
                       placeholder="Your Name"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full rounded-xl bg-[#14181B]/80 px-4 py-2.5 text-sm text-white placeholder:text-gray-400 border border-[#709FA8]/30 focus:border-[#709FA8] focus:ring-2 focus:ring-[#709FA8]/20 focus:outline-none transition-colors"
+                      className="w-full rounded-xl bg-[var(--bg-primary)] px-4 py-2.5 text-sm text-[var(--text-primary)] placeholder:text-[var(--text-muted)] border border-[var(--bg-card-border)] focus:border-[#2B5866] dark:focus:border-[#709FA8] focus:ring-2 focus:ring-[#2B5866]/20 dark:focus:ring-[#709FA8]/20 focus:outline-none transition-colors"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold uppercase tracking-wider text-[#709FA8] mb-1">
+                    <label className="block text-xs font-semibold uppercase tracking-wider text-[#2B5866] dark:text-[#709FA8] mb-1">
                       Your Email *
                     </label>
                     <input
@@ -236,13 +236,13 @@ export const Contact: React.FC = () => {
                       placeholder="Your Email"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full rounded-xl bg-[#14181B]/80 px-4 py-2.5 text-sm text-white placeholder:text-gray-400 border border-[#709FA8]/30 focus:border-[#709FA8] focus:ring-2 focus:ring-[#709FA8]/20 focus:outline-none transition-colors"
+                      className="w-full rounded-xl bg-[var(--bg-primary)] px-4 py-2.5 text-sm text-[var(--text-primary)] placeholder:text-[var(--text-muted)] border border-[var(--bg-card-border)] focus:border-[#2B5866] dark:focus:border-[#709FA8] focus:ring-2 focus:ring-[#2B5866]/20 dark:focus:ring-[#709FA8]/20 focus:outline-none transition-colors"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-[#709FA8] mb-1">
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-[#2B5866] dark:text-[#709FA8] mb-1">
                     Subject
                   </label>
                   <input
@@ -250,12 +250,12 @@ export const Contact: React.FC = () => {
                     placeholder="Project Inquiry / Opportunity"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    className="w-full rounded-xl bg-[#14181B]/80 px-4 py-2.5 text-sm text-white placeholder:text-gray-400 border border-[#709FA8]/30 focus:border-[#709FA8] focus:ring-2 focus:ring-[#709FA8]/20 focus:outline-none transition-colors"
+                    className="w-full rounded-xl bg-[var(--bg-primary)] px-4 py-2.5 text-sm text-[var(--text-primary)] placeholder:text-[var(--text-muted)] border border-[var(--bg-card-border)] focus:border-[#2B5866] dark:focus:border-[#709FA8] focus:ring-2 focus:ring-[#2B5866]/20 dark:focus:ring-[#709FA8]/20 focus:outline-none transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-[#709FA8] mb-1">
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-[#2B5866] dark:text-[#709FA8] mb-1">
                     Message *
                   </label>
                   <textarea
@@ -264,7 +264,7 @@ export const Contact: React.FC = () => {
                     placeholder="Your Message..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full rounded-xl bg-[#14181B]/80 px-4 py-2.5 text-sm text-white placeholder:text-gray-400 border border-[#709FA8]/30 focus:border-[#709FA8] focus:ring-2 focus:ring-[#709FA8]/20 focus:outline-none transition-colors resize-none"
+                    className="w-full rounded-xl bg-[var(--bg-primary)] px-4 py-2.5 text-sm text-[var(--text-primary)] placeholder:text-[var(--text-muted)] border border-[var(--bg-card-border)] focus:border-[#2B5866] dark:focus:border-[#709FA8] focus:ring-2 focus:ring-[#2B5866]/20 dark:focus:ring-[#709FA8]/20 focus:outline-none transition-colors resize-none"
                   />
                 </div>
 
