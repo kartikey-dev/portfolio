@@ -90,7 +90,7 @@ export const Contact: React.FC = () => {
               <div className="flex flex-col gap-6">
                 {/* Email */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-slate-900 border border-slate-200 shadow-sm dark:bg-[#2B5866]/20 dark:text-[#709FA8] dark:border-[#709FA8]/30">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-slate-900 border border-slate-200 shadow-sm">
                     ✉️
                   </div>
                   <div>
@@ -108,7 +108,7 @@ export const Contact: React.FC = () => {
 
                 {/* Phone */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-slate-900 border border-slate-200 shadow-sm dark:bg-[#488293]/20 dark:text-[#709FA8] dark:border-[#488293]/30">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-slate-900 border border-slate-200 shadow-sm">
                     📞
                   </div>
                   <div>
@@ -146,7 +146,7 @@ export const Contact: React.FC = () => {
 
                 {/* Location */}
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-slate-900 border border-slate-200 shadow-sm dark:bg-[#2B5866]/20 dark:text-[#709FA8] dark:border-[#709FA8]/30">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-slate-900 border border-slate-200 shadow-sm">
                     📍
                   </div>
                   <div>

@@ -45,7 +45,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
       className={`mb-12 flex flex-col ${centered ? "items-center text-center" : "items-start text-left"} ${className}`}
     >
       {badge && (
-        <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-bold uppercase tracking-wider bg-slate-900 text-white border border-slate-900 dark:bg-[#2B5866]/40 dark:text-[#709FA8] dark:border-[#709FA8]/40 rounded-full mb-3 shadow-sm">
+        <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-bold uppercase tracking-wider bg-slate-900 text-white border border-slate-900 dark:bg-white dark:text-[#709FA8] dark:border-[#709FA8]/40 rounded-full mb-3 shadow-sm">
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 dark:bg-[#709FA8] animate-pulse" />
           {badge}
         </span>
@@ -59,9 +59,8 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
         </p>
       )}
       <div
-        className={`mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-[#2B5866] via-[#488293] to-[#709FA8] ${
-          centered ? "mx-auto" : ""
-        }`}
+        className={`mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-[#2B5866] via-[#488293] to-[#709FA8] ${centered ? "mx-auto" : ""
+          }`}
       />
     </div>
   );

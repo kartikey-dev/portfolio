@@ -96,7 +96,7 @@ export const Hero: React.FC = () => {
           {/* Left Column — Text & CTAs */}
           <div className="lg:col-span-7 flex flex-col items-start gap-6">
             {/* Expert UI Badge */}
-            <div className="hero-animate inline-flex items-center gap-2.5 rounded-full bg-slate-900 text-white border border-slate-900 dark:bg-[#2B5866]/50 dark:border-[#709FA8]/60 px-4 py-1.5 text-xs font-bold uppercase tracking-widest dark:text-[#709FA8] shadow-md shadow-black/10 backdrop-blur-md">
+            <div className="hero-animate inline-flex items-center gap-1.5 px-3 py-1 text-xs font-bold uppercase tracking-wider bg-slate-900 text-white border border-slate-900 dark:bg-white dark:text-[#709FA8] dark:border-[#709FA8]/40 rounded-full mb-3 shadow-sm">
               <span className="flex h-2 w-2 rounded-full bg-emerald-400 dark:bg-[#709FA8] animate-ping" />
               <span>Senior Frontend Engineer &amp; UI Expert</span>
             </div>

@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div className="max-w-2xl">
               {/* Availability Indicator */}
-              <div className="inline-flex items-center gap-2 rounded-full bg-slate-900 text-white border border-slate-900 shadow-md shadow-black/10 dark:bg-[#2B5866]/40 dark:text-[#709FA8] dark:border-[#709FA8]/50 sm:text-xs text-[10px] font-bold uppercase tracking-wider mb-4 px-3 py-1">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-bold uppercase tracking-wider bg-slate-900 text-white border border-slate-900 dark:bg-white dark:text-[#709FA8] dark:border-[#709FA8]/40 rounded-full mb-3 shadow-sm">
                 <span className="h-2 w-2 rounded-full bg-emerald-400 dark:bg-[#709FA8] animate-pulse" />
                 <span>Available for Senior Frontend Engineering &amp; UI Consulting</span>
               </div>
@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
               <span className="font-heading text-2xl font-black tracking-tight text-[var(--text-primary)]">
                 Kumar <span className="gradient-text">Kartikey</span>
               </span>
-              <span className="text-[10px] font-mono font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-[#2B5866]/10 dark:bg-[#2B5866]/20 text-[#2B5866] dark:text-[#709FA8] border border-[#2B5866]/30 dark:border-[#709FA8]/30">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-slate-900 text-white border border-slate-900 dark:bg-white dark:text-[#709FA8] dark:border-[#709FA8]/40">
                 7+ Yrs Exp
               </span>
             </div>
@@ -244,7 +244,7 @@ export const Footer: React.FC = () => {
           <div className="flex flex-wrap max-sm:justify-center items-center gap-3 text-center sm:text-left">
             <span>&copy; {currentYear} Kumar Kartikey. All rights reserved.</span>
             <span className="hidden sm:inline text-[var(--bg-card-border)]">•</span>
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#2B5866]/20 text-[#709FA8] border border-[#709FA8]/30 font-mono text-[10px] font-bold">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-900 text-white border border-slate-900 dark:bg-white dark:text-[#709FA8] dark:border-[#709FA8]/40 font-mono text-[10px] font-bold">
               ⚡ 90+/100 Core Web Vitals Optimized
             </span>
           </div>
